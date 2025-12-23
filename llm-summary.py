@@ -4,7 +4,7 @@
 # then set  Tools>Preferences>Python Intepreter  to  C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\.venv\Scripts\python.exe
 # restart the kernel (press = button on far right, or just restart spyer)
 
-from openai import OpenAI
+from openai import OpenAI   # pip install openai
 
 with open("openrouter-api-key.shh", "r") as f:
     API_KEY = f.read()
@@ -18,7 +18,8 @@ client = OpenAI(
 global PROMPT_TEMPLATE # making explicit that is global variable
 PROMPT_TEMPLATE = """The following is an article that appeared in Science Magazine many years ago about the biotechnology industry.
 
-Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had.
+Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had. 
+Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
 Write a response following these sections :
     
 1. SUMMARY
@@ -31,21 +32,19 @@ Research what happened subsequent to the article being published and summarize t
 Describe what predictions of the article matched the later history, and which predictions were wrong.
 
 4. INTEREST 
-Give a score from 0 to 9 on how interesting the article is in hindsight, and the insightfulness of its retrospective analysis.
+Give a score from 0 to 9 on how interesting the article is in hindsight, and the insightfulness of its retrospective analysis. Do not simply give all articles a medium score, please be thoughtful about long-term impact.
 
+5. CITATIONS
+Here cite the URLs of the websites you used as sources of information. Remember to search across multiple timeframes, not just one time period
 
 --- The article ---
 
 """
 
-article_fulltext = """
-Pfizer and Allergan: Here We Go Again
-29 Oct 201511:50 AM ET
+article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
 
-Last night the Wall Street Journal broke the news that Pfizer and Allergan are considering merging. I'm not a fan of huge pharma mergers, never have been, but this one at least isn't as offensive as some of them. That's partly because, in the words of FierceBiotech's John Carroll (on Twitter) that Allergan at least doesn't have as huge an R&D effort for Pfizer to demolish. And since Allergan is incorporated in Ireland, this is a way for Pfizer to do what it really seems to need to do most - deal with its tax situation, which was the driving force behind their attempt to take over AstraZeneca. Pfizer has gigantic amounts of money piling up in its non-US-based operations, and if they repatriate it, they'll expose themselves to some of the highest corporate tax rates in the industrialized world. (As an aside, does Bernie Sanders want to cut corporate taxes all the way down to Scandanavian levels? Just a thought.)
-As the story has it (here's a non-gated summary from Reuters), Pfizer approached Allergan with the idea, who's apparently taking it seriously and not fleeing in terror like AZ did. Earlier rumors has Pfizer going after GSK or Shire (for the same tax reasons), and their shares are actually dropping a bit now that their investors are perhaps missing out on a big Pfizer payday. Allergan's revenues are at least increasing strongly, which is a lot more than you can say for Pfizer's, but this deal would create the biggest behemoth yet in the drug business. And as someone in that Reuters piece says, when you're as big as Pfizer, a deal like this is one of the only things that can really add to the growth of your company - so what situation would they be in afterwards? This whole idea just continues the Pfizer strategy of the last twenty-odd years. It means, I think, that Ian Read may have come into his job as CEO talking about doing things differently, but that now that he's experienced Pfizer's situation from every angle, he's decided that all he can do is more of what got them to this state in the first place. Won't his eventual successor have fun, though!
-At any rate, these talks are said to be preliminary. But Pfizer is going to buy someone, and it's going to be someone large and in another country. That much seems clear (as it has been for a while now). It might well be Allergan, but if not, then hey, there are always other drug companies to buy. Gotta buy someone. Can't just sit there. Nothing else left to do.
-"""
+with open("./prompts/%s"%article_source, "r") as f_in:
+    article_fulltext = f_in.read()
 
 
 def generate_prompt(article_text: str, 
@@ -64,17 +63,61 @@ def generate_prompt(article_text: str,
     
 query_prompt = generate_prompt(article_fulltext)
 
-response = client.responses.create( #client.chat.completions.create(
-  model = "arcee-ai/trinity-mini:free",
-  #messages=[
-  #  {
-  #    "role": "user",
-  #    "content": "What is the meaning of life?"
-  #  }]
-  input = query_prompt,
-  reasoning = {"effort" : "medium"},
-  text = {"verbosity": "medium"}
-)
+model_parameters = {
+    "model" :"nex-agi/deepseek-v3.1-nex-n1:free",#"deepseek/deepseek-v3.2",#"arcee-ai/trinity-mini:free",
+    "input" : query_prompt,
+    # "tools" : [ {
+    #     "type": "web_search",  # warning - this will make 'free' tier models no longer free
+    #     "max_results": 20,
+    #     "include_text": True,
+    #     "include_highlights": True
+    #     } ],
+    "tool_choice" : "required",  # cannot attempt to answer without doing some web searching
+    "reasoning" : {"effort": "high"},
+    "text": {"verbosity": "medium"}
+    }
+
+response = client.responses.create( 
+    **model_parameters)
+
 response_text = response.output_text
+
+
+
+with open("./responses/output-test.md", "w", encoding="utf-8") as f:
+    params_to_write = dict(model_parameters)
+    params_to_write["input"] = article_source
+    f.write("model_params = ")
+    f.write(repr(params_to_write))
+    f.write("\n\n") # two newlines separating
+    f.write(response_text)
+#end
+
+
+'''  how to figure out what parameters each model supports :
+import requests
+url = "https://openrouter.ai/api/v1/parameters/arcee-ai/trinity-mini%3Afree"
+headers = {"Authorization": "Bearer %s"%API_KEY}
+response = requests.get(url, headers=headers)
+print(response.json())
+'''
+
+
+''' notes
+
+arcee-ai/trinity-mini:free
+    - very fast, within a few seconds even if include web search
+    - lots of hallucinations even though web search tool helps a bit
+    - costs around $0.02 per prompt
     
-print(response_text)
+deepseq 3.2
+    - takes around 20 seconds with web search and high reasoning effort
+    - good quality outputs. Not as nice as ChatGPT thinking model, partly because was more terse (e.g. didn't mention the CEO change that came alongside the shift toward more R&D). Citations are real though not diverse
+    - costs around 0.025 per prompt
+    
+deepseq 3.1 free
+    - also slower of around 20 seconds even without web search
+    - surprisingly gave almost just as good output as deepseq 3.2 despite all citations being hallucinations and having no website access. However this may be partly luck since started 'yes merger happend but'... then corrected itself
+    - costs 0 though risky that makes plausible-sounding text that may not be real    
+
+'''
