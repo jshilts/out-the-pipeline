@@ -4,7 +4,9 @@
 # then set  Tools>Preferences>Python Intepreter  to  C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\.venv\Scripts\python.exe
 # restart the kernel (press = button on far right, or just restart spyer)
 
+import os
 from openai import OpenAI   # pip install openai
+
 
 with open("openrouter-api-key.shh", "r") as f:
     API_KEY = f.read()
@@ -16,7 +18,7 @@ client = OpenAI(
 
 
 global PROMPT_TEMPLATE # making explicit that is global variable
-PROMPT_TEMPLATE = """The following is an article that appeared in Science Magazine many years ago about the biotechnology industry.
+PROMPT_TEMPLATE = """The following is an article that appeared in Science Magazine several years ago about the biotechnology industry.
 
 Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had. 
 Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
@@ -40,17 +42,16 @@ Here cite the URLs of the websites you used as sources of information. Remember 
 --- The article ---
 
 """
-
-article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
-
-with open("./prompts/%s"%article_source, "r") as f_in:
-    article_fulltext = f_in.read()
-
-
 def generate_prompt(article_text: str, 
                     prompt_template = PROMPT_TEMPLATE):
+    # produces the prompt for the LLM
+    
     if len(article_text) < 100 :
         print("---article not found")  # revise this to give the URL of the missed article in the future
+    #end
+    
+    if article_text[0:4].upper() == "HTTP" :
+        article_text.split("\n", maxsplit = 1)[1]  # remove the first line
     #end
     
     lines = [
@@ -60,12 +61,15 @@ def generate_prompt(article_text: str,
     
     return "\n".join(lines)
 #end
-    
-query_prompt = generate_prompt(article_fulltext)
+
+def convert_article_date(article_timestamp: str):
+    # converts dates in the article to the YYYYMMMDD format (in the future can consider using library to do this more robustly)
+    return article_timestamp[7:11] + article_timestamp[3:6] + article_timestamp[0:2]
+#end
 
 model_parameters = {
     "model" :"nex-agi/deepseek-v3.1-nex-n1:free",#"deepseek/deepseek-v3.2",#"arcee-ai/trinity-mini:free",
-    "input" : query_prompt,
+    "input" : "",
     # "tools" : [ {
     #     "type": "web_search",  # warning - this will make 'free' tier models no longer free
     #     "max_results": 20,
@@ -77,21 +81,42 @@ model_parameters = {
     "text": {"verbosity": "medium"}
     }
 
-response = client.responses.create( 
-    **model_parameters)
+article_list = os.listdir("./prompts/")
 
-response_text = response.output_text
+for article_source in article_list:
+    #article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
+
+    with open("./prompts/%s"%article_source, "r") as f_in:
+        article_fulltext = f_in.read()
 
 
+    query_prompt = generate_prompt(article_fulltext)
+    
+    model_parameters["input"] = query_prompt
+    
+    
+    response = client.responses.create( 
+        **model_parameters)
+    
+    response_text = response.output_text
+    
+    print(response_text)
+    
+    simplified_output_name = "out_" + convert_article_date(article_fulltext.split('\n')[2]) + "_" + article_source.split(".")[0][:15] + "_" + model_parameters["model"].split("/")[1][:15]
 
-with open("./responses/output-test.md", "w", encoding="utf-8") as f:
-    params_to_write = dict(model_parameters)
-    params_to_write["input"] = article_source
-    f.write("model_params = ")
-    f.write(repr(params_to_write))
-    f.write("\n\n") # two newlines separating
-    f.write(response_text)
+    with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
+        params_to_write = dict(model_parameters)
+        params_to_write["input"] = article_source
+        f.write("model_params = ")
+        f.write(repr(params_to_write))
+        f.write("\n\n") # two newlines separating
+        f.write(response_text)
+    #end
 #end
+
+
+#### pipeline could be quick calls via a free model to gauge which articles of interest to analyze (outputing just a few tokens of the interest score) then thinking LLM analyzes those texts in the second pass
+
 
 
 '''  how to figure out what parameters each model supports :
