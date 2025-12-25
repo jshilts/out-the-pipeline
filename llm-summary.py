@@ -5,8 +5,11 @@
 # restart the kernel (press = button on far right, or just restart spyer)
 
 import os
+import re
 from openai import OpenAI   # pip install openai
 
+
+IF_WEB_SEARCH = False
 
 with open("openrouter-api-key.shh", "r") as f:
     API_KEY = f.read()
@@ -42,6 +45,11 @@ Here cite the URLs of the websites you used as sources of information. Remember 
 --- The article ---
 
 """
+if not IF_WEB_SEARCH: # remove parts of prompt about internet searches
+    PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
+    PROMPT_TEMPLATE = re.sub(r'5. CITATIONS.*?(?=---)', '', PROMPT_TEMPLATE, flags = re.DOTALL)
+#end
+
 def generate_prompt(article_text: str, 
                     prompt_template = PROMPT_TEMPLATE):
     # produces the prompt for the LLM
@@ -70,25 +78,29 @@ def convert_article_date(article_timestamp: str):
 model_parameters = {
     "model" :"nex-agi/deepseek-v3.1-nex-n1:free",#"deepseek/deepseek-v3.2",#"arcee-ai/trinity-mini:free",
     "input" : "",
-    # "tools" : [ {
-    #     "type": "web_search",  # warning - this will make 'free' tier models no longer free
-    #     "max_results": 20,
-    #     "include_text": True,
-    #     "include_highlights": True
-    #     } ],
-    "tool_choice" : "required",  # cannot attempt to answer without doing some web searching
     "reasoning" : {"effort": "high"},
     "text": {"verbosity": "medium"}
     }
+if IF_WEB_SEARCH:
+    model_parameters["tools"] = [ {
+        "type": "web_search",  # warning - this will make 'free' tier models no longer free
+        "max_results": 20,
+        "include_text": True,
+        "include_highlights": True
+        } ]
+    model_parameters["tool_choice"] = "required"  # cannot attempt to answer without doing some web searching
+#end    
 
-article_list = os.listdir("./prompts/")
+
+article_list = os.listdir("./prompts/")  # by default analyzes everything. If want a subset, put the others not to be processed into the 'storage' folder (since not recursive file finding here)
+article_list = [filename for filename in article_list if isinstance(filename, str) and filename.endswith(".txt")]
 
 for article_source in article_list:
     #article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
 
-    with open("./prompts/%s"%article_source, "r") as f_in:
+    with open("./prompts/%s"%article_source, "r", encoding="utf-8", errors="replace") as f_in:
         article_fulltext = f_in.read()
-
+    article_fulltext = article_fulltext.replace("\\'", "'")  # replace escape characters found in apostraphes so tokenizer doesn't see weird things like "I\'m not sure they\'re going"
 
     query_prompt = generate_prompt(article_fulltext)
     
@@ -99,8 +111,7 @@ for article_source in article_list:
         **model_parameters)
     
     response_text = response.output_text
-    
-    print(response_text)
+    #print(response_text)
     
     simplified_output_name = "out_" + convert_article_date(article_fulltext.split('\n')[2]) + "_" + article_source.split(".")[0][:15] + "_" + model_parameters["model"].split("/")[1][:15]
 
