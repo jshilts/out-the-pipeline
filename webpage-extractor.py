@@ -358,14 +358,14 @@ def process_url_list(urls: List[str]):
 # ---------- Example usage ----------
 def main():
     
-    with open("./webpages/all_links.txt", "r") as f_in:
+    with open("./weblinks/all_links.txt", "r") as f_in:
         full_url_list = [line.strip() for line in f_in.readlines()]
     #end 
-    url_list = full_url_list[3000:3050]
+    url_list = full_url_list[2900:3000]
     # breaking up into chunks since there is over 6,600 articles. Each group of 10 taking a couple minutes
     # pattern is first 10 (0:10) then next 10 (10:20) etc
-    # DONE 0:69 (but dates wrong, all late 2025 ones)    3000:3050
-    # next would be 3050:3100 for example
+    # DONE 3000:3200
+    # (must repeat last number when do next one, since python 0:10 means 0-9)
     
     
     # optionally: read URLs from a file or command-line arguments
