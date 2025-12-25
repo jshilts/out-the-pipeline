@@ -83,9 +83,9 @@ def parse_date_string(ds: Optional[str]) -> Optional[datetime]:
 
 def filename_from_date_and_slug(dt: Optional[datetime], slug: str) -> str:
     if dt:
-        name = dt.strftime("%Y%b%d")
+        name = dt.strftime("%Y%m%d") # dt.strftime("%Y%b%d")  # %b gives month as Dec instead of number 12
     else:
-        name = "YYYYMMMDD"#datetime.utcnow().strftime("%Y%b%d")
+        name = "YYYYMMDD"#datetime.utcnow().strftime("%Y%m%d")
     return f"{name}-{slug}"
 
 def ensure_unique_path(path: Path) -> Path:
@@ -322,7 +322,7 @@ def process_url_list(urls: List[str]):
                     try:
                         html_path.write_text(html, encoding="utf-8")
                     except Exception as e:
-                        print(f"Failed to write HTML for {url}: {e}", file=sys.stderr)
+                        print(f"---Failed to write HTML for {url}: {e}", file=sys.stderr)
 
                     header_lines = []
                     if fields.get("title"):
@@ -338,13 +338,13 @@ def process_url_list(urls: List[str]):
                     try:
                         text_path.write_text(full_text, encoding="utf-8")
                     except Exception as e:
-                        print(f"Failed to write text for {url}: {e}", file=sys.stderr)
+                        print(f"---Failed to write text for {url}: {e}", file=sys.stderr)
 
                     print(html_path.resolve())
                     print(text_path.resolve())
                     results.append((url, str(html_path), str(text_path)))
                 except Exception as e:
-                    print(f"Error processing {url}: {e}", file=sys.stderr)
+                    print(f"---Error processing {url}: {e}", file=sys.stderr)
                 finally:
                     # polite pause between requests
                     wait_random(3.1, 15.3)
@@ -361,10 +361,10 @@ def main():
     with open("./weblinks/all_links.txt", "r") as f_in:
         full_url_list = [line.strip() for line in f_in.readlines()]
     #end 
-    url_list = full_url_list[2900:3000]
+    url_list = full_url_list[2800:2900]
     # breaking up into chunks since there is over 6,600 articles. Each group of 10 taking a couple minutes
     # pattern is first 10 (0:10) then next 10 (10:20) etc
-    # DONE 3000:3200
+    # DONE 2800:3200
     # (must repeat last number when do next one, since python 0:10 means 0-9)
     
     

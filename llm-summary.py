@@ -113,7 +113,7 @@ for article_source in article_list:
     response_text = response.output_text
     #print(response_text)
     
-    simplified_output_name = "out_" + convert_article_date(article_fulltext.split('\n')[2]) + "_" + article_source.split(".")[0][:15] + "_" + model_parameters["model"].split("/")[1][:15]
+    simplified_output_name = "out_" + convert_article_date(article_fulltext.split('\n')[1]) + "_" + article_source.split(".")[0][:30] + "_" + model_parameters["model"].split("/")[1][:15]
 
     with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
         params_to_write = dict(model_parameters)
