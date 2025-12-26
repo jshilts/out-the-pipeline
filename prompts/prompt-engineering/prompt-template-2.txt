@@ -5,7 +5,7 @@ Use internet searches to follow the facts precisely and include a citation refer
 Before answering, think about how confident you are about the facts and that you have checked all the relevant information from the past up to the present. Do not include statements that you are not confident are true.
 Write a response following this structure for the sections :
 
-# Article Title 
+# Article Title (Month Year)
 
 ## 1. SUMMARY
 Give a short summary of 1-2 paragraphs for what the article said. Provide enough context that the article can be understood just from reading the summary. 
