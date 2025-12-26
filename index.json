@@ -1,26 +1,38 @@
 [
   {
-    "filename": "out_20151123-pfizer-allergan_deepseek-v3.1-n.md",
-    "date": "2015-11-23",
-    "title": "Pfizer-Allergan",
+    "filename": "out_20140630-gsk-china-situation-g_deepseek-v3.1-n.md",
+    "date": "2014-06-30",
+    "title": "The GSK-China Situation Gets Even Weirder",
     "score": 7
-  },
-  {
-    "filename": "out_20141210-ambition-recursion_deepseek-v3.1-n.md",
-    "date": "2014-12-10",
-    "title": "Ambition From Recursion",
-    "score": 6
   },
   {
     "filename": "out_20140902-exelixis-against-wall_deepseek-v3.1-n.md",
     "date": "2014-09-02",
     "title": "Exelixis Against the Wall",
+    "score": 5
+  },
+  {
+    "filename": "out_20141210-ambition-recursion_deepseek-v3.1-n.md",
+    "date": "2014-12-10",
+    "title": "Ambition From Recursion",
     "score": 7
   },
   {
-    "filename": "out_20140630-gsk-china-situation-g_deepseek-v3.1-n.md",
-    "date": "2014-06-30",
-    "title": "GSK China Situation",
-    "score": 5
+    "filename": "out_20150810-young-blood-revisited_deepseek-v3.1-n.md",
+    "date": "2015-08-10",
+    "title": "Young Blood, Revisited",
+    "score": 4
+  },
+  {
+    "filename": "out_20150811-wild-ride-aqx-1125_deepseek-v3.1-n.md",
+    "date": "2015-08-11",
+    "title": "The Wild Ride of AQX-1125",
+    "score": 7
+  },
+  {
+    "filename": "out_20151123-pfizer-allergan_deepseek-v3.1-n.md",
+    "date": "2015-11-23",
+    "title": "Pfizer-Allergan",
+    "score": 6
   }
 ]
