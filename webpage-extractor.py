@@ -364,7 +364,7 @@ def main():
     url_list = full_url_list[3600:3800]
     # breaking up into chunks since there is over 6,600 articles. Each group of 10 taking a couple minutes
     # pattern is first 10 (0:10) then next 10 (10:20) etc
-    # DONE 2000:3600
+    # DONE 2000:3800
     # (must repeat last number when do next one, since python 0:10 means 0-9)
     
     

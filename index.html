@@ -5,37 +5,132 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Archive</title>
 <style>
-  body{margin:0;font-family:system-ui,Arial,sans-serif;display:flex;height:100vh}
-  nav{width:320px;overflow:auto;border-right:1px solid #ddd;padding:12px;box-sizing:border-box}
-  main{flex:1;overflow:auto;padding:20px;box-sizing:border-box}
-  .item{display:block;padding:8px;border-radius:6px;text-decoration:none;color:inherit;margin-bottom:6px}
-  .date{font-size:0.9em;color:#444;display:block}
-  .score-badge{display:inline-block;padding:3px 6px;border-radius:4px;font-weight:600;margin-right:8px}
+  /* Layout basics */
+  body {
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+
+  /* 1) Allow main to shrink on narrow screens */
+  main {
+    flex: 1;
+    min-width: 0; /* <-- important fix (suggestion #1) */
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* 2) Responsive sidebar width using clamp (suggestion #2) */
+  nav {
+    width: clamp(200px, 30vw, 320px); /* min 200px, ideal 30vw, max 320px */
+    max-width: 100%;
+    overflow: auto;
+    border-right: 1px solid #ddd;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  /* Content styles */
+  .item { display:block; padding:8px; border-radius:6px; text-decoration:none; color:inherit; margin-bottom:6px; }
+  .date { font-size:0.9em; color:#444; display:block; }
+  .score-badge { display:inline-block; padding:3px 6px; border-radius:4px; font-weight:600; margin-right:8px; }
+
+  /* Toggle button (hidden on desktop) */
+  #toggle {
+    display: none; /* shown on small screens in media query */
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 1100;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+  }
+
+  /* 3) Stack sidebar above content on small screens and provide a simple hide/show toggle (suggestion #3) */
+  @media (max-width: 600px) {
+    body {
+      flex-direction: column;
+      height: auto;
+    }
+
+    /* Make nav full width and hidden by default (toggle will show it) */
+    nav {
+      width: 100%;
+      max-width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      display: none; /* hidden by default on mobile; toggle will flip this */
+      position: static;
+      box-shadow: none;
+    }
+
+    /* When body has .show-nav, display the nav */
+    body.show-nav nav {
+      display: block;
+    }
+
+    /* Ensure main doesn't get squashed under the toggle button */
+    main {
+      min-height: 50vh;
+      padding-top: 56px; /* room for the toggle if you want it floating */
+    }
+
+    #toggle {
+      display: block;
+    }
+  }
+
+  /* small polish for focus states */
+  #toggle:focus { outline: 2px solid Highlight; outline-offset: 2px; }
+  a.item:focus { outline: 2px solid Highlight; outline-offset: 2px; border-radius: 6px; }
 </style>
 </head>
 <body>
-  <nav id="sidebar"><h2>Articles</h2><div id="list"></div></nav>
-  <main id="content"><p>Select an article</p></main>
+  <!-- Toggle button for mobile (only visible under 600px) -->
+  <button id="toggle" aria-controls="sidebar" aria-expanded="false">Menu</button>
+
+  <nav id="sidebar" aria-label="Articles">
+    <h2>Articles</h2>
+    <div id="list"></div>
+  </nav>
+
+  <main id="content">
+    <p>Select an article</p>
+  </main>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
+/* Data loading + article rendering (unchanged except for the toggle behavior) */
 async function loadIndex(){
-  const res = await fetch('index.json');
-  const idx = await res.json();
-  const list = document.getElementById('list');
-  idx.forEach(item=>{
-    const a = document.createElement('a');
-    a.href = "#"+item.filename;
-    a.className = 'item';
-    const hue = (item.score||0)*13; // 0..117
-    const badge = '<span class="score-badge" style="background:hsl('+hue+',70%,75%)">'+(item.score||0)+'</span>';
-    a.innerHTML = badge + '<strong>'+escapeHtml(item.title)+'</strong><span class="date">'+formatDate(item.date)+'</span>';
-    list.appendChild(a);
-  });
-  // load hash or first item
-  if(location.hash) loadArticle(location.hash.slice(1));
-  else if(idx.length) loadArticle(idx[0].filename);
-  window.addEventListener('hashchange',()=>loadArticle(location.hash.slice(1)));
+  try {
+    const res = await fetch('index.json');
+    const idx = await res.json();
+    const list = document.getElementById('list');
+    idx.forEach(item=>{
+      const a = document.createElement('a');
+      a.href = "#"+item.filename;
+      a.className = 'item';
+      const hue = (item.score||0)*13; // 0..117
+      const badge = '<span class="score-badge" style="background:hsl('+hue+',70%,75%)">'+(item.score||0)+'</span>';
+      a.innerHTML = badge + '<strong>'+escapeHtml(item.title)+'</strong><span class="date">'+formatDate(item.date)+'</span>';
+      list.appendChild(a);
+    });
+
+    // load hash or first item
+    if(location.hash) loadArticle(location.hash.slice(1));
+    else if(idx.length) loadArticle(idx[0].filename);
+    window.addEventListener('hashchange',()=>loadArticle(location.hash.slice(1)));
+  } catch (e) {
+    console.error('Failed to load index.json', e);
+    document.getElementById('content').innerHTML = '<p>Cannot load index.</p>';
+  }
 }
 
 function formatDate(d) {
@@ -62,14 +157,35 @@ async function loadArticle(filename){
     const r = await fetch('responses/'+filename);
     if(!r.ok) { document.getElementById('content').innerHTML = '<p>Cannot load file.</p>'; return; }
     const md = await r.text();
-    // Optionally strip title/score lines if you store them at top. Adjust as needed.
     document.getElementById('content').innerHTML = marked.parse(md);
     window.scrollTo(0,0);
+
+    /* If on mobile, hide the nav after selecting an article so user sees content */
+    if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
+      document.body.classList.remove('show-nav');
+      toggleButton.setAttribute('aria-expanded', 'false');
+    }
   }catch(e){
     document.getElementById('content').innerHTML = '<p>Error loading.</p>';
     console.error(e);
   }
 }
+
+/* Toggle behavior for mobile menu */
+const toggleButton = document.getElementById('toggle');
+toggleButton.addEventListener('click', () => {
+  const isOpen = document.body.classList.toggle('show-nav');
+  toggleButton.setAttribute('aria-expanded', String(isOpen));
+});
+
+/* Close nav when pressing Escape (mobile) */
+document.addEventListener('keydown', (ev) => {
+  if (ev.key === 'Escape' && document.body.classList.contains('show-nav')) {
+    document.body.classList.remove('show-nav');
+    toggleButton.setAttribute('aria-expanded', 'false');
+    toggleButton.focus();
+  }
+});
 
 loadIndex();
 </script>
