@@ -1,5 +1,0 @@
-Improving the Old-Fashioned Reaction Workup
-22 Oct 2014
-
-Here's something new (http://pubs.acs.org/doi/abs/10.1021/ol501418t) : working up a reaction. The authors say that they have a porous polymer that adsorbs organic compounds from aqueous reaction mixtures, allowing you to just stir and filter rather than doing a liquid/liquid extraction. The adsorbed material can then be taken right to chromatography, as if you'd adsorbed your compound onto any other solid support, or just washed with solvent to liberate the crude product. 
- I have colleagues who will be trying this out soon, and I'll report on their experience with the stuff. If it really is widely applicable, it could be a nice addition to the parallel synthesis and flow chemistry worlds (pumping a crude reaction through a cartridge of absorbing polymer could be a fast way to do workups and solvent switches).

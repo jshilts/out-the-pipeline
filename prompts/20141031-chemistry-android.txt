@@ -1,6 +1,0 @@
-Chemistry on Android
-31 Oct 2014
-
-A reader sends along an organic chemistry mechanisms game that he's released on Google Play (https://play.google.com/store/apps/details?id=com.electrolyticearth.chemistrylab) . I don't have an android device, so I haven't tried it out myself, but those of you who teaching organic (or looking for ways to teach it), have a look and send along some feedback. Now if someone can set it up so that you have to draw the Mitsunobu or the Cannizarro right in order to move a bird, storm a castle, or make a row of candy disappear, than you could really cash in. . . 
- Other suggestions for chemistry apps on Android welcome in the comments - I'll move them up here to the body of the post as they come in. 
- Update: two that have been mentioned so far are Chemistry by Design (https://play.google.com/store/apps/details?id=air.edu.arizona.oia.sequence&hl=en) and TB Mobile (https://play.google.com/store/apps/details?id=com.mmi.android.tbmobile&hl=en) .

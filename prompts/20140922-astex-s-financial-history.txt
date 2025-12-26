@@ -1,6 +1,0 @@
-Astex's Financial History
-22 Sep 2014
-
-I'm at the FBLD conference in Basel today through Wednesday, and I'll be blogging some of the things I hear there. This morning we had an overview from Harren Jhoti of Astex, looking back over the company's history (they were recently bought by Otsuka for about $900 million). 
- One of the most striking slides was not from the scientific side - it was a plot of the company's financial position over the years. They had several deals with larger companies over the years (GSK, Novartis, J&J among others), and you could see that these, in many cases, were very timely indeed. In fact, Jhoti said, the company was more than once in the position of running out of money within a few months. 
- I think that many small companies could show a similar slide - well, the ones that survive could. The others would show a graph, if there were anyone left to show it, where that line came down and crossed the X-axis, and that was that. You hear a lot about these little tech companies, especially social media and the liek, that just take off and soar ever higher, but that doesn't happen much in biopharma. You can go for years dodging disaster until something works, which can make it a tough sell to investors, since you can also go for years and have nothing that works at all.

@@ -8,9 +8,12 @@ import os
 import re
 from openai import OpenAI   # pip install openai
 
-
+#### user inputs ####
 IF_WEB_SEARCH = False
+SELECTED_PROMPT = "prompt-template-2.txt"
 
+
+#### script ####
 with open("openrouter-api-key.shh", "r") as f:
     API_KEY = f.read()
 
@@ -21,30 +24,10 @@ client = OpenAI(
 
 
 global PROMPT_TEMPLATE # making explicit that is global variable
-PROMPT_TEMPLATE = """The following is an article that appeared in Science Magazine several years ago about the biotechnology industry.
-
-Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had. Sometimes the historical outcome will be clear-cut and easy to summarize, and other times not.
-Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
-Write a response following these sections :
+with open("./prompts/prompt-engineering/" + SELECTED_PROMPT) as f:
+    PROMPT_TEMPLATE = f.read()
     
-1. SUMMARY
-Give a short summary of 1-2 paragraphs for what the article said. Sometimes the summary will be simple and straightforward, and sometimes not.
 
-2. HISTORY
-Research what happened subsequent to the article being published and summarize those later developments.
-
-3. PREDICTIONS
-Describe what predictions of the article matched the later history, and which predictions were wrong.
-
-4. INTEREST 
-Give a decile score of how interesting the article ranks, from 0 to 9 where 0 is in the bottom 10% of interest, and 9 is like percentiles 90-99 of very high interest and long-term importance.
-
-5. CITATIONS
-Here cite the URLs of the websites you used as sources of information. Remember to search across multiple timeframes, not just one time period
-
---- The article ---
-
-"""
 if not IF_WEB_SEARCH: # remove parts of prompt about internet searches
     PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
     PROMPT_TEMPLATE = re.sub(r'5. CITATIONS.*?(?=---)', '', PROMPT_TEMPLATE, flags = re.DOTALL)
@@ -54,7 +37,7 @@ def generate_prompt(article_text: str,
                     prompt_template = PROMPT_TEMPLATE):
     # produces the prompt for the LLM
     
-    if len(article_text) < 100 :
+    if len(article_text) < 10 :
         print("---article not found")  # revise this to give the URL of the missed article in the future
     #end
     
@@ -118,6 +101,7 @@ for i, article_source in enumerate(article_list):
     with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
         params_to_write = dict(model_parameters)
         params_to_write["input"] = article_source
+        params_to_write["prompt-template"] = SELECTED_PROMPT.split(".")[0]
         f.write("model_params = ")
         f.write(repr(params_to_write))
         f.write("\n\n") # two newlines separating

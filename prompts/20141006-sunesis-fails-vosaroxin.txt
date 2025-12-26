@@ -1,5 +1,0 @@
-Sunesis Fails with Vosaroxin
-6 Oct 2014
-
-When last heard from (https://www.science.org/pipeline/2008/09/19/sunesis_no_substitutions_allowed) , Sunesis was trying to get some last compounds through clinical trials, having cut everything else possible along the way (and having sold more shares (http://www.fiercebiotech.com/press-releases/sunesis-prices-15-5-million-offering) to raise cash). 
- Their lead molecule has been vosaroxin (http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0010186) (also known as voreloxin and SNS-595), a quinolone which has been in trials (http://www.nature.com/leu/journal/v25/n12/full/leu2011157a.html) for leukemia. Unfortunately, the company said today (http://www.nasdaq.com/article/sunesis-pharmas-phase-3-valor-trial-fails-to-meet-primary-endpoint-20141006-00157) that the Phase III trial failed to meet its primary endpoint (and the stock's behavior reflects that, thoroughly). The company's trying to make what it can out of secondary endpoints and possible effects in older patients, but the market doesn't seem to be buying it.

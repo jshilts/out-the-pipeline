@@ -1,5 +1,0 @@
-What Would You Put In a Med-Chem Textbook?
-18 Dec 2014
-
-I had an interesting note this morning from a reader who's been asked about writing an introductory textbook on medicinal chemistry. He's been looking over the field, and wondering what to include (and what to leave out). Quite a few current med-chem texts have a fairly robust section on combichem, for example, but many of these seem out of proportion to the technique's current importance. 
- So what would you deemphasize if you were writing one of these? And what would you give more time to? (We'll take the obligatory references to finding jobs in the field as already having been made!)

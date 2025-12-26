@@ -1,0 +1,24 @@
+PROMPT_TEMPLATE = """The following is a commentary article that appeared in Science Magazine several years ago about the biotechnology industry.
+
+Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thoughtful and deeply critical, questioning hype and investigating the true real-world impact a technology had. Sometimes the historical outcome will be clear-cut and easy to summarize, and other times not.
+Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
+Write a response following these sections :
+    
+1. SUMMARY
+Give a short summary of 1-2 paragraphs for what the article said. Sometimes the summary will be simple and straightforward, and sometimes not.
+
+2. HISTORY
+Research what happened subsequent to the article being published and summarize those later developments.
+
+3. PREDICTIONS
+Describe what predictions of the article matched the later history, and which predictions were wrong.
+
+4. INTEREST 
+Give a decile score of how interesting the article ranks, from 0 to 9 where 0 is in the bottom 10% of interest, and 9 is like percentiles 90-99 of very high interest and long-term importance.
+
+5. CITATIONS
+Here cite the URLs of the websites you used as sources of information. Remember to search across multiple timeframes, not just one time period
+
+--- The article ---
+
+"""

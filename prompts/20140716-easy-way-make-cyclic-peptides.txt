@@ -1,6 +1,0 @@
-An Easy Way to Make Cyclic Peptides
-16 Jul 2014
-
-If you ever find yourself needing to make large cyclic peptides, you now have a new option. This paper (http://pubs.acs.org/doi/abs/10.1021/ol501609y) in Organic Letters describes a particularly clean way to do it: let glutathione-S-transferase (GST) do the work for you. Bradley Pentelute's group at MIT reports that if your protein has a glutathione attached at one end, and a pentafluoroaryl Cys at the other, that GST will step in and promote the nucleophilic aromatic substitution reaction to close the two ends together. 
-
-This is an application of their earlier work (http://pubs.acs.org/doi/abs/10.1021/ja400119t) on the uncatalyzed reaction and on the use of GST (http://onlinelibrary.wiley.com/doi/10.1002/anie.201306430/abstract) for ligation.. Remarkably, the GST method seems to product very high yields of cyclic peptides up to at least 40 residues, and at reasonable concentration (10 mM) of the starting material, under aqueous conditions. Cyclic peptides themselves are interesting beasts, often showing unusual properties compared to the regular variety, and this method look as it will provide plenty more of them for study.

@@ -1,4 +1,0 @@
-A Question: Monoclonal Antibodies in the Clinic
-3 Sep 2014
-
-A reader sends along this query, and since I've never worked around monoclonal antibodies, I thought I'd ask the crowd: how much of a read on safety do you get with a mAb in Phase I? How much Phase I work would one feel necessary to feel safe going on to Phase II, from a tox/safety standpoint? Any thoughts are welcome. I suspect the answer is greatly going to depend on what said antibody is being raised to target.

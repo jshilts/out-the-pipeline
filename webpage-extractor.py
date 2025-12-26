@@ -324,7 +324,7 @@ def process_url_list(urls: List[str]):
                     except Exception as e:
                         print(f"---Failed to write HTML for {url}: {e}", file=sys.stderr)
 
-                    header_lines = []
+                    header_lines = [url]
                     if fields.get("title"):
                         header_lines.append(fields["title"])
                     if fields.get("category"):

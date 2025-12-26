@@ -1,6 +1,0 @@
-Always Insist on Error Bars
-11 Mar 2014
-
-That's the take-home of this post (http://www.thestreet.com/story/12524899/1/la-jollas-kidney-drug-is-statistical-noise-but-stock-soars.html) by Adam Feuerstein about La Jolla Pharmaceuticals and their kidney drug candidate GCS-100. It's a galectin inhibitor, and it's had a rough time in development. But investors in the company were cheered up a great deal by a recent press release, stating that the drug had shown positive effects. 
- But look closer. The company's bar-chart presentation looks reasonably good, albeit with a binary dose-response (the low dose looks like it worked; the high dose didn't). But scroll down on that page to see the data expressed as means with error bars. Oh dear. . . 
- Update: it's been mentioned in the comments that the data look better with standard error rather than standard deviations. Courtesy of a reader, here's the graph in that form. And it does look better, but not by all that much:

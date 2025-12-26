@@ -1,5 +1,0 @@
-How Polyphenols Work, Perhaps?
-18 Jun 2014
-
-No medicinal chemist, in my experience, is enthusiastic about polyphenol compounds (https://www.science.org/pipeline/2010/05/10/unlovely_polyphenols) . At least, not after their first experiences with them. These things are all over the natural product landscape, and many of them have biological activities, but (1) they're beastly to try to develop into drugs, and (2) no one understands very well what their targets might be or what they're doing to them. 
- That second part may finally be coming into the light. This paper (http://pubs.acs.org/doi/abs/10.1021/cb500086e) in ACS Chemical Biology suggests that many of these compounds (our old friend resveratrol among them) may be working their way into the bilayers of cell membranes and thus affecting the activity of membrane-bound proteins. If that's true, then these compounds don't have "targets" in the usual sense of the word. They have a mechanism, but it's a broad one and likely to do all kinds of things in different cells under different conditions. We'll see if this hypothesis pans out, but it looks reasonable (and fits a lot of the hard-to-categorize facts).

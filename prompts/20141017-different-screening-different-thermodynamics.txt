@@ -1,5 +1,0 @@
-Different Screening, Different Thermodynamics?
-17 Oct 2014
-
-Chris Lipinski and the folks at Collaborative Drug Discovery send word of an interesting webinar (https://www.collaborativedrug.com/buzz/2014/09/08/announcing-cdds-first-live-webinar-event-are-your-compounds-biased-by-your-discovery-techniques/) that will take place this coming Wednesday (October 22nd) at 2 PM EST. It's on enthalpic and entropic trends in ligand binding, and how various screening and discovery techniques might bias these significantly. 
- Here's the registration page (http://info.collaborativedrug.com/webinar-registration-page-october-22-2014) if you're interested. I'm curious about what they've turned up - my understanding is that it will explore, among other things, the differences in molecules selected by industry-trained medicinal chemists versus the sorts that are reported by more academic chemical biologists. As has come up here several times in the past, there certainly do seem to be some splits there, and the CDD people seem to have some numbers to back up those impressions.

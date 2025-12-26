@@ -1,8 +1,0 @@
-Daiichi Sankyo Will Pay You A Million Dollars
-11 Dec 2014
-
-Daiichi Sankyo is apparently crowdsourcing ideas for anti-obesity drug discovery. See this page (https://ninesights.ninesigma.com/rfps/-/rfp-portlet/rfpViewer/2695?) at NineSigma. The requirements are that the submitted idea: 
- Must be a new anti-obesity drug candidate or drug target 
- Exhibit superior anti-obesity drug efficacy or a better safety profile than existing drugs (phentermine/topiramate, lorcaserin, orlistat). 
- Well, then, no problem! They'll take on small molecule or biologics, in any state of development, preferably hitting some target that known agents don't, and with at least in vitro proof of concept (preferably in vivo ). How much are they paying for these? Up to $1 million, although it says that the licensing fee can be negotiated separately. 
- Let me give any interested applicants a hint: if you have such a compound, it is surely worth far more than one million dollars, so you'd better look into that licensing fee part before you start filling out any web forms. One million dollars is pocket lint in drug discovery and development - Daiichi Sankyo (or any large company) can part with a million dollars and never even feel it leave. I understand that all the real contract and licensing stuff will occur downstream of this NineSigma stuff, but still - is there anyone out there with a proposal that would fit this request that needs this incentive to try to get someone interested?

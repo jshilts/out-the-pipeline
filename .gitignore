@@ -1,3 +1,5 @@
 .venv
 openrouter-api-key.shh
 webarticles
+prompts/*.txt
+responses/*/

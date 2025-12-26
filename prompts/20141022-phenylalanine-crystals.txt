@@ -1,4 +1,0 @@
-Phenylalanine Crystals
-22 Oct 2014
-
-No matter how long you've been doing chemistry, there are still things that you come across that surprise you. Did you know that plain old L-phenylalanine has been one of the most difficult subjects ever (http://onlinelibrary.wiley.com/resolve/doi?DOI=10.1002%2Fanie.201406886) for small-molecule crystallography? I sure didn't. But people have tried for decades to grow good enough crystals of it to decide what space group it's in. One big problem has been the presence of several polymorphs (see blog posts here (https://www.science.org/pipeline/2011/01/12/gassing_your_crystals) and here (https://www.science.org/pipeline/2009/08/25/polymorphs_and_salts_india_raises_an_eyebrow) ), but it looks like the paper linked above has finally straightened things out.

@@ -1,5 +1,0 @@
-A New Reductive Amination
-30 Sep 2014
-
-A colleague brought this new JACS paper (http://pubs.acs.org/doi/abs/10.1021/ja5093612) to my attention the other day. It's a complementary method to the classic reductive amination reaction. Instead of an aldehyde and amine (giving you a new alkylated amine), in this case, you use a carboxylic acid and an amine to give you the same product, knocking things down another oxidation state along the way. 
- This reaction, from Matthias Beller and co-workers at Rostock, uses Karstedt's catalyst (http://en.wikipedia.org/wiki/Karstedt's_catalyst) (a platinum species) with phenylsilane as reducing agent. Double bonds don't get reduced, Cbz and Boc groups survive, as do aliphatic esters. Most of the examples in the paper are on substituted anilines, but there are several aliphatic amines as well. A wide variety of carboxylic acids seem to work, including fluorinated ones. I like it - as a medicinal chemist, I'm always looking for another way to make amines, and there sure are a lot of carboxylic acids out there in the world.
