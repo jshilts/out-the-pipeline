@@ -67,7 +67,7 @@
       max-width: 100%;
       border-right: none;
       border-bottom: 1px solid #ddd;
-      max-height: 72px;           /* <-- peek height */
+      max-height: 108px;           /* <-- peek height */
       overflow: hidden;
       transition: max-height .28s ease, box-shadow .2s ease;
     }
@@ -125,12 +125,12 @@
 </head>
 <body>
   <!-- Toggle button for mobile (only visible under 600px) -->
-  <button id="toggle" aria-controls="sidebar" aria-expanded="false">Menu</button>
+  #<button id="toggle" aria-controls="sidebar" aria-expanded="false">Menu</button>
 
   <nav id="sidebar" aria-label="Articles">
     <div style="position:relative">
       <!-- visible peek handle that suggests there is more to open -->
-      <button class="nav-peek-handle" id="peekHandle" aria-hidden="false" title="Open menu">Open</button>
+      <button class="nav-peek-handle" id="peekHandle" aria-hidden="false" title="Open menu">Menu</button>
       <h2 style="margin:0 0 8px 0">Articles</h2>
     </div>
     <div id="list"></div>
@@ -201,17 +201,17 @@ async function loadArticle(filename){
 }
 
 /* Elements */
-const toggleButton = document.getElementById('toggle');
+// const toggleButton = document.getElementById('toggle');
 const peekHandle = document.getElementById('peekHandle');
 const sidebar = document.getElementById('sidebar');
 
 /* Toggle button behavior for mobile menu */
-toggleButton.addEventListener('click', () => {
-  const isOpen = document.body.classList.toggle('show-nav');
-  toggleButton.setAttribute('aria-expanded', String(isOpen));
-  if (isOpen) sidebar.classList.add('expanded');
-  else sidebar.classList.remove('expanded');
-});
+//toggleButton.addEventListener('click', () => {
+//  const isOpen = document.body.classList.toggle('show-nav');
+//  toggleButton.setAttribute('aria-expanded', String(isOpen));
+//  if (isOpen) sidebar.classList.add('expanded');
+//  else sidebar.classList.remove('expanded');
+//});
 
 /* Peek handle opens the menu when tapped */
 peekHandle.addEventListener('click', (ev) => {
