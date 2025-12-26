@@ -103,7 +103,7 @@ def main():
     if not os.path.isdir(RESP_DIR):
         raise SystemExit(f"Directory not found: {RESP_DIR}")
 
-    for fname in sorted(os.listdir(RESP_DIR)):
+    for fname in os.listdir(RESP_DIR):
         if not fname.lower().endswith('.md'):
             continue
         full = os.path.join(RESP_DIR, fname)
@@ -112,7 +112,16 @@ def main():
         entry = process_file(full, fname)
         entries.append(entry)
 
-    # write index.json (pretty printed)
+    # sort by date, descending if needed; if date is None, place at the end
+    def date_key(e):
+        if e['date']:
+            return e['date']
+        else:
+            return '9999-12-31'  # push None dates to end
+
+    entries = sorted(entries, key=date_key)
+
+    # write index.json
     with open(OUT_PATH, 'w', encoding='utf-8') as out:
         json.dump(entries, out, ensure_ascii=False, indent=2)
 
