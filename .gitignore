@@ -3,3 +3,4 @@ openrouter-api-key.shh
 webarticles
 prompts/*.txt
 responses/*/
+prompts/storage/
