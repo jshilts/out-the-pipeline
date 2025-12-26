@@ -1,7 +1,7 @@
 # out-the-pipeline
-Retrospective analyses of Derek Lowe's 'in the pipeline' predictions and commentary using AI
+Retrospective analyses of Derek Lowe's "In the Pipeline" predictions and commentary using AI
 
-
+  
 #### Structure ####
 
 requirements.txt  provides the required package versions for running this in Python >=3.10
