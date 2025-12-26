@@ -1,0 +1,5 @@
+Some New Reviews
+7 Mar 2014
+
+Walensky and Bird have a Miniperspective (http://pubs.acs.org/doi/abs/10.1021/jm4011675) out in J. Med. Chem. on stapled peptides, giving advice on how to increase one's chances of success in the area. Worth checking out, unless you're at Genentech or WEHI, of course. The authors might say that it's especially worth reading in those cases, come to think of it. I await the day when this dispute gets resolved, although a lot of people awaited the day that the nonclassical carbocation controversy got resolved, too, and look how long that took. 
+ And in Science , Tehshik Yoon has a review (http://www.sciencemag.org/content/343/6174/1239176.abstract) on visible-light catalyzed photochemistry. I like these reactions a lot, and have run a few myself. The literature has been blowing up all over the place in this field, and it's good to have an overview like this to keep things straight.

@@ -1,0 +1,5 @@
+Rule of Ten?
+12 Aug 2014
+
+I see from See Arr Oh's Twitter feed (https://twitter.com/SeeArrOh) (from the ACS meeting in San Francisco) that he's attending a talk on macrocycles (and how some of them have bizarrely good PK and other properties. The speaker suggested a "Rule of 10" for orally available macrocycles: ring size greater than 10, molecular weight under 1000, and clogP around 10. That's quite a set. 
+ The problem is, I'll bet that the percentage of reasonable-looking compounds that fit those criteria but are actually orally active is quite small. Probably significantly smaller than the percentage of reasonable-looking compounds that fit the Lipinski Ro5 criteria and behave decently. Orally-available macrocycles seem to have some sort of internal-hydrogen-bond thing going on that we don't really grasp (https://www.science.org/pipeline/2012/09/18/going_after_the_big_cyclic_ones) , and you'd have to figure (hydrogen bonds being what they are) that there are far more ways to get it wrong than to get it right.

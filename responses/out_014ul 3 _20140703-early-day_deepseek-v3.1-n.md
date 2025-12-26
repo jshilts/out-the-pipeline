@@ -1,0 +1,5 @@
+model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140703-early-day.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}}
+
+I notice that the text you've provided appears to be a personal blog post about barbecue and cooking rather than an article about the biotechnology industry from Science Magazine. This seems to be a casual Fourth of July weekend post about preparing pork shoulder and lime sorbet, not a biotech industry analysis.
+
+Could you please provide the correct article from Science Magazine that you'd like me to analyze? Alternatively, if you meant to share a different piece about biotechnology, I'd be happy to work with that material instead. Once I have the actual biotech article, I can provide the thorough analysis you're looking for with the four sections you outlined.

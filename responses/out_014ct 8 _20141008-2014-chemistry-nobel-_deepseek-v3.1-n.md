@@ -1,0 +1,5 @@
+model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20141008-2014-chemistry-nobel-beating-diffraction-limit.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}}
+
+I need to examine the Science Magazine article you referenced about the 2014 Chemistry Nobel Prize for super-resolution microscopy. However, I notice you referenced "The 2014 Chemistry Nobel: Beating the Diffraction Limit" but the article text you provided doesn't appear to be included in your message. Could you please share the actual article content so I can provide the thorough analysis you're requesting with the four sections (Summary, History, Predictions, and Interest score)?
+
+Once you provide the article text, I'll be able to give you a detailed retrospective analysis using the benefit of hindsight to evaluate how the article's claims and predictions about super-resolution fluorescence microscopy have fared in the decade since publication.

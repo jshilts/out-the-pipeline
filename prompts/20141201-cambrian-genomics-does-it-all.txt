@@ -1,0 +1,9 @@
+Cambrian Genomics Does It All
+1 Dec 2014
+
+I'd like to echo this question (http://chemjobber.blogspot.com/2014/11/does-anyone-know-what-cambrian-genomics.html) over at Chemjobber's blog. What is Cambrian Genomics talking about? For example, see this Q&A: 
+ How do you plan to stop people from using your technology to create very dangerous microorganisms? 
+ Virtualization. Instead of mailing out DNA we will send the DNA to a virtualization center like Transcriptic, Synthego, or Emerald Cloud Lab. From there they can put thousands of different DNA strands into thousands of cells then make thousands of video files of what those cells are doing and then do image process and machine learning on those videos and send that data back to the user to do the next design. 
+ That's by no means the weirdest thing in it - go have a look and you'll see. Chemjobber has had a go at deciphering these people before (http://chemjobber.blogspot.com/2014/06/lost-in-translation-no-cambrian.html) , and I can see why he's puzzled. With all the talk about "3-D laser printing of DNA", it's easy to get confused. But while one could blame confused PR people for that sort of thing, when the CEO of the company (Austen Heinz) is out there saying stuff (http://www.techrepublic.com/article/cambrian-genomics-laser-prints-dna-to-rewrite-the-physical-world/) like: 
+ "Everything that's alive we want to rewrite," Heinz said. "Everything that's alive can be made better and more useful to humankind, including human cells. Plants can be made to take out much more carbon out of the atmosphere. We can make humans that are born without disease that can live much longer. We can make humans that can interface directly with computers by growing interfaces into the brain." 
+ . . .well, you have to wonder. Do people realize that providing DNA sequences might not be the rate-limiting step in these worthy goals?

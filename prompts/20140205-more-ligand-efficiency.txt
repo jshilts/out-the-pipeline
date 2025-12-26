@@ -1,0 +1,6 @@
+More Ligand Efficiency
+5 Feb 2014
+
+Here's a new review (http://www.nature.com/nrd/journal/v13/n2/full/nrd4163.html) on ligand efficiency metrics in drug discovery. It references the papers (https://www.science.org/pipeline/2013/08/22/too_many_metrics) that Michael Shultz has written on this topic, but (as far as I can tell) doesn't directly address his criticisms (https://www.science.org/pipeline/2013/11/25/lipinskis_anchor) . 
+
+There's a lot of data in this paper, and it's worth reading for its discussion of ligand binding thermodynamics, even if you're not sure what you think about ligand efficiency. But if you are thinking about it (and I'd especially recommend thinking about LipE/LLE), then here's a chart to give you an idea of where you stand. It shows the mean LE and LLE values for a large range of compounds against 329 targets, and may give you something to shoot for. The LLE of carbonic anhydrase inhibitors is hard to beat (that sulfonamide binding to zinc does it), but, then, you're probably not targeting carbonic anhydrase, anyway.

@@ -23,12 +23,12 @@ client = OpenAI(
 global PROMPT_TEMPLATE # making explicit that is global variable
 PROMPT_TEMPLATE = """The following is an article that appeared in Science Magazine several years ago about the biotechnology industry.
 
-Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had. 
+Let's use our benefit of hindsight to analyze the article's claims and how they fared up to the present day. Please be thorughtful and deeply critcial, questioning hype and investigating the true real-world impact a technology had. Sometimes the historical outcome will be clear-cut and easy to summarize, and other times not.
 Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
 Write a response following these sections :
     
 1. SUMMARY
-Give a short summary of 1-2 paragraphs for what the article said.
+Give a short summary of 1-2 paragraphs for what the article said. Sometimes the summary will be simple and straightforward, and sometimes not.
 
 2. HISTORY
 Research what happened subsequent to the article being published and summarize those later developments.
@@ -37,7 +37,7 @@ Research what happened subsequent to the article being published and summarize t
 Describe what predictions of the article matched the later history, and which predictions were wrong.
 
 4. INTEREST 
-Give a score from 0 to 9 on how interesting the article is in hindsight, and the insightfulness of its retrospective analysis. Do not simply give all articles a medium score, please be thoughtful about long-term impact.
+Give a decile score of how interesting the article ranks, from 0 to 9 where 0 is in the bottom 10% of interest, and 9 is like percentiles 90-99 of very high interest and long-term importance.
 
 5. CITATIONS
 Here cite the URLs of the websites you used as sources of information. Remember to search across multiple timeframes, not just one time period
@@ -70,10 +70,10 @@ def generate_prompt(article_text: str,
     return "\n".join(lines)
 #end
 
-def convert_article_date(article_timestamp: str):
-    # converts dates in the article to the YYYYMMMDD format (in the future can consider using library to do this more robustly)
-    return article_timestamp[7:11] + article_timestamp[3:6] + article_timestamp[0:2]
-#end
+# def convert_article_date(article_timestamp: str):
+#     # converts dates in the article to the YYYYMMMDD format (in the future can consider using library to do this more robustly)
+#     return article_timestamp[7:11] + article_timestamp[3:6] + article_timestamp[0:2]
+# #end
 
 model_parameters = {
     "model" :"nex-agi/deepseek-v3.1-nex-n1:free",#"deepseek/deepseek-v3.2",#"arcee-ai/trinity-mini:free",
@@ -95,7 +95,7 @@ if IF_WEB_SEARCH:
 article_list = os.listdir("./prompts/")  # by default analyzes everything. If want a subset, put the others not to be processed into the 'storage' folder (since not recursive file finding here)
 article_list = [filename for filename in article_list if isinstance(filename, str) and filename.endswith(".txt")]
 
-for article_source in article_list:
+for i, article_source in enumerate(article_list):
     #article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
 
     with open("./prompts/%s"%article_source, "r", encoding="utf-8", errors="replace") as f_in:
@@ -113,7 +113,7 @@ for article_source in article_list:
     response_text = response.output_text
     #print(response_text)
     
-    simplified_output_name = "out_" + convert_article_date(article_fulltext.split('\n')[1]) + "_" + article_source.split(".")[0][:30] + "_" + model_parameters["model"].split("/")[1][:15]
+    simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + model_parameters["model"].split("/")[1][:15]   # convert_article_date(article_fulltext.split('\n')[1]) + 
 
     with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
         params_to_write = dict(model_parameters)
@@ -123,6 +123,8 @@ for article_source in article_list:
         f.write("\n\n") # two newlines separating
         f.write(response_text)
     #end
+    
+    print(f"{i+1} out of {len(article_list)} complete ({100.0 * (i+1) / len(article_list):.2f}%) ")
 #end
 
 

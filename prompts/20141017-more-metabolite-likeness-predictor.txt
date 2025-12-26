@@ -1,0 +1,5 @@
+More on
+17 Oct 2014
+
+A recent computational paper (http://link.springer.com/article/10.1007/s11306-014-0733-z) that suggested that similarity to known metabolites could help predict successful drug candidates brought in a lot of comments (https://www.science.org/pipeline/2014/10/06/a_new_way_to_estimate_a_compounds_chances) around here. Now the folks at Cambridge MedChem Consulting have another look at it here (http://www.cambridgemedchemconsulting.com/news/index_files/c6a2b836d29f44ff067ae10fbb77dde8-169.html#unique-entry-id-169) . 
+ The big concern (as was expressed by some commenters here as well) is the Tanimoto similarity cutoff of 0.5. Does that make everything look too similar, or not? CMC has some numbers across different data sets, and suggests that this cutoff is, in fact, too permissive to allow for much discrimination. People with access to good comparison sets of compounds that made it and compounds that didn't - basically, computational chemists inside large industrial drug discovery organizations - will have a better chance to see how all this holds up.

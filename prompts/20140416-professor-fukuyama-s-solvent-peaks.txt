@@ -1,0 +1,10 @@
+Professor Fukuyama's Solvent Peaks
+16 Apr 2014
+
+See Arr Oh expresses some doubts (http://justlikecooking.blogspot.com/2014/04/doubt.html) about all the NMR spectral corrections we've been seeing lately. He's specifically referring to Bethany Halford's interview piece (http://cen.acs.org/articles/92/web/2014/04/Tohru-Fukuyamas-Correction-Crisis.html) , and he has this to say after reading it: 
+ If your group focuses on "clean up your spectra" more than "purify your compounds better," that's a communications issue. If a professor with a large group sees nothing but perfect spectra all day, two thoughts should crop up: 
+ 1. "I must have the smartest, most efficient students in the world," or... 
+ 2. "Something's fishy here." 
+ Perfect-looking data should always be a cause for concern in any experiment. My guess is that Prof. Fukuyama was closer to Option One, though, possibly in the variant of "My group has such high standards!" But high standards or not, a series of perfect, flat, NMR spectra with no solvent and no impurities is rather hard to achieve in total synthesis, considering the quantities that are being used. Load up the tube with 50mg of material and you can make a lot of stuff look good, but you don't have fifty mgs at step thirty-four, do you? I remember putting everything I had into one NMR tube (or worse, one polarimeter tube) in my own total synthesis days, and I carried the thing down to the machine like it was a bag of gold. 
+ But there's no doubt that in a big group, there will be people who try to slip things past the boss. I've seen it myself; I'm sure that a lot of you have. And if you're giving the boss exactly what the boss wants to see - perfection - then it's going to be a lot easier. These spectral problems look like a collaborative effort to me - expectations from above, willingness from below. And there are a lot of other groups that have done (and, I feel sure, still do) the same thing. Zapping the solvent peaks in the NMR is the least of it, in some cases. 
+ Update: added a direct link to the Fukuyama/Yokoshima interview.

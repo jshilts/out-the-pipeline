@@ -1,0 +1,4 @@
+Technical Problems
+6 May 2014
+
+The site has been glitching a lot recently, especially when it comes to displaying entries with comments. I hope to have this fixed shortly, but I wanted to let everyone know that I'm aware of the problem (and how), and that repairs are underway.

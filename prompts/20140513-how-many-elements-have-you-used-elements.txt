@@ -1,0 +1,32 @@
+How Many Elements Have You Used, As Elements?
+13 May 2014
+
+I've written before about how many different elements I've used over the course of my chemical career, but here's a more demanding variant (http://theorganicsolution.wordpress.com/2014/05/13/elemental-chemistry/) of that question: how many elements have you used in their elemental form? Here's my list - I'm including things that have been transformed, and some that haven't, but I'm not counting structural metals: 
+ Hydrogen (hydrogenations, naturally) 
+ Helium (carrier gas in GC) 
+ Lithium (Barbier reactions, Birch reduction, etc.) 
+ Carbon (decolorizing) 
+ Nitrogen (inert gas) 
+ Oxygen (oxidized a couple of anions over the years, etc.) 
+ Sodium (making alkoxides, Birch reduction) 
+ Magnesium (Grignard formation) 
+ Phosphorus (red phosphorus in a halogenation) 
+ Sulfur (cleaning up mercury!) 
+ Argon (inert gas) 
+ Potassium (drying solvents) 
+ Iron (reduction of nitro groups) 
+ Nickel (as Raney nickel) 
+ Copper (making carbenes, among other things) 
+ Zinc (reductions, zinc-copper couple) 
+ Selenium (as a catalyst in a Kjeldahl, years ago as an undergraduate) 
+ Bromine (many nasty brominations) 
+ Ruthenium (hydrogenation catalyst) 
+ Rhodium (high-pressure hydrogenation, once) 
+ Palladium (hydrogenation) 
+ Silver (well, produced some in a Tollens) 
+ Tin (reduction) 
+ Iodine (Grignard initiation, TLC) 
+ Platinum (hydrogenation) 
+ Mercury (vacuum lines, etc.) 
+ So that takes me to 24 26 elements used in their pure forms, 21 of them as part of actual chemical transformations, more or less. Notable omissions are sulfur, which I don't think I've actually used as elemental sulfur , and chlorine (not quite). There are a few other opportunities ( silver , samarium, and indium I've seen used as the metals, for example), but not that many, at least for an organic chemist. 
+ Updates are due to people reminding me of things in the comments! And no, I don't think I've ever used samarium metal itself, although that's certainly another easy one to rack up. As for Raney nickel, it starts out being an aluminum/nickel alloy, but my impression was that the aluminum got pretty well eaten out of it by all that sodium hydroxide. I've made the stuff (once), and a more tedious experience I do not wish for. I've also realized that I used elemental sulfur one time as an undergrad, along with elemental copper, to make cupric sulfide, which is perhaps a more elevated activity than cleaning up mercury spills.
