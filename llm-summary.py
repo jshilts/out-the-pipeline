@@ -30,7 +30,7 @@ with open("./prompts/prompt-engineering/" + SELECTED_PROMPT) as f:
 
 if not IF_WEB_SEARCH: # remove parts of prompt about internet searches
     PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
-    PROMPT_TEMPLATE = re.sub(r'5. CITATIONS.*?(?=---)', '', PROMPT_TEMPLATE, flags = re.DOTALL)
+    PROMPT_TEMPLATE = re.sub(r'.*5\. CITATIONS.*?(?=---)', '', PROMPT_TEMPLATE, flags = re.DOTALL)
 #end
 
 def generate_prompt(article_text: str, 

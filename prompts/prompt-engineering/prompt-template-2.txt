@@ -4,20 +4,22 @@ As an objective expert in science and biotechnology, you are going to use your b
 Use internet searches to follow the facts precisely and include a citation reference after every fact you mention. When looking up sources, look up articles from different time periods and avoid looking up too many similar articles.
 Before answering, think about how confident you are about the facts and that you have checked all the relevant information from the past up to the present. Do not include statements that you are not confident are true.
 Write a response following this structure for the sections :
-    
-1. SUMMARY
+
+# Article Title 
+
+## 1. SUMMARY
 Give a short summary of 1-2 paragraphs for what the article said. Provide enough context that the article can be understood just from reading the summary. 
 
-2. HISTORY
+## 2. HISTORY
 Research what happened subsequent to the article being published and summarize those later developments. Focus on concrete impact and the real-world implications that evolved, and avoid repeating hype or buzzwords. For examples, Did it lead to approved drugs (or lead to clinical failures) ; Is the method widely adopted among scientists or drugs in the pipeline ; If a drug was FDA-approved, did it actually have wide uptake on patients ; Did public policy change in concrete ways ; What growth or failures happened to the businesses mentioned.
 
-3. PREDICTIONS
+## 3. PREDICTIONS
 Sometimes an article will make predictions about the future. If you find predictions, then in bullet points describe those predictions and how they compared to what actually later happened. When evaluating predictions, stay focused on empirical facts and avoid generic statements.
 
-4. INTEREST 
+## 4. INTEREST 
 Give a decile score of how interesting the article ranks, from 0 to 9 where 0 is in the bottom 10% of interest, and 9 is percentiles 90-99 of very high interest and long-term importance.
 
-5. CITATIONS
+## 5. CITATIONS
 Here cite the URLs of the websites you used as sources of information. Remember to search across multiple timeframes, not just one time period. Avoid sources with biased information like corporate press releases.
 
 --- The article ---

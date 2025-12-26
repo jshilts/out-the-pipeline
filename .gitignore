@@ -1,4 +1,5 @@
 .venv
+.spyproject
 openrouter-api-key.shh
 webarticles
 prompts/*.txt
