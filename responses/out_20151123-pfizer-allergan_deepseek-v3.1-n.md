@@ -1,4 +1,3 @@
-model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20151123-pfizer-allergan.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}
 
 # Analysis of “Pfizer-Allergan” (2015) with the benefit of hindsight
 
@@ -59,3 +58,8 @@ The article made several implicit and explicit forecasts about the merger, R&D p
 Score: **7/9**
 
 **Rationale**: The article is interesting and historically valuable because it captured a critical moment when large pharmaceutical companies were engaging in tax-inversion mergers while grappling with fundamental questions about R&D productivity and merger-driven growth. It correctly identified the tax rationale as central and fragile, and it articulated a durable insight about the limits of “acquire rather than innovate” strategies at massive scale. Its broader framing of Pfizer’s serial M&A culture as a source of persistent uncertainty for scientists rings true across subsequent years. The piece is focused, skeptical in a constructive way, and mostly supported by ensuing events. It stops short of a 9/9 because its primary prediction was superseded by the deal’s termination, but its insights about inversions, R&D sustainability, and corporate strategy remain relevant and prescient.
+
+
+
+----
+_model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20151123-pfizer-allergan.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_

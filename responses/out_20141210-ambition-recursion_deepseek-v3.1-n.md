@@ -1,4 +1,3 @@
-model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20141210-ambition-recursion.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}
 
 # Retrospective Analysis of “Ambition From Recursion” (2014)
 
@@ -28,3 +27,8 @@ No formal predictions were made in the article itself. Lowe’s commentary focus
 Score: 6
 
 This article is interesting primarily as an early-skeptic take on a company deploying computational and automated approaches to scale drug repurposing. Recursion went on to build a substantial platform, advance multiple programs into clinical trials, complete a public listing, and secure major pharma partnerships. Its trajectory illustrates both the potential of platform-enabled discovery and the severe practical constraints of drug development timelines and attrition. As a counterpoint to hype, the piece remains relevant to discussions about what is feasible in biotech. It does not represent a breakthrough scientific finding or a long-term shift in regulatory or clinical paradigms, limiting its broader impact.
+
+
+
+----
+_model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20141210-ambition-recursion.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_

@@ -102,10 +102,12 @@ for i, article_source in enumerate(article_list):
         params_to_write = dict(model_parameters)
         params_to_write["input"] = article_source
         params_to_write["prompt-template"] = SELECTED_PROMPT.split(".")[0]
-        f.write("model_params = ")
-        f.write(repr(params_to_write))
-        f.write("\n\n") # two newlines separating
+        f.write("\n") # start with light gap
         f.write(response_text)
+        f.write("\n\n\n----\n")
+        f.write("_model_params = ")
+        f.write(repr(params_to_write))
+        f.write("_") # end the italic markdown
     #end
     
     print(f"{i+1} out of {len(article_list)} complete ({100.0 * (i+1) / len(article_list):.2f}%) ")

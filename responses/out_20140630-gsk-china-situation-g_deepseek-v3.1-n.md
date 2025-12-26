@@ -1,4 +1,3 @@
-model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140630-gsk-china-situation-gets-even-weirder.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}
 
 # Analysis of "GSK" (June 2014)
 
@@ -26,3 +25,8 @@ The article itself did not make explicit predictions about the future, instead f
 **Score: 5/9**
 
 This article ranks in the 50-59th percentile of interest. While it documented a notable corporate surveillance and corruption case, the story gained greater significance in hindsight due to its role in exposing systemic corruption in China's pharmaceutical sector. The case had substantial real-world impact, resulting in record corporate fines, criminal convictions, regulatory reforms, and lasting changes in how multinational pharmaceutical companies operate in China. However, the article itself captured only a snapshot of a developing story rather than providing comprehensive analysis of the broader implications.
+
+
+
+----
+_model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140630-gsk-china-situation-gets-even-weirder.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_

@@ -1,4 +1,3 @@
-model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140902-exelixis-against-wall.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}
 
 # Analysis of "Exelixis Against the Wall" (September 2014)
 
@@ -36,3 +35,8 @@ Exelixis did not collapse as the article suggested might happen. Instead, the co
 **Score: 7**
 
 This article ranks in the 70-79th percentile of interest. It's a compelling case study of biotech volatility and the difficulty of predicting clinical outcomes, but it's most valuable as a historical snapshot of how quickly fortunes can change in drug development. The dramatic contrast between the article's pessimistic assessment and what actually transpired makes it particularly instructive for understanding: (1) the binary nature of clinical trial outcomes and their company-defining consequences, (2) how orphan drug designations can anchor a company's survival strategy, and (3) the limitations of making definitive predictions about biotech companies based on single trial failures. The Exelixis story became a notable example of biotech turnaround and resilience in an industry where many companies do indeed fail after major clinical setbacks.
+
+
+
+----
+_model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140902-exelixis-against-wall.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_
