@@ -13,16 +13,14 @@
     height: 100vh;
   }
 
-  /* 1) Allow main to shrink on narrow screens */
   main {
     flex: 1;
-    min-width: 0; /* important: lets main actually shrink in a flex row */
+    min-width: 0;
     overflow: auto;
     padding: 20px;
     box-sizing: border-box;
   }
 
-  /* 2) Responsive sidebar width using clamp */
   nav {
     width: clamp(200px, 30vw, 320px);
     max-width: 100%;
@@ -34,32 +32,13 @@
     position: relative;
   }
 
-  /* Content styles */
   .item { display:block; padding:8px; border-radius:6px; text-decoration:none; color:inherit; margin-bottom:6px; }
   .date { font-size:0.9em; color:#444; display:block; }
   .score-badge { display:inline-block; padding:3px 6px; border-radius:4px; font-weight:600; margin-right:8px; }
 
-  /* Toggle button (hidden on desktop) */
-  #toggle {
-    display: none;
-    position: fixed;
-    top: 8px;
-    left: 8px;
-    z-index: 1100;
-    padding: 8px 10px;
-    font-size: 14px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    background: white;
-    cursor: pointer;
-  }
-
   /* Mobile: stack and show a "peek" preview of the menu */
   @media (max-width: 600px) {
-    body {
-      flex-direction: column;
-      height: auto;
-    }
+    body { flex-direction: column; height: auto; }
 
     /* Default: show a short preview of the nav (peek) */
     nav {
@@ -67,7 +46,7 @@
       max-width: 100%;
       border-right: none;
       border-bottom: 1px solid #ddd;
-      max-height: 108px;           /* <-- peek height */
+      max-height: 108px;    /* preview height */
       overflow: hidden;
       transition: max-height .28s ease, box-shadow .2s ease;
     }
@@ -75,12 +54,11 @@
     /* When expanded, make nav scrollable and tall */
     body.show-nav nav,
     nav.expanded {
-      max-height: 80vh;          /* enough to show full menu */
+      max-height: 80vh;
       overflow: auto;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
-    /* A small visible handle in the peek to indicate there's more */
     .nav-peek-handle {
       position: absolute;
       right: 12px;
@@ -94,7 +72,6 @@
       cursor: pointer;
     }
 
-    /* Fade at bottom of peek to hint more content */
     nav::after {
       content: "";
       display: block;
@@ -102,35 +79,26 @@
       left: 0;
       right: 0;
       bottom: 0;
-      height: 28px;
+      height: 36px; /* fade height */
       pointer-events: none;
       background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
     }
 
-    /* Ensure main has breathing room below the peek handle if it's floating */
     main {
       min-height: 50vh;
-      padding-top: 56px;
-    }
-
-    #toggle {
-      display: block;
+      padding-top: 12px; /* no floating toggle, small gap */
     }
   }
 
-  /* small polish for focus states */
-  #toggle:focus { outline: 2px solid Highlight; outline-offset: 2px; }
   a.item:focus { outline: 2px solid Highlight; outline-offset: 2px; border-radius: 6px; }
 </style>
 </head>
 <body>
-  <!-- Toggle button for mobile (only visible under 600px) -->
-  #<button id="toggle" aria-controls="sidebar" aria-expanded="false">Menu</button>
 
   <nav id="sidebar" aria-label="Articles">
     <div style="position:relative">
-      <!-- visible peek handle that suggests there is more to open -->
-      <button class="nav-peek-handle" id="peekHandle" aria-hidden="false" title="Open menu">Menu</button>
+      <!-- peek handle — visible on mobile, toggles open/close -->
+      <button class="nav-peek-handle" id="peekHandle" aria-expanded="false" title="Menu">Menu</button>
       <h2 style="margin:0 0 8px 0">Articles</h2>
     </div>
     <div id="list"></div>
@@ -149,18 +117,16 @@ async function loadIndex(){
     const idx = await res.json();
     const list = document.getElementById('list');
 
-    // create items (keep first few visible in the peek)
     idx.forEach(item=>{
       const a = document.createElement('a');
       a.href = "#"+item.filename;
       a.className = 'item';
-      const hue = (item.score||0)*13; // 0..117
+      const hue = (item.score||0)*13;
       const badge = '<span class="score-badge" style="background:hsl('+hue+',70%,75%)">'+(item.score||0)+'</span>';
       a.innerHTML = badge + '<strong>'+escapeHtml(item.title)+'</strong><span class="date">'+formatDate(item.date)+'</span>';
       list.appendChild(a);
     });
 
-    // load hash or first item
     if(location.hash) loadArticle(location.hash.slice(1));
     else if(idx.length) loadArticle(idx[0].filename);
     window.addEventListener('hashchange',()=>loadArticle(location.hash.slice(1)));
@@ -187,12 +153,11 @@ async function loadArticle(filename){
     document.getElementById('content').innerHTML = marked.parse(md);
     window.scrollTo(0,0);
 
-    // If on mobile, collapse the nav after selecting an article to show content
+    // Collapse the nav on mobile after selecting an article
     if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
       document.body.classList.remove('show-nav');
-      toggleButton.setAttribute('aria-expanded', 'false');
-      // restore peek state by removing any explicit "expanded" class
       sidebar.classList.remove('expanded');
+      peekHandle.setAttribute('aria-expanded', 'false');
     }
   }catch(e){
     document.getElementById('content').innerHTML = '<p>Error loading.</p>';
@@ -201,29 +166,24 @@ async function loadArticle(filename){
 }
 
 /* Elements */
-// const toggleButton = document.getElementById('toggle');
 const peekHandle = document.getElementById('peekHandle');
 const sidebar = document.getElementById('sidebar');
 
-/* Toggle button behavior for mobile menu */
-//toggleButton.addEventListener('click', () => {
-//  const isOpen = document.body.classList.toggle('show-nav');
-//  toggleButton.setAttribute('aria-expanded', String(isOpen));
-//  if (isOpen) sidebar.classList.add('expanded');
-//  else sidebar.classList.remove('expanded');
-//});
-
-/* Peek handle opens the menu when tapped */
+/* Peek handle toggles open/close */
 peekHandle.addEventListener('click', (ev) => {
   ev.stopPropagation();
-  document.body.classList.add('show-nav');
-  sidebar.classList.add('expanded');
-  toggleButton.setAttribute('aria-expanded', 'true');
+  const isOpen = document.body.classList.toggle('show-nav');
+  if (isOpen) {
+    sidebar.classList.add('expanded');
+    peekHandle.setAttribute('aria-expanded', 'true');
+  } else {
+    sidebar.classList.remove('expanded');
+    peekHandle.setAttribute('aria-expanded', 'false');
+  }
 });
 
-/* Also allow clicking the peek area (top of nav) to open */
+/* Clicking near the top of the peek area also expands */
 sidebar.addEventListener('click', (ev) => {
-  // if nav is in peek mode and the click is near the top, expand
   if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
     const rect = sidebar.getBoundingClientRect();
     const clickY = ev.clientY - rect.top;
@@ -231,7 +191,7 @@ sidebar.addEventListener('click', (ev) => {
       ev.preventDefault();
       document.body.classList.add('show-nav');
       sidebar.classList.add('expanded');
-      toggleButton.setAttribute('aria-expanded', 'true');
+      peekHandle.setAttribute('aria-expanded', 'true');
       return;
     }
   }
@@ -242,8 +202,8 @@ document.addEventListener('keydown', (ev) => {
   if (ev.key === 'Escape' && document.body.classList.contains('show-nav')) {
     document.body.classList.remove('show-nav');
     sidebar.classList.remove('expanded');
-    toggleButton.setAttribute('aria-expanded', 'false');
-    toggleButton.focus();
+    peekHandle.setAttribute('aria-expanded', 'false');
+    peekHandle.focus();
   }
 });
 
