@@ -30,7 +30,7 @@ with open("./prompts/prompt-engineering/" + SELECTED_PROMPT) as f:
 
 if not IF_WEB_SEARCH: # remove parts of prompt about internet searches
     PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
-    PROMPT_TEMPLATE = re.sub(r'.*5\. CITATIONS.*?(?=---)', '', PROMPT_TEMPLATE, flags = re.DOTALL)
+    PROMPT_TEMPLATE = re.sub(r'5\. CITATIONS.*?(?=---|\n\n|$)', '', PROMPT_TEMPLATE, flags=re.DOTALL)
 #end
 
 def generate_prompt(article_text: str, 
@@ -97,12 +97,17 @@ for i, article_source in enumerate(article_list):
     #print(response_text)
     
     simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + model_parameters["model"].split("/")[1][:15]   # convert_article_date(article_fulltext.split('\n')[1]) + 
+    
+    original_url = article_source.split("-", 1)[1]
+    original_url = "https://www.science.org/content/blog-post/" + original_url[:-4] if original_url.endswith(".txt") else original_url
 
     with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
         params_to_write = dict(model_parameters)
         params_to_write["input"] = article_source
         params_to_write["prompt-template"] = SELECTED_PROMPT.split(".")[0]
         f.write("\n") # start with light gap
+        f.write(original_url)
+        f.write("\n")
         f.write(response_text)
         f.write("\n\n\n----\n")
         f.write("_model_params = ")

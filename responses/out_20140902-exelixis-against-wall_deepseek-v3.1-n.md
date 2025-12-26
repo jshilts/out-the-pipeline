@@ -1,41 +1,48 @@
 
-# Analysis of "Exelixis Against the Wall" (September 2014)
+https://www.science.org/content/blog-post/exelixis-against-wall
+# Exelixis Against the Wall (September 2014)
 
 ## 1. SUMMARY
 
-The article describes Exelixis facing a critical juncture in September 2014. The company, which once boasted an extensive pipeline of kinase inhibitors, had experienced multiple clinical failures and partnership reversals over the preceding years. The immediate crisis stemmed from disappointing Phase III results for cabozantinib in prostate cancer—while the drug showed some improvement in progression-free survival (PFS), it failed to demonstrate benefit in overall survival (OS), which the FDA considered the primary meaningful endpoint. Due to this failure, Exelixis announced a dramatic workforce reduction from 330 to just 70 employees, conserving resources to complete two remaining cabozantinib trials in renal cell carcinoma and advanced hepatocellular carcinoma. The company's survival essentially depended on these final trials, though the article noted that cabozantinib had orphan drug status for medullary thyroid cancer where it had shown real clinical benefit.
+The article describes Exelixis as a company facing an existential crisis after years of setbacks. The company once had an expansive pipeline of kinase inhibitors, but multiple projects failed and major collaboration deals were terminated. The focus had narrowed to cabozantinib for prostate cancer, following a 2011 dispute with the FDA over clinical trial design where the agency insisted on overall survival (OS) as the primary endpoint rather than faster surrogate markers. 
+
+The Phase III results announced in September 2014 showed that while cabozantinib demonstrated some progression-free survival benefits, it failed to show overall survival improvement—the critical endpoint that mattered. The company announced significant workforce reduction from 330 employees down to 70 to preserve cash for ongoing trials in renal cell carcinoma and advanced hepatocellular carcinoma. Cabozantinib did have orphan drug status for medullary thyroid cancer with demonstrated efficacy, but the prostate cancer failure and resource constraints put the company's survival in question.
 
 ## 2. HISTORY
 
-**Subsequent Developments (2014-2024):**
+The 2014 article captured a pivotal moment, but the subsequent decade proved surprisingly different from the dire predictions. Here's what actually happened:
 
-Exelixis did not collapse as the article suggested might happen. Instead, the company engineered a remarkable turnaround:
+**Cabozantinib's Clinical Success:** Despite the prostate cancer failure in 2014, cabozantinib (brand name Cabometyx) went on to achieve multiple FDA approvals. It received approval for:
+- Advanced renal cell carcinoma (RCC) in 2016
+- Hepatocellular carcinoma (HCC) in 2019  
+- Differentiated thyroid cancer in 2021
+- Various combination therapies and expanded indications
 
-- **Cabozantinib (Cabometyx) Approvals**: Following the 2014 prostate cancer failure, cabozantinib received FDA approval for:
-  - Metastatic renal cell carcinoma (RCC) in April 2016
-  - Advanced hepatocellular carcinoma (HCC) in January 2019  
-  - Previously treated medullary thyroid cancer (approved 2012, the orphan indication mentioned in the article)
+The two "tough" indications mentioned in the article—RCC and HCC—both became major commercial successes for the drug.
 
-- **Clinical Success**: The "last two trials" referenced in the article—RCC and HCC—both succeeded. Cabozantinib demonstrated meaningful overall survival benefits in these indications, unlike the prostate cancer trial that failed.
+**Corporate Survival and Growth:** Far from being "it for them," Exelixis survived and thrived. The company avoided bankruptcy and instead became a successful commercial-stage company. Cabozantinib generated over $1.4 billion in annual revenue by 2022, making it a blockbuster oncology drug. The company grew significantly, expanding both its commercial infrastructure and R&D pipeline.
 
-- **Company Recovery**: Exelixis recovered financially and grew significantly. By the late 2010s, the company was generating over $1 billion annually in revenue from cabozantinib and expanded its workforce substantially beyond the 70-employee nadir of 2014.
-
-- **Pipeline Expansion**: The company expanded beyond cabozantinib, developing additional oncology compounds and building a more diversified clinical portfolio.
-
-- **Market Performance**: Exelixis became a profitable, sustainable biotechnology company rather than facing the predicted corporate demise.
+**Additional Drug Development:** Beyond cabozantinib, Exelixis continued drug development including partnerships and collaborations. The company maintained sufficient resources to pursue additional therapeutic candidates rather than merely scraping by to complete existing trials.
 
 ## 3. PREDICTIONS
 
-**Article Prediction**: "if nothing comes up there [in the RCC and HCC trials], I'd have to think that this will be it for them" - suggesting Exelixis would likely fail as a company if these remaining trials didn't succeed.
+- **Prediction:** "I'd have to think that this will be it for them" regarding Exelixis's survival if the remaining trials didn't succeed.
+  
+  **Reality:** The company not only survived but became a successful commercial entity with a blockbuster drug. Cabometyx sales exceeded $1 billion annually by 2019-2020.
 
-**Reality**: This prediction proved incorrect. The RCC and HCC trials did succeed, leading to FDA approvals that transformed Exelixis into a commercially successful company. Rather than representing "the end," these trials became the foundation of the company's subsequent growth and profitability.
+- **Prediction:** The article suggested the remaining RCC and HCC trials were unlikely battlefields that offered little room for optimism given the prostate failure.
+  
+  **Reality:** Both RCC and HCC became approved indications where cabozantinib demonstrated clear clinical benefit, representing major commercial successes.
+
+- **Prediction:** Implicit assumption that the prostate cancer OS failure indicated broader problems with the compound's efficacy.
+  
+  **Reality:** Cabozantinib proved highly effective in other cancer types, demonstrating that efficacy varies significantly by tumor type—a common pattern with targeted kinase inhibitors.
 
 ## 4. INTEREST
 
-**Score: 7**
+**Score: 5**
 
-This article ranks in the 70-79th percentile of interest. It's a compelling case study of biotech volatility and the difficulty of predicting clinical outcomes, but it's most valuable as a historical snapshot of how quickly fortunes can change in drug development. The dramatic contrast between the article's pessimistic assessment and what actually transpired makes it particularly instructive for understanding: (1) the binary nature of clinical trial outcomes and their company-defining consequences, (2) how orphan drug designations can anchor a company's survival strategy, and (3) the limitations of making definitive predictions about biotech companies based on single trial failures. The Exelixis story became a notable example of biotech turnaround and resilience in an industry where many companies do indeed fail after major clinical setbacks.
-
+This article ranks in the middle decile because while it accurately captured a dramatic moment in biotech, its dire predictions proved completely wrong, making it a useful cautionary tale about the difficulty of predicting company survival based on single clinical setbacks. The case illustrates how drug efficacy can vary dramatically across different cancer types, and how companies can survive near-death experiences in biotech.
 
 
 ----
