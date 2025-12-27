@@ -126,15 +126,19 @@ async function loadIndex() {
     if (!res.ok) throw new Error('index.json not found');
     indexData = await res.json();
 
+    // build initial peek items
     const frag = document.createDocumentFragment();
     indexData.slice(0, peekCount).forEach(item => frag.appendChild(createItemNode(item)));
     listEl.appendChild(frag);
 
     listEl.addEventListener('click', onListClick);
 
-    // IMPORTANT: parse synchronously for the initial article so "Loading..." won't hang
+    // only after DOM is populated, load initial article
     const initial = location.hash ? location.hash.slice(1) : (indexData[0] && indexData[0].filename);
-    if (initial) loadArticle(initial, { syncParse: true });
+    if (initial) {
+      // parse synchronously for first load to avoid "Loading..." hang
+      await loadArticle(initial, { syncParse: true });
+    }
 
     window.addEventListener('hashchange', () => {
       const f = location.hash.slice(1);
