@@ -3,9 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Archive</title>
+<title>Archive (mobile-optimized)</title>
 <style>
-  /* Layout basics */
   body {
     margin: 0;
     font-family: system-ui, Arial, sans-serif;
@@ -30,35 +29,30 @@
     box-sizing: border-box;
     background: #fff;
     position: relative;
+    will-change: max-height;
   }
 
-  .item { display:block; padding:8px; border-radius:6px; text-decoration:none; color:inherit; margin-bottom:6px; }
+  .item { display:block; padding:8px; border-radius:6px; text-decoration:none; color:inherit; margin-bottom:6px; touch-action: manipulation; }
   .date { font-size:0.9em; color:#444; display:block; }
   .score-badge { display:inline-block; padding:3px 6px; border-radius:4px; font-weight:600; margin-right:8px; }
 
-  /* Mobile: stack and show a "peek" preview of the menu */
   @media (max-width: 600px) {
     body { flex-direction: column; height: auto; }
-
-    /* Default: show a short preview of the nav (peek) */
     nav {
       width: 100%;
       max-width: 100%;
       border-right: none;
       border-bottom: 1px solid #ddd;
-      max-height: 108px;    /* preview height */
+      max-height: 120px;
       overflow: hidden;
-      transition: max-height .28s ease, box-shadow .2s ease;
+      transition: max-height .26s ease, box-shadow .18s ease;
     }
-
-    /* When expanded, make nav scrollable and tall */
     body.show-nav nav,
     nav.expanded {
       max-height: 80vh;
       overflow: auto;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
     }
-
     .nav-peek-handle {
       position: absolute;
       right: 12px;
@@ -70,8 +64,8 @@
       border: 1px solid #ccc;
       background: white;
       cursor: pointer;
+      touch-action: manipulation;
     }
-
     nav::after {
       content: "";
       display: block;
@@ -79,17 +73,17 @@
       left: 0;
       right: 0;
       bottom: 0;
-      height: 36px; /* fade height */
+      height: 36px;
       pointer-events: none;
       background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
     }
-
     main {
       min-height: 50vh;
-      padding-top: 12px; /* no floating toggle, small gap */
+      padding-top: 12px;
     }
   }
 
+  .nav-peek-handle:focus { outline: 2px solid Highlight; outline-offset: 2px; }
   a.item:focus { outline: 2px solid Highlight; outline-offset: 2px; border-radius: 6px; }
 </style>
 </head>
@@ -97,11 +91,10 @@
 
   <nav id="sidebar" aria-label="Articles">
     <div style="position:relative">
-      <!-- peek handle — visible on mobile, toggles open/close -->
       <button class="nav-peek-handle" id="peekHandle" aria-expanded="false" title="Menu">Menu</button>
       <h2 style="margin:0 0 8px 0">Articles</h2>
     </div>
-    <div id="list"></div>
+    <div id="list" aria-live="polite"></div>
   </nav>
 
   <main id="content">
@@ -110,29 +103,115 @@
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-/* Data loading + article rendering */
-async function loadIndex(){
+const peekCount = 6;
+let indexData = [];
+let remainingRendered = false;
+const articleCache = new Map();
+const listEl = document.getElementById('list');
+const sidebar = document.getElementById('sidebar');
+const peekHandle = document.getElementById('peekHandle');
+const contentEl = document.getElementById('content');
+
+function useIdle(task, fallbackDelay = 0) {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(task, { timeout: 1000 });
+  } else {
+    setTimeout(task, fallbackDelay);
+  }
+}
+
+async function loadIndex() {
   try {
     const res = await fetch('index.json');
-    const idx = await res.json();
-    const list = document.getElementById('list');
+    if (!res.ok) throw new Error('index.json not found');
+    indexData = await res.json();
 
-    idx.forEach(item=>{
-      const a = document.createElement('a');
-      a.href = "#"+item.filename;
-      a.className = 'item';
-      const hue = (item.score||0)*13;
-      const badge = '<span class="score-badge" style="background:hsl('+hue+',70%,75%)">'+(item.score||0)+'</span>';
-      a.innerHTML = badge + '<strong>'+escapeHtml(item.title)+'</strong><span class="date">'+formatDate(item.date)+'</span>';
-      list.appendChild(a);
+    const frag = document.createDocumentFragment();
+    indexData.slice(0, peekCount).forEach(item => frag.appendChild(createItemNode(item)));
+    listEl.appendChild(frag);
+
+    listEl.addEventListener('click', onListClick);
+
+    const initial = location.hash ? location.hash.slice(1) : (indexData[0] && indexData[0].filename);
+    if (initial) loadArticle(initial);
+
+    window.addEventListener('hashchange', () => {
+      const f = location.hash.slice(1);
+      if (f) loadArticle(f);
     });
+  } catch (err) {
+    console.error(err);
+    contentEl.innerHTML = '<p>Cannot load index.</p>';
+  }
+}
 
-    if(location.hash) loadArticle(location.hash.slice(1));
-    else if(idx.length) loadArticle(idx[0].filename);
-    window.addEventListener('hashchange',()=>loadArticle(location.hash.slice(1)));
-  } catch (e) {
-    console.error('Failed to load index.json', e);
-    document.getElementById('content').innerHTML = '<p>Cannot load index.</p>';
+function createItemNode(item) {
+  const a = document.createElement('a');
+  a.href = '#' + item.filename;
+  a.className = 'item';
+  a.dataset.filename = item.filename;
+  const hue = (item.score || 0) * 13;
+  const badge = '<span class="score-badge" style="background:hsl('+hue+',70%,75%)">'+(item.score||0)+'</span>';
+  a.innerHTML = badge + '<strong>' + escapeHtml(item.title) + '</strong><span class="date">' + formatDate(item.date) + '</span>';
+  return a;
+}
+
+function appendRemainingItems() {
+  if (remainingRendered || indexData.length <= peekCount) return;
+  remainingRendered = true;
+  const frag = document.createDocumentFragment();
+  indexData.slice(peekCount).forEach(item => frag.appendChild(createItemNode(item)));
+  useIdle(() => listEl.appendChild(frag), 50);
+}
+
+function onListClick(ev) {
+  const a = ev.target.closest('a.item');
+  if (!a) return;
+  ev.preventDefault();
+  const filename = a.dataset.filename;
+  if (!filename) return;
+  if (location.hash.slice(1) !== filename) location.hash = filename;
+  loadArticle(filename);
+  if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
+    document.body.classList.remove('show-nav');
+    sidebar.classList.remove('expanded');
+    peekHandle.setAttribute('aria-expanded', 'false');
+  }
+}
+
+async function loadArticle(filename) {
+  if (!filename) return;
+  contentEl.innerHTML = '<p>Loading...</p>';
+  const cached = articleCache.get(filename);
+  if (cached && cached.html) {
+    contentEl.innerHTML = cached.html;
+    window.scrollTo(0,0);
+    return;
+  }
+
+  try {
+    const r = await fetch('responses/' + filename);
+    if (!r.ok) { contentEl.innerHTML = '<p>Cannot load file.</p>'; return; }
+    const md = await r.text();
+    articleCache.set(filename, { md, html: null });
+
+    useIdle(() => {
+      try {
+        const html = marked.parse(md);
+        articleCache.set(filename, { md, html });
+        if (location.hash.slice(1) === filename) {
+          contentEl.innerHTML = html;
+          window.scrollTo(0,0);
+        }
+      } catch {
+        articleCache.set(filename, { md, html: marked.parse(md) });
+        if (location.hash.slice(1) === filename) contentEl.innerHTML = articleCache.get(filename).html;
+      }
+    }, 50);
+
+  } catch (err) {
+    console.error(err);
+    contentEl.innerHTML = '<p>Error loading.</p>';
   }
 }
 
@@ -144,45 +223,19 @@ function formatDate(d) {
 }
 function escapeHtml(s){ return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
-async function loadArticle(filename){
-  if(!filename) return;
-  try{
-    const r = await fetch('responses/'+filename);
-    if(!r.ok) { document.getElementById('content').innerHTML = '<p>Cannot load file.</p>'; return; }
-    const md = await r.text();
-    document.getElementById('content').innerHTML = marked.parse(md);
-    window.scrollTo(0,0);
-
-    // Collapse the nav on mobile after selecting an article
-    if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
-      document.body.classList.remove('show-nav');
-      sidebar.classList.remove('expanded');
-      peekHandle.setAttribute('aria-expanded', 'false');
-    }
-  }catch(e){
-    document.getElementById('content').innerHTML = '<p>Error loading.</p>';
-    console.error(e);
-  }
-}
-
-/* Elements */
-const peekHandle = document.getElementById('peekHandle');
-const sidebar = document.getElementById('sidebar');
-
-/* Peek handle toggles open/close */
 peekHandle.addEventListener('click', (ev) => {
   ev.stopPropagation();
   const isOpen = document.body.classList.toggle('show-nav');
   if (isOpen) {
     sidebar.classList.add('expanded');
     peekHandle.setAttribute('aria-expanded', 'true');
+    appendRemainingItems();
   } else {
     sidebar.classList.remove('expanded');
     peekHandle.setAttribute('aria-expanded', 'false');
   }
 });
 
-/* Clicking near the top of the peek area also expands */
 sidebar.addEventListener('click', (ev) => {
   if (window.matchMedia && window.matchMedia('(max-width:600px)').matches) {
     const rect = sidebar.getBoundingClientRect();
@@ -192,12 +245,12 @@ sidebar.addEventListener('click', (ev) => {
       document.body.classList.add('show-nav');
       sidebar.classList.add('expanded');
       peekHandle.setAttribute('aria-expanded', 'true');
+      appendRemainingItems();
       return;
     }
   }
 });
 
-/* Close nav when pressing Escape (mobile) */
 document.addEventListener('keydown', (ev) => {
   if (ev.key === 'Escape' && document.body.classList.contains('show-nav')) {
     document.body.classList.remove('show-nav');
