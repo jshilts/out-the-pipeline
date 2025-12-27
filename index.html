@@ -112,44 +112,6 @@ const sidebar = document.getElementById('sidebar');
 const peekHandle = document.getElementById('peekHandle');
 const contentEl = document.getElementById('content');
 
-function useIdle(task, fallbackDelay = 0) {
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(task, { timeout: 1000 });
-  } else {
-    setTimeout(task, fallbackDelay);
-  }
-}
-
-async function loadIndex() {
-  try {
-    const res = await fetch('index.json');
-    if (!res.ok) throw new Error('index.json not found');
-    indexData = await res.json();
-
-    // build initial peek items
-    const frag = document.createDocumentFragment();
-    indexData.slice(0, peekCount).forEach(item => frag.appendChild(createItemNode(item)));
-    listEl.appendChild(frag);
-
-    listEl.addEventListener('click', onListClick);
-
-    // only after DOM is populated, load initial article
-    const initial = location.hash ? location.hash.slice(1) : (indexData[0] && indexData[0].filename);
-    if (initial) {
-      // parse synchronously for first load to avoid "Loading..." hang
-      await loadArticle(initial, { syncParse: true });
-    }
-
-    window.addEventListener('hashchange', () => {
-      const f = location.hash.slice(1);
-      if (f) loadArticle(f);
-    });
-  } catch (err) {
-    console.error(err);
-    contentEl.innerHTML = '<p>Cannot load index.</p>';
-  }
-}
-
 function createItemNode(item) {
   const a = document.createElement('a');
   a.href = '#' + item.filename;
@@ -166,7 +128,7 @@ function appendRemainingItems() {
   remainingRendered = true;
   const frag = document.createDocumentFragment();
   indexData.slice(peekCount).forEach(item => frag.appendChild(createItemNode(item)));
-  useIdle(() => listEl.appendChild(frag), 50);
+  listEl.appendChild(frag);
 }
 
 function onListClick(ev) {
@@ -184,11 +146,10 @@ function onListClick(ev) {
   }
 }
 
-async function loadArticle(filename, opts = {}) {
+async function loadArticle(filename) {
   if (!filename) return;
   contentEl.innerHTML = '<p>Loading...</p>';
 
-  // If we already have parsed HTML, show it immediately
   const cached = articleCache.get(filename);
   if (cached && cached.html) {
     contentEl.innerHTML = cached.html;
@@ -197,65 +158,45 @@ async function loadArticle(filename, opts = {}) {
   }
 
   try {
-    // If we have raw markdown cached and syncParse requested, parse synchronously
-    if (cached && cached.md && opts.syncParse) {
-      try {
-        const html = marked.parse(cached.md);
-        articleCache.set(filename, { md: cached.md, html });
-        if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
-        window.scrollTo(0,0);
-        return;
-      } catch (e) {
-        console.error('Sync parse failed for cached md', e);
-        // fall through to fresh fetch
-      }
-    }
-
     const r = await fetch('responses/' + filename);
     if (!r.ok) { contentEl.innerHTML = '<p>Cannot load file.</p>'; return; }
     const md = await r.text();
-    articleCache.set(filename, { md, html: null });
 
-    // If caller asked for synchronous parse (initial load), parse now so user sees content immediately
-    if (opts.syncParse) {
-      try {
-        const html = marked.parse(md);
-        articleCache.set(filename, { md, html });
-        if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
-        window.scrollTo(0,0);
-      } catch (parseErr) {
-        console.error('Sync markdown parse failed', parseErr);
-        // As a fallback, schedule parse on idle
-        useIdle(() => {
-          try {
-            const html = marked.parse(md);
-            articleCache.set(filename, { md, html });
-            if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
-            window.scrollTo(0,0);
-          } catch {}
-        }, 50);
-      }
-      return;
-    }
-
-    // Otherwise, parse during idle to reduce jank for subsequent loads
-    useIdle(() => {
-      try {
-        const html = marked.parse(md);
-        articleCache.set(filename, { md, html });
-        if (location.hash.slice(1) === filename) {
-          contentEl.innerHTML = html;
-          window.scrollTo(0,0);
-        }
-      } catch {
-        articleCache.set(filename, { md, html: marked.parse(md) });
-        if (location.hash.slice(1) === filename) contentEl.innerHTML = articleCache.get(filename).html;
-      }
-    }, 50);
-
+    // Parse immediately (synchronous) for **all articles** now — this fixes the stuck "Loading..."
+    const html = marked.parse(md);
+    articleCache.set(filename, { md, html });
+    contentEl.innerHTML = html;
+    window.scrollTo(0,0);
   } catch (err) {
     console.error(err);
     contentEl.innerHTML = '<p>Error loading.</p>';
+  }
+}
+
+async function loadIndex() {
+  try {
+    const res = await fetch('index.json');
+    if (!res.ok) throw new Error('index.json not found');
+    indexData = await res.json();
+
+    const frag = document.createDocumentFragment();
+    indexData.slice(0, peekCount).forEach(item => frag.appendChild(createItemNode(item)));
+    listEl.appendChild(frag);
+
+    listEl.addEventListener('click', onListClick);
+
+    const initial = location.hash ? location.hash.slice(1) : (indexData[0] && indexData[0].filename);
+    if (initial) {
+      await loadArticle(initial); // synchronous parse for first load fixes the bug
+    }
+
+    window.addEventListener('hashchange', () => {
+      const f = location.hash.slice(1);
+      if (f) loadArticle(f);
+    });
+  } catch (err) {
+    console.error(err);
+    contentEl.innerHTML = '<p>Cannot load index.</p>';
   }
 }
 
