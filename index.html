@@ -132,8 +132,9 @@ async function loadIndex() {
 
     listEl.addEventListener('click', onListClick);
 
+    // IMPORTANT: parse synchronously for the initial article so "Loading..." won't hang
     const initial = location.hash ? location.hash.slice(1) : (indexData[0] && indexData[0].filename);
-    if (initial) loadArticle(initial);
+    if (initial) loadArticle(initial, { syncParse: true });
 
     window.addEventListener('hashchange', () => {
       const f = location.hash.slice(1);
@@ -179,9 +180,11 @@ function onListClick(ev) {
   }
 }
 
-async function loadArticle(filename) {
+async function loadArticle(filename, opts = {}) {
   if (!filename) return;
   contentEl.innerHTML = '<p>Loading...</p>';
+
+  // If we already have parsed HTML, show it immediately
   const cached = articleCache.get(filename);
   if (cached && cached.html) {
     contentEl.innerHTML = cached.html;
@@ -190,11 +193,48 @@ async function loadArticle(filename) {
   }
 
   try {
+    // If we have raw markdown cached and syncParse requested, parse synchronously
+    if (cached && cached.md && opts.syncParse) {
+      try {
+        const html = marked.parse(cached.md);
+        articleCache.set(filename, { md: cached.md, html });
+        if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
+        window.scrollTo(0,0);
+        return;
+      } catch (e) {
+        console.error('Sync parse failed for cached md', e);
+        // fall through to fresh fetch
+      }
+    }
+
     const r = await fetch('responses/' + filename);
     if (!r.ok) { contentEl.innerHTML = '<p>Cannot load file.</p>'; return; }
     const md = await r.text();
     articleCache.set(filename, { md, html: null });
 
+    // If caller asked for synchronous parse (initial load), parse now so user sees content immediately
+    if (opts.syncParse) {
+      try {
+        const html = marked.parse(md);
+        articleCache.set(filename, { md, html });
+        if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
+        window.scrollTo(0,0);
+      } catch (parseErr) {
+        console.error('Sync markdown parse failed', parseErr);
+        // As a fallback, schedule parse on idle
+        useIdle(() => {
+          try {
+            const html = marked.parse(md);
+            articleCache.set(filename, { md, html });
+            if (location.hash.slice(1) === filename) contentEl.innerHTML = html;
+            window.scrollTo(0,0);
+          } catch {}
+        }, 50);
+      }
+      return;
+    }
+
+    // Otherwise, parse during idle to reduce jank for subsequent loads
     useIdle(() => {
       try {
         const html = marked.parse(md);
