@@ -315,7 +315,26 @@ async function loadIndex() {
 
     // choose initial selection: prefer hash, otherwise most recent year
     const initialHash = location.hash ? location.hash.slice(1) : null;
-    let initialFilename = initialHash || (indexData[0] && indexData[0].filename);
+    let initialFilename = initialHash || null;
+	if (!initialFilename && indexData && indexData.length) {
+	  // choose the article whose date is closest to exactly 10 years ago from today
+	  const now = new Date();
+	  const target = new Date(now.getFullYear() - 10, now.getMonth(), now.getDate());
+	  let closest = null;
+	  let bestDiff = Infinity;
+	  indexData.forEach(it => {
+		const p = parseDateParts(it.date);
+		if (!p) return;
+		const d = new Date(p.year, p.month - 1, p.day);
+		const diff = Math.abs(d - target);
+		if (diff < bestDiff) {
+		  bestDiff = diff;
+		  closest = it;
+		}
+	  });
+	  initialFilename = closest ? closest.filename : (indexData[0] && indexData[0].filename);
+	}
+
 
     if (initialFilename) {
       const found = indexData.find(it=>it.filename===initialFilename);
