@@ -1,5 +1,449 @@
 [
   {
+    "filename": "out_20100104-remember-apo-a1-milan_deepseek-v3.1-n.md",
+    "date": "2010-01-04",
+    "title": "Remember Apo-A1 Milano? Pfizer Does.",
+    "score": 7
+  },
+  {
+    "filename": "out_20100105-always-read-fine-prin_deepseek-v3.1-n.md",
+    "date": "2010-01-05",
+    "title": "Always Read the Fine Print",
+    "score": 3
+  },
+  {
+    "filename": "out_20100105-run-it-past-chemists_deepseek-v3.1-n.md",
+    "date": "2010-01-05",
+    "title": "Run It Past the Chemists",
+    "score": 6
+  },
+  {
+    "filename": "out_20100106-five-technologies-scr_deepseek-v3.1-n.md",
+    "date": "2010-01-06",
+    "title": "Five Technologies For the Scrap Heap?",
+    "score": 7
+  },
+  {
+    "filename": "out_20100106-lilly-s-r-d-outsourci_deepseek-v3.1-n.md",
+    "date": "2010-01-06",
+    "title": "Lilly's R&D Outsourcing",
+    "score": 6
+  },
+  {
+    "filename": "out_20100107-extortion-retractions_deepseek-v3.1-n.md",
+    "date": "2010-01-07",
+    "title": "Extortion, Retractions, And More",
+    "score": 7
+  },
+  {
+    "filename": "out_20100107-xmrv-cause-chronic-fa_deepseek-v3.1-n.md",
+    "date": "2010-01-07",
+    "title": "Is XMRV the Cause of Chronic Fatigue Syndrome? Or Anything?",
+    "score": 8
+  },
+  {
+    "filename": "out_20100108-carl-icahn-going-genz_deepseek-v3.1-n.md",
+    "date": "2010-01-08",
+    "title": "Carl Icahn Going For Genzyme?",
+    "score": 6
+  },
+  {
+    "filename": "out_20100108-find-pattern_deepseek-v3.1-n.md",
+    "date": "2010-01-08",
+    "title": "Find That Pattern",
+    "score": 5
+  },
+  {
+    "filename": "out_20100108-reasons-not-go-grad-s_deepseek-v3.1-n.md",
+    "date": "2010-01-08",
+    "title": "Reasons Not to Go to Grad School?",
+    "score": 7
+  },
+  {
+    "filename": "out_20100111-magl-new-cancer-targe_deepseek-v3.1-n.md",
+    "date": "2010-01-11",
+    "title": "MAGL: A New Cancer Target",
+    "score": 7
+  },
+  {
+    "filename": "out_20100111-sure-about_deepseek-v3.1-n.md",
+    "date": "2010-01-11",
+    "title": "Sure About That?",
+    "score": 4
+  },
+  {
+    "filename": "out_20100112-sirtris-compounds-wor_deepseek-v3.1-n.md",
+    "date": "2010-01-12",
+    "title": "The Sirtris Compounds: Worthless? Really?",
+    "score": 8
+  },
+  {
+    "filename": "out_20100113-two-doses-crazy_deepseek-v3.1-n.md",
+    "date": "2010-01-13",
+    "title": "Two Doses of Crazy",
+    "score": 4
+  },
+  {
+    "filename": "out_20100114-department-placebo-ef_deepseek-v3.1-n.md",
+    "date": "2010-01-14",
+    "title": "Department of Placebo Effects",
+    "score": 7
+  },
+  {
+    "filename": "out_20100114-gaining-and-losing-an_deepseek-v3.1-n.md",
+    "date": "2010-01-14",
+    "title": "Gaining and Losing and Discovering and Selling",
+    "score": 7
+  },
+  {
+    "filename": "out_20100115-physics-dogs-and-othe_deepseek-v3.1-n.md",
+    "date": "2010-01-15",
+    "title": "Physics, for Dogs and Others",
+    "score": 3
+  },
+  {
+    "filename": "out_20100115-sirtuin-scenarios_deepseek-v3.1-n.md",
+    "date": "2010-01-15",
+    "title": "Sirtuin Scenarios",
+    "score": 8
+  },
+  {
+    "filename": "out_20100118-correlations-lovely-c_deepseek-v3.1-n.md",
+    "date": "2010-01-18",
+    "title": "Correlations, Lovely Correlations",
+    "score": 8
+  },
+  {
+    "filename": "out_20100118-oxford-s-new-building_deepseek-v3.1-n.md",
+    "date": "2010-01-18",
+    "title": "Oxford's New Building, One Year Later",
+    "score": 3
+  },
+  {
+    "filename": "out_20100119-what-should-non-chemi_deepseek-v3.1-n.md",
+    "date": "2010-01-19",
+    "title": "What Should Non-Chemists Know About Medicinal Chemistry, Anyway?",
+    "score": 6
+  },
+  {
+    "filename": "out_20100120-database-side-effects_deepseek-v3.1-n.md",
+    "date": "2010-01-20",
+    "title": "A Database of Side Effects",
+    "score": 7
+  },
+  {
+    "filename": "out_20100120-honesty-sort_deepseek-v3.1-n.md",
+    "date": "2010-01-20",
+    "title": "Honesty, Of A Sort",
+    "score": 6
+  },
+  {
+    "filename": "out_20100121-enzyme-inhibitor-you-_deepseek-v3.1-n.md",
+    "date": "2010-01-21",
+    "title": "An Enzyme Inhibitor You Have Never, Ever, Considered",
+    "score": 3
+  },
+  {
+    "filename": "out_20100121-hoc-signo-non-vinces_deepseek-v3.1-n.md",
+    "date": "2010-01-21",
+    "title": "In Hoc Signo Non Vinces",
+    "score": 3
+  },
+  {
+    "filename": "out_20100122-maybe-you-need-some-m_deepseek-v3.1-n.md",
+    "date": "2010-01-22",
+    "title": "Maybe You Need Some More Testosterone Over There",
+    "score": 6
+  },
+  {
+    "filename": "out_20100122-receptors-moving-and-_deepseek-v3.1-n.md",
+    "date": "2010-01-22",
+    "title": "Receptors, Moving and Shaking",
+    "score": 4
+  },
+  {
+    "filename": "out_20100125-gsk-and-sirtris-bit-m_deepseek-v3.1-n.md",
+    "date": "2010-01-25",
+    "title": "GSK and Sirtris: A Bit More",
+    "score": 8
+  },
+  {
+    "filename": "out_20100126-pipeline-1895_deepseek-v3.1-n.md",
+    "date": "2010-01-26",
+    "title": "The Infinitely Active Impurity",
+    "score": 6
+  },
+  {
+    "filename": "out_20100126-storm-teacup_deepseek-v3.1-n.md",
+    "date": "2010-01-26",
+    "title": "A Storm in a Teacup",
+    "score": 8
+  },
+  {
+    "filename": "out_20100127-enzymes-and-fluorines_deepseek-v3.1-n.md",
+    "date": "2010-01-27",
+    "title": "Enzymes and Fluorines",
+    "score": 7
+  },
+  {
+    "filename": "out_20100127-sequenom-strike-music_deepseek-v3.1-n.md",
+    "date": "2010-01-27",
+    "title": "Sequenom: Strike Up the Music, Bring On the Cream Pies",
+    "score": 7
+  },
+  {
+    "filename": "out_20100128-acorda-and-ampyra_deepseek-v3.1-n.md",
+    "date": "2010-01-28",
+    "title": "Acorda and Ampyra",
+    "score": 7
+  },
+  {
+    "filename": "out_20100128-scorched-earth-policy_deepseek-v3.1-n.md",
+    "date": "2010-01-28",
+    "title": "A Scorched-Earth Policy at Wyeth's Princeton Site?",
+    "score": 2
+  },
+  {
+    "filename": "out_20100128-your-first-pharma-blo_deepseek-v3.1-n.md",
+    "date": "2010-01-28",
+    "title": "Your First Pharma Bloodletting of 2010: AstraZeneca",
+    "score": 7
+  },
+  {
+    "filename": "out_20100129-johnson-may-have-been_deepseek-v3.1-n.md",
+    "date": "2010-01-29",
+    "title": "Johnson May Have Been On to Something",
+    "score": 2
+  },
+  {
+    "filename": "out_20100129-merck-and-sirna_deepseek-v3.1-n.md",
+    "date": "2010-01-29",
+    "title": "Merck and Sirna",
+    "score": 8
+  },
+  {
+    "filename": "out_20100129-sure-thing_deepseek-v3.1-n.md",
+    "date": "2010-01-29",
+    "title": "Sure Thing",
+    "score": 3
+  },
+  {
+    "filename": "out_20100201-and-carl-icahn-front_deepseek-v3.1-n.md",
+    "date": "2010-02-01",
+    "title": "And on the Carl Icahn Front. . .",
+    "score": 3
+  },
+  {
+    "filename": "out_20100201-gsk-more-cuts-coming_deepseek-v3.1-n.md",
+    "date": "2010-02-01",
+    "title": "GSK: More Cuts Coming",
+    "score": 3
+  },
+  {
+    "filename": "out_20100202-literature-notes_deepseek-v3.1-n.md",
+    "date": "2010-02-02",
+    "title": "Literature Notes",
+    "score": 2
+  },
+  {
+    "filename": "out_20100202-pile-malaria-leads-ta_deepseek-v3.1-n.md",
+    "date": "2010-02-02",
+    "title": "A Pile of Malaria Leads For the Taking",
+    "score": 4
+  },
+  {
+    "filename": "out_20100203-dimebon-alzheimer-s-b_deepseek-v3.1-n.md",
+    "date": "2010-02-03",
+    "title": "Dimebon for Alzheimer's: A Black Box Indeed",
+    "score": 7
+  },
+  {
+    "filename": "out_20100203-modest-literature-pro_deepseek-v3.1-n.md",
+    "date": "2010-02-03",
+    "title": "A Modest Literature Proposal",
+    "score": 8
+  },
+  {
+    "filename": "out_20100204-bms-freezes-salaries_deepseek-v3.1-n.md",
+    "date": "2010-02-04",
+    "title": "BMS Freezes Salaries",
+    "score": 3
+  },
+  {
+    "filename": "out_20100204-gsk-day_deepseek-v3.1-n.md",
+    "date": "2010-02-04",
+    "title": "GSK Day",
+    "score": 2
+  },
+  {
+    "filename": "out_20100204-here-s-business-plan-_deepseek-v3.1-n.md",
+    "date": "2010-02-04",
+    "title": "Here's a Business Plan For You",
+    "score": 2
+  },
+  {
+    "filename": "out_20100205-sheer-economics-how-w_deepseek-v3.1-n.md",
+    "date": "2010-02-05",
+    "title": "Sheer Economics: How We Got in This Fix",
+    "score": 8
+  },
+  {
+    "filename": "out_20100208-polluting-literature-_deepseek-v3.1-n.md",
+    "date": "2010-02-08",
+    "title": "Polluting the Literature with PAINs",
+    "score": 9
+  },
+  {
+    "filename": "out_20100208-together-last_deepseek-v3.1-n.md",
+    "date": "2010-02-08",
+    "title": "Together At Last",
+    "score": 3
+  },
+  {
+    "filename": "out_20100209-more-pharma-s-ugly-fi_deepseek-v3.1-n.md",
+    "date": "2010-02-09",
+    "title": "More On Pharma's Ugly Finances",
+    "score": 7
+  },
+  {
+    "filename": "out_20100210-chemical-supplier-que_deepseek-v3.1-n.md",
+    "date": "2010-02-10",
+    "title": "Chemical Supplier Question",
+    "score": 3
+  },
+  {
+    "filename": "out_20100210-where-would-you-start_deepseek-v3.1-n.md",
+    "date": "2010-02-10",
+    "title": "Where Would You Start a Company?",
+    "score": 7
+  },
+  {
+    "filename": "out_20100211-another-new-med-chem-_deepseek-v3.1-n.md",
+    "date": "2010-02-11",
+    "title": "Another New Med-Chem Journal",
+    "score": 4
+  },
+  {
+    "filename": "out_20100211-sanofi-aventis-cuts-b_deepseek-v3.1-n.md",
+    "date": "2010-02-11",
+    "title": "Sanofi-Aventis Cuts Back",
+    "score": 6
+  },
+  {
+    "filename": "out_20100212-who-follows-these-thi_deepseek-v3.1-n.md",
+    "date": "2010-02-12",
+    "title": "Who Follows These Things?",
+    "score": 6
+  },
+  {
+    "filename": "out_20100216-pharma-and-health-car_deepseek-v3.1-n.md",
+    "date": "2010-02-16",
+    "title": "Pharma and the Health Care Bill: Value For the Money?",
+    "score": 6
+  },
+  {
+    "filename": "out_20100216-picking-industrial-hi_deepseek-v3.1-n.md",
+    "date": "2010-02-16",
+    "title": "Picking Up Industrial Hires",
+    "score": 4
+  },
+  {
+    "filename": "out_20100216-twitter-and-science-r_deepseek-v3.1-n.md",
+    "date": "2010-02-16",
+    "title": "Twitter and Science, Revisited",
+    "score": 2
+  },
+  {
+    "filename": "out_20100216-xmrv-and-chronic-fati_deepseek-v3.1-n.md",
+    "date": "2010-02-16",
+    "title": "XMRV and Chronic Fatigue Syndrome: More Negative Data",
+    "score": 8
+  },
+  {
+    "filename": "out_20100217-drug-patents-india_deepseek-v3.1-n.md",
+    "date": "2010-02-17",
+    "title": "Drug Patents in India",
+    "score": 7
+  },
+  {
+    "filename": "out_20100217-merck-announces-cuts_deepseek-v3.1-n.md",
+    "date": "2010-02-17",
+    "title": "Merck Announces Cuts",
+    "score": 4
+  },
+  {
+    "filename": "out_20100218-biology-numbers_deepseek-v3.1-n.md",
+    "date": "2010-02-18",
+    "title": "Biology By the Numbers",
+    "score": 8
+  },
+  {
+    "filename": "out_20100219-two-one-sale_deepseek-v3.1-n.md",
+    "date": "2010-02-19",
+    "title": "Two For One Sale",
+    "score": 6
+  },
+  {
+    "filename": "out_20100222-avandia-market-or-not_deepseek-v3.1-n.md",
+    "date": "2010-02-22",
+    "title": "Avandia: Off the Market or Not?",
+    "score": 9
+  },
+  {
+    "filename": "out_20100222-front-lines-cancer-tr_deepseek-v3.1-n.md",
+    "date": "2010-02-22",
+    "title": "The Front Lines of Cancer Treatment",
+    "score": 9
+  },
+  {
+    "filename": "out_20100223-things-i-won-t-work-d_deepseek-v3.1-n.md",
+    "date": "2010-02-23",
+    "title": "Things I Won't Work With: Dioxygen Difluoride",
+    "score": 6
+  },
+  {
+    "filename": "out_20100224-knocking-doors_deepseek-v3.1-n.md",
+    "date": "2010-02-24",
+    "title": "out_20100224-knocking-doors_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20100224-steve-nissen-s-meetin_deepseek-v3.1-n.md",
+    "date": "2010-02-24",
+    "title": "Steve Nissen's Meeting with GSK",
+    "score": 7
+  },
+  {
+    "filename": "out_20100224-write-book-why-don-t-_deepseek-v3.1-n.md",
+    "date": "2010-02-24",
+    "title": "Write A Book, Why Don't You",
+    "score": 2
+  },
+  {
+    "filename": "out_20100225-cranking-away_deepseek-v3.1-n.md",
+    "date": "2010-02-25",
+    "title": "Cranking Away",
+    "score": 3
+  },
+  {
+    "filename": "out_20100226-her2-confusion_deepseek-v3.1-n.md",
+    "date": "2010-02-26",
+    "title": "HER2 Confusion",
+    "score": 8
+  },
+  {
+    "filename": "out_20100226-layoff-news_deepseek-v3.1-n.md",
+    "date": "2010-02-26",
+    "title": "Layoff News",
+    "score": 4
+  },
+  {
+    "filename": "out_20100226-pipeline-1940_deepseek-v3.1-n.md",
+    "date": "2010-02-26",
+    "title": "out_20100226-pipeline-1940_deepseek-v3.1-n",
+    "score": null
+  },
+  {
     "filename": "out_20101101-are-genes-patentable-_deepseek-v3.1-n.md",
     "date": "2010-11-01",
     "title": "Are Genes Patentable Or Not?",
@@ -370,6 +814,378 @@
     "date": "2010-12-30",
     "title": "out_20101230-another-cold-weather-_deepseek-v3.1-n",
     "score": null
+  },
+  {
+    "filename": "out_20110103-and-so-2011_deepseek-v3.1-n.md",
+    "date": "2011-01-03",
+    "title": "And So, 2011",
+    "score": 6
+  },
+  {
+    "filename": "out_20110103-drug-approvals-2010_deepseek-v3.1-n.md",
+    "date": "2011-01-03",
+    "title": "Drug Approvals 2010",
+    "score": 4
+  },
+  {
+    "filename": "out_20110104-detecting-single-canc_deepseek-v3.1-n.md",
+    "date": "2011-01-04",
+    "title": "Detecting Single Cancer Cells",
+    "score": 5
+  },
+  {
+    "filename": "out_20110105-how-fund-nonprofit-dr_deepseek-v3.1-n.md",
+    "date": "2011-01-05",
+    "title": "How to Fund a Nonprofit Drug Company - And Others?",
+    "score": 7
+  },
+  {
+    "filename": "out_20110106-mmr-vaccine-and-autis_deepseek-v3.1-n.md",
+    "date": "2011-01-06",
+    "title": "MMR Vaccine and Autism: Lies, All Lies",
+    "score": 9
+  },
+  {
+    "filename": "out_20110106-storage-industrial-ch_deepseek-v3.1-n.md",
+    "date": "2011-01-06",
+    "title": "Storage of Industrial Chemicals, Gone Rather Wrong",
+    "score": 3
+  },
+  {
+    "filename": "out_20110107-more-homemade-street-_deepseek-v3.1-n.md",
+    "date": "2011-01-07",
+    "title": "More On Homemade Street Drugs",
+    "score": 8
+  },
+  {
+    "filename": "out_20110107-phd-problem_deepseek-v3.1-n.md",
+    "date": "2011-01-07",
+    "title": "The PhD Problem",
+    "score": 7
+  },
+  {
+    "filename": "out_20110110-ahem-sell-gobs-dope_deepseek-v3.1-n.md",
+    "date": "2011-01-10",
+    "title": "Ahem: Sell Gobs of Dope",
+    "score": 5
+  },
+  {
+    "filename": "out_20110110-has-luc-montagnier-lo_deepseek-v3.1-n.md",
+    "date": "2011-01-10",
+    "title": "Has Luc Montagnier Lost It?",
+    "score": 5
+  },
+  {
+    "filename": "out_20110111-life-paper_deepseek-v3.1-n.md",
+    "date": "2011-01-11",
+    "title": "Life of a Paper",
+    "score": 3
+  },
+  {
+    "filename": "out_20110111-xmrv-it-s-ugly-s-scie_deepseek-v3.1-n.md",
+    "date": "2011-01-11",
+    "title": "XMRV: It's Ugly, But That's Science",
+    "score": 7
+  },
+  {
+    "filename": "out_20110112-gassing-your-crystals_deepseek-v3.1-n.md",
+    "date": "2011-01-12",
+    "title": "Gassing Your Crystals",
+    "score": 6
+  },
+  {
+    "filename": "out_20110112-snow-and-chance-happe_deepseek-v3.1-n.md",
+    "date": "2011-01-12",
+    "title": "Snow and Chance Happeneth To Them All",
+    "score": 0
+  },
+  {
+    "filename": "out_20110113-merck-s-thrombin-anta_deepseek-v3.1-n.md",
+    "date": "2011-01-13",
+    "title": "Merck's Thrombin Antagonist In Trouble",
+    "score": 7
+  },
+  {
+    "filename": "out_20110113-sanofi-s-slow-motion-_deepseek-v3.1-n.md",
+    "date": "2011-01-13",
+    "title": "Sanofi's Slow-Motion Takeover of Genzyme",
+    "score": 6
+  },
+  {
+    "filename": "out_20110114-fishing-around-biomar_deepseek-v3.1-n.md",
+    "date": "2011-01-14",
+    "title": "Fishing Around for Biomarkers",
+    "score": 4
+  },
+  {
+    "filename": "out_20110117-reboxetine-doesn-t-wo_deepseek-v3.1-n.md",
+    "date": "2011-01-17",
+    "title": "Reboxetine Doesn't Work. But That's Not the Real Problem.",
+    "score": 7
+  },
+  {
+    "filename": "out_20110118-retractions-why-secre_deepseek-v3.1-n.md",
+    "date": "2011-01-18",
+    "title": "Retractions: Why The Secrecy?",
+    "score": 8
+  },
+  {
+    "filename": "out_20110119-dogs-and-ponys_deepseek-v3.1-n.md",
+    "date": "2011-01-19",
+    "title": "Dogs and Ponys",
+    "score": 3
+  },
+  {
+    "filename": "out_20110120-freedom-operate_deepseek-v3.1-n.md",
+    "date": "2011-01-20",
+    "title": "Freedom to Operate",
+    "score": 6
+  },
+  {
+    "filename": "out_20110120-merck-s-vorapaxar-ble_deepseek-v3.1-n.md",
+    "date": "2011-01-20",
+    "title": "Merck's Vorapaxar: Bleeding, Indeed",
+    "score": 6
+  },
+  {
+    "filename": "out_20110121-oh-and-while-you-re-i_deepseek-v3.1-n.md",
+    "date": "2011-01-21",
+    "title": "Oh, And While You're At It...",
+    "score": 6
+  },
+  {
+    "filename": "out_20110124-not-enough-progress-a_deepseek-v3.1-n.md",
+    "date": "2011-01-24",
+    "title": "Not Enough Progress Against Cancer?",
+    "score": 7
+  },
+  {
+    "filename": "out_20110125-weirdness-cold-fusion_deepseek-v3.1-n.md",
+    "date": "2011-01-25",
+    "title": "Weirdness: A Cold Fusion Demonstration?",
+    "score": 8
+  },
+  {
+    "filename": "out_20110125-weirdness-montagnier-_deepseek-v3.1-n.md",
+    "date": "2011-01-25",
+    "title": "Weirdness: Montagnier Again, Teleporting DNA",
+    "score": 6
+  },
+  {
+    "filename": "out_20110126-abbott-s-cutting-jobs_deepseek-v3.1-n.md",
+    "date": "2011-01-26",
+    "title": "Article Title",
+    "score": 3
+  },
+  {
+    "filename": "out_20110126-those-me-too-drugs_deepseek-v3.1-n.md",
+    "date": "2011-01-26",
+    "title": "Those Me-Too Drugs",
+    "score": 6
+  },
+  {
+    "filename": "out_20110127-another-snow-day_deepseek-v3.1-n.md",
+    "date": "2011-01-27",
+    "title": "Another Snow Day",
+    "score": 1
+  },
+  {
+    "filename": "out_20110128-and-quick-political-n_deepseek-v3.1-n.md",
+    "date": "2011-01-28",
+    "title": "And a Quick Political Note",
+    "score": 2
+  },
+  {
+    "filename": "out_20110128-arsenic-dna-kinetic-a_deepseek-v3.1-n.md",
+    "date": "2011-01-28",
+    "title": "Arsenic in DNA: The Kinetic Argument",
+    "score": 8
+  },
+  {
+    "filename": "out_20110128-friday-mental-health-_deepseek-v3.1-n.md",
+    "date": "2011-01-28",
+    "title": "Friday Mental Health Break: Bad Project",
+    "score": 1
+  },
+  {
+    "filename": "out_20110128-what-referees-really-_deepseek-v3.1-n.md",
+    "date": "2011-01-28",
+    "title": "What The Referees Really Think",
+    "score": 3
+  },
+  {
+    "filename": "out_20110131-sanofi-s-parp1-inhibi_deepseek-v3.1-n.md",
+    "date": "2011-01-31",
+    "title": "Sanofi's PARP1 Inhibitor Misses",
+    "score": 8
+  },
+  {
+    "filename": "out_20110131-what-s-most-worthwhil_deepseek-v3.1-n.md",
+    "date": "2011-01-31",
+    "title": "What's the Most Worthwhile New Drug Since 1990?",
+    "score": 6
+  },
+  {
+    "filename": "out_20110201-bad-news-pfizer-close_deepseek-v3.1-n.md",
+    "date": "2011-02-01",
+    "title": "Bad News: Pfizer Closes Site in Sandwich",
+    "score": 4
+  },
+  {
+    "filename": "out_20110201-nih-s-new-drug-discov_deepseek-v3.1-n.md",
+    "date": "2011-02-01",
+    "title": "The NIH's New Drug Discovery Center: Heading Into the Swamp?",
+    "score": 8
+  },
+  {
+    "filename": "out_20110201-pfizer-part-two-cuts-_deepseek-v3.1-n.md",
+    "date": "2011-02-01",
+    "title": "Pfizer Part Two: Cuts at Groton",
+    "score": 6
+  },
+  {
+    "filename": "out_20110203-pfizer-s-ceo-speaks_deepseek-v3.1-n.md",
+    "date": "2011-02-03",
+    "title": "Article: Pfizer's CEO Speaks",
+    "score": 7
+  },
+  {
+    "filename": "out_20110204-merck-s-strategy-vs-p_deepseek-v3.1-n.md",
+    "date": "2011-02-04",
+    "title": "Merck's Strategy vs. Pfizer's",
+    "score": 6
+  },
+  {
+    "filename": "out_20110207-fragments-versus-dos-_deepseek-v3.1-n.md",
+    "date": "2011-02-07",
+    "title": "Fragments Versus DOS: A Showdown",
+    "score": 7
+  },
+  {
+    "filename": "out_20110207-not-letting-pfizer-s-_deepseek-v3.1-n.md",
+    "date": "2011-02-07",
+    "title": "Not Letting Pfizer's UK Site Go to Waste?",
+    "score": 7
+  },
+  {
+    "filename": "out_20110208-too-much-outsourcing-_deepseek-v3.1-n.md",
+    "date": "2011-02-08",
+    "title": "Too Much Outsourcing: Has the Line Been Crossed?",
+    "score": 7
+  },
+  {
+    "filename": "out_20110208-whistleblowers-paid-t_deepseek-v3.1-n.md",
+    "date": "2011-02-08",
+    "title": "Whistleblowers: Paid Too Much?",
+    "score": 8
+  },
+  {
+    "filename": "out_20110209-fanapt-not-paying-out_deepseek-v3.1-n.md",
+    "date": "2011-02-09",
+    "title": "Fanapt: Not Paying Out",
+    "score": 6
+  },
+  {
+    "filename": "out_20110209-thallium-poisoning-da_deepseek-v3.1-n.md",
+    "date": "2011-02-09",
+    "title": "Thallium Poisoning? In This Day and Age?",
+    "score": 4
+  },
+  {
+    "filename": "out_20110210-top-200-drugs_deepseek-v3.1-n.md",
+    "date": "2011-02-10",
+    "title": "The Top 200 Drugs",
+    "score": 4
+  },
+  {
+    "filename": "out_20110211-drug-problems-diagnos_deepseek-v3.1-n.md",
+    "date": "2011-02-11",
+    "title": "Drug Problems: A Diagnosis",
+    "score": 9
+  },
+  {
+    "filename": "out_20110211-merck-j-j-and-remicad_deepseek-v3.1-n.md",
+    "date": "2011-02-11",
+    "title": "Merck, J&J, and Remicade: Waiting Nervously",
+    "score": 7
+  },
+  {
+    "filename": "out_20110214-new-cures-faster-fast_deepseek-v3.1-n.md",
+    "date": "2011-02-14",
+    "title": "New Cures! Faster! Faster!",
+    "score": 8
+  },
+  {
+    "filename": "out_20110215-noted-through-massive_deepseek-v3.1-n.md",
+    "date": "2011-02-15",
+    "title": "Article Title",
+    "score": 3
+  },
+  {
+    "filename": "out_20110216-key-player-sanofi-gen_deepseek-v3.1-n.md",
+    "date": "2011-02-16",
+    "title": "The Key Player in the Sanofi-Genzyme Deal Speaks Out",
+    "score": 6
+  },
+  {
+    "filename": "out_20110217-health-care-reform-an_deepseek-v3.1-n.md",
+    "date": "2011-02-17",
+    "title": "Health Care Reform and the Drug Industry: How Goes It?",
+    "score": 7
+  },
+  {
+    "filename": "out_20110218-smell-vibrations-frui_deepseek-v3.1-n.md",
+    "date": "2011-02-18",
+    "title": "Smell The Vibrations? Fruit Flies Might Be Able To. . .",
+    "score": 6
+  },
+  {
+    "filename": "out_20110221-cutting-cuts-save-mon_deepseek-v3.1-n.md",
+    "date": "2011-02-21",
+    "title": "Cutting The Cuts to Save Money on the Money-Saving",
+    "score": 5
+  },
+  {
+    "filename": "out_20110222-oncology-follow-up-tr_deepseek-v3.1-n.md",
+    "date": "2011-02-22",
+    "title": "Oncology Follow-Up Trials",
+    "score": 7
+  },
+  {
+    "filename": "out_20110222-science-and-revolutio_deepseek-v3.1-n.md",
+    "date": "2011-02-22",
+    "title": "Science and Revolution",
+    "score": 8
+  },
+  {
+    "filename": "out_20110223-gonna-focus-re-engine_deepseek-v3.1-n.md",
+    "date": "2011-02-23",
+    "title": "Gonna Focus on Re-Engineering the Tools for the Process",
+    "score": 3
+  },
+  {
+    "filename": "out_20110223-want-live-where-merck_deepseek-v3.1-n.md",
+    "date": "2011-02-23",
+    "title": "Want to Live Where Merck Used to Work?",
+    "score": 5
+  },
+  {
+    "filename": "out_20110224-big-pharma-killing-st_deepseek-v3.1-n.md",
+    "date": "2011-02-24",
+    "title": "Is Big Pharma Killing Startup Companies?",
+    "score": 6
+  },
+  {
+    "filename": "out_20110225-things-i-won-t-work-c_deepseek-v3.1-n.md",
+    "date": "2011-02-25",
+    "title": "Things I Won't Work With: Chlorine Azide",
+    "score": 4
+  },
+  {
+    "filename": "out_20110228-down-phase-iii-again_deepseek-v3.1-n.md",
+    "date": "2011-02-28",
+    "title": "Down In Phase III. Again.",
+    "score": 7
   },
   {
     "filename": "out_20111101-exelixis-fights-city-_deepseek-v3.1-n.md",
@@ -844,6 +1660,540 @@
     "date": "2011-12-28",
     "title": "The UCLA Lab Fatality: Criminal Charges Filed",
     "score": 7
+  },
+  {
+    "filename": "out_20120103-2012-startups_deepseek-v3.1-n.md",
+    "date": "2012-01-03",
+    "title": "2012 In Startups",
+    "score": 6
+  },
+  {
+    "filename": "out_20120103-research-world-stagge_deepseek-v3.1-n.md",
+    "date": "2012-01-03",
+    "title": "The Research World Staggers Back to Work",
+    "score": 3
+  },
+  {
+    "filename": "out_20120103-s-sir-andrew-you_deepseek-v3.1-n.md",
+    "date": "2012-01-03",
+    "title": "That's Sir Andrew to You",
+    "score": 3
+  },
+  {
+    "filename": "out_20120104-changing-literature_deepseek-v3.1-n.md",
+    "date": "2012-01-04",
+    "title": "The Changing Literature",
+    "score": 7
+  },
+  {
+    "filename": "out_20120104-osiris-and-their-stem_deepseek-v3.1-n.md",
+    "date": "2012-01-04",
+    "title": "Osiris And Their Stem Cells",
+    "score": 7
+  },
+  {
+    "filename": "out_20120105-lead-oriented-synthes_deepseek-v3.1-n.md",
+    "date": "2012-01-05",
+    "title": "Lead-Oriented Synthesis - What Might That Be?",
+    "score": 7
+  },
+  {
+    "filename": "out_20120105-reaction-andy-grove-s_deepseek-v3.1-n.md",
+    "date": "2012-01-05",
+    "title": "Reaction to Andy Grove's Clinical Trial Proposals",
+    "score": 6
+  },
+  {
+    "filename": "out_20120106-do-we-believe-these-t_deepseek-v3.1-n.md",
+    "date": "2012-01-06",
+    "title": "Do We Believe These Things, Or Not?",
+    "score": 8
+  },
+  {
+    "filename": "out_20120106-scifinder-access-unem_deepseek-v3.1-n.md",
+    "date": "2012-01-06",
+    "title": "SciFinder Access For the Unemployed",
+    "score": 3
+  },
+  {
+    "filename": "out_20120109-jp-morgan-myths_deepseek-v3.1-n.md",
+    "date": "2012-01-09",
+    "title": "The JP Morgan Myths",
+    "score": 6
+  },
+  {
+    "filename": "out_20120109-look-future_deepseek-v3.1-n.md",
+    "date": "2012-01-09",
+    "title": "A Look Into the Future?",
+    "score": 7
+  },
+  {
+    "filename": "out_20120111-ten-years-science-blo_deepseek-v3.1-n.md",
+    "date": "2012-01-11",
+    "title": "Ten Years of Science Blogging. Already?",
+    "score": 7
+  },
+  {
+    "filename": "out_20120112-resveratrol-research-_deepseek-v3.1-n.md",
+    "date": "2012-01-12",
+    "title": "A Resveratrol Research Scandal. Oh, Joy.",
+    "score": 6
+  },
+  {
+    "filename": "out_20120112-sanofi-s-bridgewater-_deepseek-v3.1-n.md",
+    "date": "2012-01-12",
+    "title": "Sanofi's Bridgewater Site - Closing This Week?",
+    "score": 2
+  },
+  {
+    "filename": "out_20120112-welcome-jungle-here-s_deepseek-v3.1-n.md",
+    "date": "2012-01-12",
+    "title": "Welcome To the Jungle! Here's Your Panther",
+    "score": 7
+  },
+  {
+    "filename": "out_20120113-dealing-dishonesty_deepseek-v3.1-n.md",
+    "date": "2012-01-13",
+    "title": "Dealing With Dishonesty",
+    "score": 4
+  },
+  {
+    "filename": "out_20120116-biogen-decimated-pipe_deepseek-v3.1-n.md",
+    "date": "2012-01-16",
+    "title": "Biogen: A Decimated Pipeline",
+    "score": 7
+  },
+  {
+    "filename": "out_20120116-defending-das-resvert_deepseek-v3.1-n.md",
+    "date": "2012-01-16",
+    "title": "Article Title",
+    "score": 4
+  },
+  {
+    "filename": "out_20120117-down-research-works-a_deepseek-v3.1-n.md",
+    "date": "2012-01-17",
+    "title": "Down With the Research Works Act",
+    "score": 7
+  },
+  {
+    "filename": "out_20120117-newhouse-research_deepseek-v3.1-n.md",
+    "date": "2012-01-17",
+    "title": "Newhouse Research",
+    "score": 4
+  },
+  {
+    "filename": "out_20120117-warp-drive-bio-best-n_deepseek-v3.1-n.md",
+    "date": "2012-01-17",
+    "title": "Warp Drive Bio: Best Name or Worst?",
+    "score": 6
+  },
+  {
+    "filename": "out_20120118-fun-epigenetics_deepseek-v3.1-n.md",
+    "date": "2012-01-18",
+    "title": "Fun With Epigenetics",
+    "score": 6
+  },
+  {
+    "filename": "out_20120118-selling-sanofi-s-comp_deepseek-v3.1-n.md",
+    "date": "2012-01-18",
+    "title": "Selling Sanofi’s Compounds on the Side",
+    "score": 3
+  },
+  {
+    "filename": "out_20120119-dapagliflozin-goes-do_deepseek-v3.1-n.md",
+    "date": "2012-01-19",
+    "title": "Dapagliflozin Goes Down (For the Last Time?) - January 2012",
+    "score": 8
+  },
+  {
+    "filename": "out_20120119-research-works-act-on_deepseek-v3.1-n.md",
+    "date": "2012-01-19",
+    "title": "The Research Works Act: One (Two!) Against and One For",
+    "score": 7
+  },
+  {
+    "filename": "out_20120119-takeda-announces-cuts_deepseek-v3.1-n.md",
+    "date": "2012-01-19",
+    "title": "Takeda Announces Cuts",
+    "score": 3
+  },
+  {
+    "filename": "out_20120120-alnylam-cuts-back-har_deepseek-v3.1-n.md",
+    "date": "2012-01-20",
+    "title": "Alnylam Cuts Back Hard",
+    "score": 7
+  },
+  {
+    "filename": "out_20120120-worst-lecture-all-or-_deepseek-v3.1-n.md",
+    "date": "2012-01-20",
+    "title": "Worst Lecture of All, Or Greatest?",
+    "score": 4
+  },
+  {
+    "filename": "out_20120120-zelboraf-treat-one-ca_deepseek-v3.1-n.md",
+    "date": "2012-01-20",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20120123-comment-trouble_deepseek-v3.1-n.md",
+    "date": "2012-01-23",
+    "title": "Comment Trouble",
+    "score": 0
+  },
+  {
+    "filename": "out_20120123-pipeline-2794_deepseek-v3.1-n.md",
+    "date": "2012-01-23",
+    "title": "The New Groupthink and the Assault on Solitude",
+    "score": 3
+  },
+  {
+    "filename": "out_20120123-strangest-presentatio_deepseek-v3.1-n.md",
+    "date": "2012-01-23",
+    "title": "Strangest Presentation You've Seen?",
+    "score": 2
+  },
+  {
+    "filename": "out_20120125-comments-and-everythi_deepseek-v3.1-n.md",
+    "date": "2012-01-25",
+    "title": "Comments (And Everything Else) Are Back",
+    "score": 1
+  },
+  {
+    "filename": "out_20120125-open-office-plans-que_deepseek-v3.1-n.md",
+    "date": "2012-01-25",
+    "title": "Open Office Plans - A Question or Two",
+    "score": 5
+  },
+  {
+    "filename": "out_20120125-panel-academic-indust_deepseek-v3.1-n.md",
+    "date": "2012-01-25",
+    "title": "Panel on Academic-Industrial Collaboration in Drug Discovery",
+    "score": 3
+  },
+  {
+    "filename": "out_20120126-putting-number-chemic_deepseek-v3.1-n.md",
+    "date": "2012-01-26",
+    "title": "Putting a Number on Chemical Beauty",
+    "score": 0.67
+  },
+  {
+    "filename": "out_20120126-science-zero-sum-worl_deepseek-v3.1-n.md",
+    "date": "2012-01-26",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20120127-arsenic-bacteria-ride_deepseek-v3.1-n.md",
+    "date": "2012-01-27",
+    "title": "Arsenic Bacteria Ride Again. (Or Don't).",
+    "score": 7
+  },
+  {
+    "filename": "out_20120127-roche-goes-hostile-il_deepseek-v3.1-n.md",
+    "date": "2012-01-27",
+    "title": "Roche Goes Hostile for Illumina",
+    "score": 8
+  },
+  {
+    "filename": "out_20120130-key-everything-not-qu_deepseek-v3.1-n.md",
+    "date": "2012-01-30",
+    "title": "The Key to Everything? Not Quite.",
+    "score": 7
+  },
+  {
+    "filename": "out_20120130-un-stoppable-pixantro_deepseek-v3.1-n.md",
+    "date": "2012-01-30",
+    "title": "(Un)stoppable Pixantrone",
+    "score": 5
+  },
+  {
+    "filename": "out_20120131-andrulis-paper-s-fall_deepseek-v3.1-n.md",
+    "date": "2012-01-31",
+    "title": "The Andrulis Paper's Fallout",
+    "score": 3
+  },
+  {
+    "filename": "out_20120131-astrazeneca-cutting-e_deepseek-v3.1-n.md",
+    "date": "2012-01-31",
+    "title": "AstraZeneca Cutting Even More?",
+    "score": 2
+  },
+  {
+    "filename": "out_20120131-future-pharma-yikes_deepseek-v3.1-n.md",
+    "date": "2012-01-31",
+    "title": "The Future of Pharma? Yikes.",
+    "score": 3
+  },
+  {
+    "filename": "out_20120201-astrazeneca-layoffs-a_deepseek-v3.1-n.md",
+    "date": "2012-02-01",
+    "title": "AstraZeneca Layoffs and Closings",
+    "score": 5
+  },
+  {
+    "filename": "out_20120201-potassium-hydride-not_deepseek-v3.1-n.md",
+    "date": "2012-02-01",
+    "title": "Potassium Hydride Is Not Your Friend",
+    "score": 3
+  },
+  {
+    "filename": "out_20120201-smugness-warning-sign_deepseek-v3.1-n.md",
+    "date": "2012-02-01",
+    "title": "Smugness as a Warning Sign",
+    "score": 7
+  },
+  {
+    "filename": "out_20120202-fluorine-nmr-why-not_deepseek-v3.1-n.md",
+    "date": "2012-02-02",
+    "title": "Fluorine NMR: Why Not?",
+    "score": 19
+  },
+  {
+    "filename": "out_20120203-astrazeneca-waltham_deepseek-v3.1-n.md",
+    "date": "2012-02-03",
+    "title": "AstraZeneca in Waltham",
+    "score": 6
+  },
+  {
+    "filename": "out_20120203-how-andrulis-paper-go_deepseek-v3.1-n.md",
+    "date": "2012-02-03",
+    "title": "How the Andrulis Paper Got Published",
+    "score": 3
+  },
+  {
+    "filename": "out_20120206-academia-and-industry_deepseek-v3.1-n.md",
+    "date": "2012-02-06",
+    "title": "Academia and Industry, Suing Each Other",
+    "score": 7
+  },
+  {
+    "filename": "out_20120206-academic-industrial-c_deepseek-v3.1-n.md",
+    "date": "2012-02-06",
+    "title": "The Academic-Industrial Collaboration in Drug Discovery Panel: Today",
+    "score": 2
+  },
+  {
+    "filename": "out_20120206-glass-structure-atom-_deepseek-v3.1-n.md",
+    "date": "2012-02-06",
+    "title": "Glass Structure, Atom by Atom",
+    "score": 7
+  },
+  {
+    "filename": "out_20120206-let-s-start-meeting-a_deepseek-v3.1-n.md",
+    "date": "2012-02-06",
+    "title": "Let's Start Off the Meeting With An Ad, OK?",
+    "score": 4
+  },
+  {
+    "filename": "out_20120207-more-industrial-espio_deepseek-v3.1-n.md",
+    "date": "2012-02-07",
+    "title": "More Industrial Espionage",
+    "score": 7
+  },
+  {
+    "filename": "out_20120207-tau-spreads-its-own_deepseek-v3.1-n.md",
+    "date": "2012-02-07",
+    "title": "Tau Spreads On Its Own?",
+    "score": 8
+  },
+  {
+    "filename": "out_20120208-buying-back-shares-ad_deepseek-v3.1-n.md",
+    "date": "2012-02-08",
+    "title": "Buying Back Shares: An Admission of Defeat",
+    "score": 7
+  },
+  {
+    "filename": "out_20120208-every-methods-paper-h_deepseek-v3.1-n.md",
+    "date": "2012-02-08",
+    "title": "out_20120208-every-methods-paper-h_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20120209-guidance-biosimilars_deepseek-v3.1-n.md",
+    "date": "2012-02-09",
+    "title": "Guidance on Biosimilars",
+    "score": 6
+  },
+  {
+    "filename": "out_20120209-roger-boisjoly-and-ma_deepseek-v3.1-n.md",
+    "date": "2012-02-09",
+    "title": "Roger Boisjoly and the Management Hat",
+    "score": 7
+  },
+  {
+    "filename": "out_20120210-infinitely-active-imp_deepseek-v3.1-n.md",
+    "date": "2012-02-10",
+    "title": "The Infinitely Active Impurity",
+    "score": 7
+  },
+  {
+    "filename": "out_20120210-terrifying-cost-new-d_deepseek-v3.1-n.md",
+    "date": "2012-02-10",
+    "title": "The Terrifying Cost of a New Drug",
+    "score": 9
+  },
+  {
+    "filename": "out_20120213-bexarotene-alzheimer-_deepseek-v3.1-n.md",
+    "date": "2012-02-13",
+    "title": "Bexarotene for Alzheimer's",
+    "score": 6
+  },
+  {
+    "filename": "out_20120213-nobel-prizes-chemistr_deepseek-v3.1-n.md",
+    "date": "2012-02-13",
+    "title": "Nobel Prizes in Chemistry For People Who Aren't Chemists",
+    "score": 7
+  },
+  {
+    "filename": "out_20120213-pfizer-layoff-past-we_deepseek-v3.1-n.md",
+    "date": "2012-02-13",
+    "title": "Pfizer Layoff This Past Weekend?",
+    "score": null
+  },
+  {
+    "filename": "out_20120214-elsevier-boycott_deepseek-v3.1-n.md",
+    "date": "2012-02-14",
+    "title": "An Elsevier Boycott",
+    "score": 7
+  },
+  {
+    "filename": "out_20120214-synthetic-electrochem_deepseek-v3.1-n.md",
+    "date": "2012-02-14",
+    "title": "Synthetic Electrochemistry: Who's Done Any?",
+    "score": 8
+  },
+  {
+    "filename": "out_20120215-eschenbach-says-marke_deepseek-v3.1-n.md",
+    "date": "2012-02-15",
+    "title": "Eschenbach Says Market, Then Test",
+    "score": 6
+  },
+  {
+    "filename": "out_20120215-real-periodic-table-r_deepseek-v3.1-n.md",
+    "date": "2012-02-15",
+    "title": "out_20120215-real-periodic-table-r_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20120216-imidazole-1-sulfonyl-_deepseek-v3.1-n.md",
+    "date": "2012-02-16",
+    "title": "Imidazole-1-Sulfonyl Azide HCl: Look Out",
+    "score": 6
+  },
+  {
+    "filename": "out_20120216-when-reagents-attack_deepseek-v3.1-n.md",
+    "date": "2012-02-16",
+    "title": "When Reagents Attack!",
+    "score": 5
+  },
+  {
+    "filename": "out_20120217-academic-industrial-c_deepseek-v3.1-n.md",
+    "date": "2012-02-17",
+    "title": "That Academic-Industrial Collaboration Panel",
+    "score": 3
+  },
+  {
+    "filename": "out_20120217-hepatitis-c-reality-i_deepseek-v3.1-n.md",
+    "date": "2012-02-17",
+    "title": "Hepatitis C: Reality Intrudes",
+    "score": 8
+  },
+  {
+    "filename": "out_20120221-rational-drug-design-_deepseek-v3.1-n.md",
+    "date": "2012-02-21",
+    "title": "Rational Drug Design. Hmm.",
+    "score": 7
+  },
+  {
+    "filename": "out_20120221-ten-tons-sodium-and-j_deepseek-v3.1-n.md",
+    "date": "2012-02-21",
+    "title": "Ten Tons of Sodium And Just One Lake",
+    "score": 2
+  },
+  {
+    "filename": "out_20120222-max-gergel-s-second-o_deepseek-v3.1-n.md",
+    "date": "2012-02-22",
+    "title": "Article Title",
+    "score": 2
+  },
+  {
+    "filename": "out_20120222-scaling-strange-dinit_deepseek-v3.1-n.md",
+    "date": "2012-02-22",
+    "title": "Scaling Up a Strange Dinitro Compound (And Others)",
+    "score": 5
+  },
+  {
+    "filename": "out_20120223-remember-when-we-were_deepseek-v3.1-n.md",
+    "date": "2012-02-23",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20120223-worst-compound-you-ve_deepseek-v3.1-n.md",
+    "date": "2012-02-23",
+    "title": "The Worst Compound You've Ever Drawn?",
+    "score": 4
+  },
+  {
+    "filename": "out_20120224-actual-motivational-p_deepseek-v3.1-n.md",
+    "date": "2012-02-24",
+    "title": "An Actual Motivational Poster",
+    "score": 2
+  },
+  {
+    "filename": "out_20120224-independent-invention_deepseek-v3.1-n.md",
+    "date": "2012-02-24",
+    "title": "Independent Inventions",
+    "score": 6
+  },
+  {
+    "filename": "out_20120227-inside-chinese-pharma_deepseek-v3.1-n.md",
+    "date": "2012-02-27",
+    "title": "Inside A Chinese Pharmaceuticals Maker",
+    "score": 2
+  },
+  {
+    "filename": "out_20120227-pseudephedrine-made-e_deepseek-v3.1-n.md",
+    "date": "2012-02-27",
+    "title": "Pseudophedrine Made Easy. Kind of.",
+    "score": 4
+  },
+  {
+    "filename": "out_20120227-research-works-act-de_deepseek-v3.1-n.md",
+    "date": "2012-02-27",
+    "title": "Is the Research Works Act Dead?",
+    "score": 7
+  },
+  {
+    "filename": "out_20120228-more-nih-s-molecular-_deepseek-v3.1-n.md",
+    "date": "2012-02-28",
+    "title": "More on the NIH's Molecular Libraries Program",
+    "score": 3
+  },
+  {
+    "filename": "out_20120228-one-does-not-simply-w_deepseek-v3.1-n.md",
+    "date": "2012-02-28",
+    "title": "One Does Not Simply Walk Into Fluorine Chemistry",
+    "score": 6
+  },
+  {
+    "filename": "out_20120228-yes-research-works-ac_deepseek-v3.1-n.md",
+    "date": "2012-02-28",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20120229-bias-industry-funded-_deepseek-v3.1-n.md",
+    "date": "2012-02-29",
+    "title": "Bias in Industry-Funded Trials in Rheumatoid Arthritis?",
+    "score": 6
+  },
+  {
+    "filename": "out_20120229-statin-safety_deepseek-v3.1-n.md",
+    "date": "2012-02-29",
+    "title": "Statin Safety",
+    "score": 6
   },
   {
     "filename": "out_20121101-lab-animals-wiped-out_deepseek-v3.1-n.md",
@@ -1362,6 +2712,576 @@
     "score": 0
   },
   {
+    "filename": "out_20130101-another-recipe-cornbr_deepseek-v3.1-n.md",
+    "date": "2013-01-01",
+    "title": "Another Recipe: Cornbread",
+    "score": 0
+  },
+  {
+    "filename": "out_20130101-bean-soup-recipe-bonu_deepseek-v3.1-n.md",
+    "date": "2013-01-01",
+    "title": "A Bean Soup Recipe, With Bonus Country Ham Talk, And a Cameo By Frederick the Great",
+    "score": 0
+  },
+  {
+    "filename": "out_20130102-how-many-good-screeni_deepseek-v3.1-n.md",
+    "date": "2013-01-02",
+    "title": "How Many Good Screening Compounds Are There?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130103-deal-year_deepseek-v3.1-n.md",
+    "date": "2013-01-03",
+    "title": "Deal of the Year?",
+    "score": 2
+  },
+  {
+    "filename": "out_20130103-overselling-p53-drugs_deepseek-v3.1-n.md",
+    "date": "2013-01-03",
+    "title": "Overselling p53 Drugs",
+    "score": 8
+  },
+  {
+    "filename": "out_20130104-anti-gmo-until-week_deepseek-v3.1-n.md",
+    "date": "2013-01-04",
+    "title": "Article Title",
+    "score": 8
+  },
+  {
+    "filename": "out_20130104-article-shows-med-che_deepseek-v3.1-n.md",
+    "date": "2013-01-04",
+    "title": "An Article That Shows What Med-Chem Is Like?",
+    "score": 3
+  },
+  {
+    "filename": "out_20130104-science-fraud-and-leg_deepseek-v3.1-n.md",
+    "date": "2013-01-04",
+    "title": "Science Fraud and Legal Action",
+    "score": 6
+  },
+  {
+    "filename": "out_20130107-bioisosteres_deepseek-v3.1-n.md",
+    "date": "2013-01-07",
+    "title": "Bioisosteres",
+    "score": 3
+  },
+  {
+    "filename": "out_20130107-grad-school-chemistry_deepseek-v3.1-n.md",
+    "date": "2013-01-07",
+    "title": "Grad School in Chemistry - The Mental Health Aspects",
+    "score": 7
+  },
+  {
+    "filename": "out_20130107-oxidizing-alcohols-wa_deepseek-v3.1-n.md",
+    "date": "2013-01-07",
+    "title": "Oxidizing Alcohols - With Water",
+    "score": 3
+  },
+  {
+    "filename": "out_20130108-metal-impurities-will_deepseek-v3.1-n.md",
+    "date": "2013-01-08",
+    "title": "Metal Impurities Will Waste Your Time",
+    "score": 6
+  },
+  {
+    "filename": "out_20130108-more-grad-school-pres_deepseek-v3.1-n.md",
+    "date": "2013-01-08",
+    "title": "More on Grad School Pressures",
+    "score": 3
+  },
+  {
+    "filename": "out_20130108-overly-honest-experim_deepseek-v3.1-n.md",
+    "date": "2013-01-08",
+    "title": "Overly Honest Experimental Methods",
+    "score": 7
+  },
+  {
+    "filename": "out_20130109-bright-glowing-indust_deepseek-v3.1-n.md",
+    "date": "2013-01-09",
+    "title": "Bright, Glowing Industrial Chemistry",
+    "score": 3
+  },
+  {
+    "filename": "out_20130109-things-i-won-t-work-a_deepseek-v3.1-n.md",
+    "date": "2013-01-09",
+    "title": "Things I Won't Work With: Azidoazide Azides, More Or Less",
+    "score": 7
+  },
+  {
+    "filename": "out_20130110-automated-ligand-desi_deepseek-v3.1-n.md",
+    "date": "2013-01-10",
+    "title": "Automated Ligand Design?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130111-reactive-oxygen-speci_deepseek-v3.1-n.md",
+    "date": "2013-01-11",
+    "title": "Reactive Oxygen Species Are Your Friends!",
+    "score": 7
+  },
+  {
+    "filename": "out_20130114-another-reactive-oxyg_deepseek-v3.1-n.md",
+    "date": "2013-01-14",
+    "title": "Another Reactive Oxygen Paper",
+    "score": 7
+  },
+  {
+    "filename": "out_20130114-virtual-screening-goo_deepseek-v3.1-n.md",
+    "date": "2013-01-14",
+    "title": "Virtual Screening, The Good Parts and the Bad Ones",
+    "score": 6
+  },
+  {
+    "filename": "out_20130115-astrazeneca-shakeup_deepseek-v3.1-n.md",
+    "date": "2013-01-15",
+    "title": "AstraZeneca Shakeup",
+    "score": 4
+  },
+  {
+    "filename": "out_20130115-big-change-pfizer-or-_deepseek-v3.1-n.md",
+    "date": "2013-01-15",
+    "title": "A Big Change at Pfizer? Or Just a Rumor?",
+    "score": 6
+  },
+  {
+    "filename": "out_20130115-obesity-infectious-di_deepseek-v3.1-n.md",
+    "date": "2013-01-15",
+    "title": "Is Obesity An Infectious Disease?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130116-blog-syn-idea-whose-t_deepseek-v3.1-n.md",
+    "date": "2013-01-16",
+    "title": "Blog Syn: An Idea Whose Time Has Come?",
+    "score": 7
+  },
+  {
+    "filename": "out_20130116-drug-discovery-most-c_deepseek-v3.1-n.md",
+    "date": "2013-01-16",
+    "title": "Drug Discovery With the Most Common Words",
+    "score": 3
+  },
+  {
+    "filename": "out_20130117-halogen-bonds_deepseek-v3.1-n.md",
+    "date": "2013-01-17",
+    "title": "Halogen Bonds",
+    "score": 7
+  },
+  {
+    "filename": "out_20130117-more-metformin-and-ca_deepseek-v3.1-n.md",
+    "date": "2013-01-17",
+    "title": "More on Metformin and Cancer (and Alzheimer's)",
+    "score": 5
+  },
+  {
+    "filename": "out_20130118-short-rise-out-depres_deepseek-v3.1-n.md",
+    "date": "2013-01-18",
+    "title": "A Short Rise Out of Depression",
+    "score": 7
+  },
+  {
+    "filename": "out_20130121-dr-das-sues-u-conn-go_deepseek-v3.1-n.md",
+    "date": "2013-01-21",
+    "title": "Dr. Das Sues U Conn. Good Luck With That",
+    "score": 6
+  },
+  {
+    "filename": "out_20130121-many-compounds-develo_deepseek-v3.1-n.md",
+    "date": "2013-01-21",
+    "title": "That Many Compounds in Development? Really?",
+    "score": 7
+  },
+  {
+    "filename": "out_20130122-academia-s-role-drug-_deepseek-v3.1-n.md",
+    "date": "2013-01-22",
+    "title": "Academia's Role in Drug Discovery",
+    "score": 7
+  },
+  {
+    "filename": "out_20130122-pick-your-stench_deepseek-v3.1-n.md",
+    "date": "2013-01-22",
+    "title": "Pick Your Stench",
+    "score": 0
+  },
+  {
+    "filename": "out_20130122-theology-ligand-effic_deepseek-v3.1-n.md",
+    "date": "2013-01-22",
+    "title": "The Theology of Ligand Efficiency",
+    "score": 7
+  },
+  {
+    "filename": "out_20130123-coincidence-no-doubt-_deepseek-v3.1-n.md",
+    "date": "2013-01-23",
+    "title": "Coincidence, No Doubt. Well, Some Doubt.",
+    "score": 3
+  },
+  {
+    "filename": "out_20130123-eating-whole-bunch-ra_deepseek-v3.1-n.md",
+    "date": "2013-01-23",
+    "title": "Eating A Whole Bunch of Random Compounds",
+    "score": 7
+  },
+  {
+    "filename": "out_20130124-daniel-vasella-steps-_deepseek-v3.1-n.md",
+    "date": "2013-01-24",
+    "title": "Daniel Vasella Steps Down at Novartis",
+    "score": 4
+  },
+  {
+    "filename": "out_20130124-three-rings-row_deepseek-v3.1-n.md",
+    "date": "2013-01-24",
+    "title": "Three Rings in a Row",
+    "score": 3
+  },
+  {
+    "filename": "out_20130124-too-many-scientists-p_deepseek-v3.1-n.md",
+    "date": "2013-01-24",
+    "title": "Too Many Scientists: A Pyramid Scheme",
+    "score": 7
+  },
+  {
+    "filename": "out_20130125-cetp-alzheimer-s-mont_deepseek-v3.1-n.md",
+    "date": "2013-01-25",
+    "title": "CETP, Alzheimer's, Monty Hall, and Roulette. And Goats.",
+    "score": 8
+  },
+  {
+    "filename": "out_20130125-chemistry-jobs-market_deepseek-v3.1-n.md",
+    "date": "2013-01-25",
+    "title": "The Chemistry Jobs Market",
+    "score": 3
+  },
+  {
+    "filename": "out_20130125-down-ullmann_deepseek-v3.1-n.md",
+    "date": "2013-01-25",
+    "title": "Down With the Ullmann",
+    "score": 6
+  },
+  {
+    "filename": "out_20130128-asking-hard-questions_deepseek-v3.1-n.md",
+    "date": "2013-01-28",
+    "title": "out_20130128-asking-hard-questions_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20130128-hydrophobic-effect-i-_deepseek-v3.1-n.md",
+    "date": "2013-01-28",
+    "title": "The Hydrophobic Effect: I Don't Understand It, Either",
+    "score": 6
+  },
+  {
+    "filename": "out_20130128-time-refill-your-pres_deepseek-v3.1-n.md",
+    "date": "2013-01-28",
+    "title": "Time to Refill Your Prescription For Zxygjfb",
+    "score": 6
+  },
+  {
+    "filename": "out_20130129-dr-oz-s-problem_deepseek-v3.1-n.md",
+    "date": "2013-01-29",
+    "title": "Dr. Oz's Problem",
+    "score": 8
+  },
+  {
+    "filename": "out_20130130-farewell-bioinformati_deepseek-v3.1-n.md",
+    "date": "2013-01-30",
+    "title": "Farewell to Bioinformatics",
+    "score": 7
+  },
+  {
+    "filename": "out_20130130-scamorama_deepseek-v3.1-n.md",
+    "date": "2013-01-30",
+    "title": "Scamorama",
+    "score": 3
+  },
+  {
+    "filename": "out_20130131-astrazeneca-s-nasty-n_deepseek-v3.1-n.md",
+    "date": "2013-01-31",
+    "title": "AstraZeneca's Nasty Numbers",
+    "score": 7
+  },
+  {
+    "filename": "out_20130131-case-you-were-wonderi_deepseek-v3.1-n.md",
+    "date": "2013-01-31",
+    "title": "In Case You Were Wondering What We Thought About the Liver",
+    "score": 2
+  },
+  {
+    "filename": "out_20130131-mipomersen-approved-b_deepseek-v3.1-n.md",
+    "date": "2013-01-31",
+    "title": "Mipomersen Approved (Bonus Antisense Roundup Included) - January 2013",
+    "score": 7
+  },
+  {
+    "filename": "out_20130201-so-does-one-grow-beta_deepseek-v3.1-n.md",
+    "date": "2013-02-01",
+    "title": "So How Does One Grow Beta-Cells?",
+    "score": 5
+  },
+  {
+    "filename": "out_20130201-traffic-record_deepseek-v3.1-n.md",
+    "date": "2013-02-01",
+    "title": "A Traffic Record",
+    "score": 2
+  },
+  {
+    "filename": "out_20130204-single-cell-nmr-singl_deepseek-v3.1-n.md",
+    "date": "2013-02-04",
+    "title": "Single-Cell NMR? How About Single-Protein NMR?",
+    "score": 7
+  },
+  {
+    "filename": "out_20130204-word-we-didn-t-know-w_deepseek-v3.1-n.md",
+    "date": "2013-02-04",
+    "title": "A Word We Didn't Know We Needed",
+    "score": 3
+  },
+  {
+    "filename": "out_20130205-not-working-out-so-we_deepseek-v3.1-n.md",
+    "date": "2013-02-05",
+    "title": "Not Working Out So Well at Merck?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130205-vibrational-scent-win_deepseek-v3.1-n.md",
+    "date": "2013-02-05",
+    "title": "Vibrational Scent Wins A Round?",
+    "score": 6
+  },
+  {
+    "filename": "out_20130206-anyone-still-swimming_deepseek-v3.1-n.md",
+    "date": "2013-02-06",
+    "title": "Anyone Still Swimming in the Chiral Pool?",
+    "score": 4
+  },
+  {
+    "filename": "out_20130206-trouble-hiring-whom-e_deepseek-v3.1-n.md",
+    "date": "2013-02-06",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20130207-addex-cuts-back-old-s_deepseek-v3.1-n.md",
+    "date": "2013-02-07",
+    "title": "Addex Cuts Back: An Old Story, Told Again",
+    "score": 7
+  },
+  {
+    "filename": "out_20130207-ducts-down-useless-cl_deepseek-v3.1-n.md",
+    "date": "2013-02-07",
+    "title": "DUCTS: Down with Useless Clinical Trial acronymS",
+    "score": 3
+  },
+  {
+    "filename": "out_20130207-how-enhance-your-onli_deepseek-v3.1-n.md",
+    "date": "2013-02-07",
+    "title": "How To Enhance Your Online Reputation. Sure.",
+    "score": 6
+  },
+  {
+    "filename": "out_20130208-all-those-drug-likene_deepseek-v3.1-n.md",
+    "date": "2013-02-08",
+    "title": "All Those Drug-Likeness Papers: A Bit Too Neat to be True?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130208-name-cure_deepseek-v3.1-n.md",
+    "date": "2013-02-08",
+    "title": "The Name of a Cure",
+    "score": 3
+  },
+  {
+    "filename": "out_20130208-snow-versus-scientifi_deepseek-v3.1-n.md",
+    "date": "2013-02-08",
+    "title": "Snow Versus Scientific Progress",
+    "score": 0
+  },
+  {
+    "filename": "out_20130211-2012-s-new-drugs_deepseek-v3.1-n.md",
+    "date": "2013-02-11",
+    "title": "2012's New Drugs",
+    "score": 7
+  },
+  {
+    "filename": "out_20130211-not-do-chromium-triox_deepseek-v3.1-n.md",
+    "date": "2013-02-11",
+    "title": "How Not to Do It: Chromium Trioxide",
+    "score": 4
+  },
+  {
+    "filename": "out_20130211-phrma-and-why-people-_deepseek-v3.1-n.md",
+    "date": "2013-02-11",
+    "title": "PhRMA And Why People Dislike the Drug Industry",
+    "score": 7
+  },
+  {
+    "filename": "out_20130212-do-we-really-know-cau_deepseek-v3.1-n.md",
+    "date": "2013-02-12",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20130212-european-lead-factory_deepseek-v3.1-n.md",
+    "date": "2013-02-12",
+    "title": "The European Lead Factory",
+    "score": 6
+  },
+  {
+    "filename": "out_20130212-pfizer-slowly-shrinks_deepseek-v3.1-n.md",
+    "date": "2013-02-12",
+    "title": "Pfizer Slowly Shrinks in Groton",
+    "score": 4
+  },
+  {
+    "filename": "out_20130213-mouse-models-inflamma_deepseek-v3.1-n.md",
+    "date": "2013-02-13",
+    "title": "Mouse Models of Inflammation Are Basically Worthless. Now We Know",
+    "score": 8
+  },
+  {
+    "filename": "out_20130214-how-can-there-be-shor_deepseek-v3.1-n.md",
+    "date": "2013-02-14",
+    "title": "Article Analysis: How Can There Be a Shortage of Scientists And An Excess At The Same Time?",
+    "score": 7
+  },
+  {
+    "filename": "out_20130215-abt-199-clinical-tria_deepseek-v3.1-n.md",
+    "date": "2013-02-15",
+    "title": "ABT-199 Clinical Trial Suspended",
+    "score": 8
+  },
+  {
+    "filename": "out_20130215-finest-blue-lab_deepseek-v3.1-n.md",
+    "date": "2013-02-15",
+    "title": "蓝色实验台",
+    "score": 1
+  },
+  {
+    "filename": "out_20130215-merck-finally-settles_deepseek-v3.1-n.md",
+    "date": "2013-02-15",
+    "title": "Merck Finally Settles Over Vytorin",
+    "score": 7
+  },
+  {
+    "filename": "out_20130215-pfizer-s-covx-closing_deepseek-v3.1-n.md",
+    "date": "2013-02-15",
+    "title": "Pfizer's Covx Closing?",
+    "score": 3
+  },
+  {
+    "filename": "out_20130218-would-go-into-chemist_deepseek-v3.1-n.md",
+    "date": "2013-02-18",
+    "title": "What Would Go Into the Chemistry Museum Displays, Anyway?",
+    "score": 4
+  },
+  {
+    "filename": "out_20130219-more-blog-syn_deepseek-v3.1-n.md",
+    "date": "2013-02-19",
+    "title": "More From Blog Syn",
+    "score": 7
+  },
+  {
+    "filename": "out_20130219-wages-copy-pasting_deepseek-v3.1-n.md",
+    "date": "2013-02-19",
+    "title": "The Wages of Copy-Pasting",
+    "score": 3
+  },
+  {
+    "filename": "out_20130220-new-old-diabetes-and-_deepseek-v3.1-n.md",
+    "date": "2013-02-20",
+    "title": "A New Old Diabetes and Obesity Drug Candidate",
+    "score": 6
+  },
+  {
+    "filename": "out_20130221-anniversary_deepseek-v3.1-n.md",
+    "date": "2013-02-21",
+    "title": "An Anniversary",
+    "score": 5
+  },
+  {
+    "filename": "out_20130221-hard-targets-how-far-_deepseek-v3.1-n.md",
+    "date": "2013-02-21",
+    "title": "The Hard Targets: How Far Along Are We?",
+    "score": 6
+  },
+  {
+    "filename": "out_20130221-incentive-hype_deepseek-v3.1-n.md",
+    "date": "2013-02-21",
+    "title": "An Incentive For Hype",
+    "score": 6
+  },
+  {
+    "filename": "out_20130222-nativis-returns_deepseek-v3.1-n.md",
+    "date": "2013-02-22",
+    "title": "Nativis Returns",
+    "score": 3
+  },
+  {
+    "filename": "out_20130222-what-if-journal-disap_deepseek-v3.1-n.md",
+    "date": "2013-02-22",
+    "title": "What If the Journal Disappears?",
+    "score": 6
+  },
+  {
+    "filename": "out_20130225-encode-nastiest-disse_deepseek-v3.1-n.md",
+    "date": "2013-02-25",
+    "title": "Article Title: ENCODE: The Nastiest Dissent I've Seen in Quite Some Time",
+    "score": 8
+  },
+  {
+    "filename": "out_20130225-interview_deepseek-v3.1-n.md",
+    "date": "2013-02-25",
+    "title": "out_20130225-interview_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20130226-natural-product-fragm_deepseek-v3.1-n.md",
+    "date": "2013-02-26",
+    "title": "Natural Product Fragments: Get Rid of the Ugly Ones Now",
+    "score": 7
+  },
+  {
+    "filename": "out_20130226-phil-baran-blog-syn_deepseek-v3.1-n.md",
+    "date": "2013-02-26",
+    "title": "Phil Baran at Blog Syn",
+    "score": 7
+  },
+  {
+    "filename": "out_20130226-standard-care-not-so-_deepseek-v3.1-n.md",
+    "date": "2013-02-26",
+    "title": "Standard of Care? Not So Fast, Not in the United Kingdom",
+    "score": 4
+  },
+  {
+    "filename": "out_20130227-nobel-follow-up_deepseek-v3.1-n.md",
+    "date": "2013-02-27",
+    "title": "A Nobel Follow-Up",
+    "score": 4
+  },
+  {
+    "filename": "out_20130227-not-what-it-says-labe_deepseek-v3.1-n.md",
+    "date": "2013-02-27",
+    "title": "Not What It Says On the Label, Though",
+    "score": 6
+  },
+  {
+    "filename": "out_20130227-selective-inhibitor-c_deepseek-v3.1-n.md",
+    "date": "2013-02-27",
+    "title": "Selective Inhibitor, The Catalog Says",
+    "score": 6
+  },
+  {
+    "filename": "out_20130228-ibm-s-watson-does-dru_deepseek-v3.1-n.md",
+    "date": "2013-02-28",
+    "title": "IBM's Watson Does Drug Discovery?",
+    "score": 8
+  },
+  {
+    "filename": "out_20130228-industrial-diels-alde_deepseek-v3.1-n.md",
+    "date": "2013-02-28",
+    "title": "The Industrial Diels–Alder, Revisited in Detail",
+    "score": 6
+  },
+  {
     "filename": "out_20131101-just-build-thing_deepseek-v3.1-n.md",
     "date": "2013-11-01",
     "title": "Just Build The Thing",
@@ -1852,6 +3772,516 @@
     "date": "2013-12-31",
     "title": "Cold-Weather Chicken Soup",
     "score": 0
+  },
+  {
+    "filename": "out_20140102-back-blogging-bonus-b_deepseek-v3.1-n.md",
+    "date": "2014-01-02",
+    "title": "Back Blogging (Bonus Biographical Begging)",
+    "score": 2
+  },
+  {
+    "filename": "out_20140102-grading-drug-companie_deepseek-v3.1-n.md",
+    "date": "2014-01-02",
+    "title": "Grading the Drug Companies",
+    "score": 3
+  },
+  {
+    "filename": "out_20140102-it-just-so-happens-i-_deepseek-v3.1-n.md",
+    "date": "2014-01-02",
+    "title": "It Just So Happens That I Have A Conference Right Here",
+    "score": 3
+  },
+  {
+    "filename": "out_20140103-easy-aziridines_deepseek-v3.1-n.md",
+    "date": "2014-01-03",
+    "title": "Easy Aziridines",
+    "score": 8
+  },
+  {
+    "filename": "out_20140103-prices-rising-every-y_deepseek-v3.1-n.md",
+    "date": "2014-01-03",
+    "title": "Prices Rising - Every Year, Every Drug?",
+    "score": 8
+  },
+  {
+    "filename": "out_20140106-2013-drug-approvals-n_deepseek-v3.1-n.md",
+    "date": "2014-01-06",
+    "title": "The 2013 Drug Approvals: Not So Great?",
+    "score": 6
+  },
+  {
+    "filename": "out_20140106-positive-rules-and-ne_deepseek-v3.1-n.md",
+    "date": "2014-01-06",
+    "title": "Positive Rules and Negative Ones",
+    "score": 7
+  },
+  {
+    "filename": "out_20140107-adoptive-t-cell-thera_deepseek-v3.1-n.md",
+    "date": "2014-01-07",
+    "title": "Adoptive T-Cell Therapy for Cancer: The Short Version",
+    "score": 8
+  },
+  {
+    "filename": "out_20140107-how-much-wrong_deepseek-v3.1-n.md",
+    "date": "2014-01-07",
+    "title": "How Much Is Wrong?",
+    "score": 7
+  },
+  {
+    "filename": "out_20140108-evidence-against-open_deepseek-v3.1-n.md",
+    "date": "2014-01-08",
+    "title": "Evidence Against Open Offices",
+    "score": 7
+  },
+  {
+    "filename": "out_20140108-tool-compound-s-new-p_deepseek-v3.1-n.md",
+    "date": "2014-01-08",
+    "title": "A Tool Compound's New Personality",
+    "score": 3
+  },
+  {
+    "filename": "out_20140109-all-in-one-alzheimer-_deepseek-v3.1-n.md",
+    "date": "2014-01-09",
+    "title": "An All-In-One Alzheimer's Paper",
+    "score": 3
+  },
+  {
+    "filename": "out_20140109-three-options-five-bi_deepseek-v3.1-n.md",
+    "date": "2014-01-09",
+    "title": "Three Options With Five Billion to Spend",
+    "score": 7
+  },
+  {
+    "filename": "out_20140110-new-look-clinical-att_deepseek-v3.1-n.md",
+    "date": "2014-01-10",
+    "title": "A New Look At Clinical Attrition",
+    "score": 8
+  },
+  {
+    "filename": "out_20140110-reply-academic-alzhei_deepseek-v3.1-n.md",
+    "date": "2014-01-10",
+    "title": "A Reply on Academic Alzheimer's Research",
+    "score": 8
+  },
+  {
+    "filename": "out_20140113-alnylam-makes-it-does_deepseek-v3.1-n.md",
+    "date": "2014-01-13",
+    "title": "Alnylam Makes It (As Does RNAi?)",
+    "score": 7
+  },
+  {
+    "filename": "out_20140113-boost-your-nad-and-fi_deepseek-v3.1-n.md",
+    "date": "2014-01-13",
+    "title": "Boost Your NAD And Fix It All?",
+    "score": 7
+  },
+  {
+    "filename": "out_20140114-new-metabolism-predic_deepseek-v3.1-n.md",
+    "date": "2014-01-14",
+    "title": "A New Metabolism Predictor",
+    "score": 4
+  },
+  {
+    "filename": "out_20140114-trouble-stapled-pepti_deepseek-v3.1-n.md",
+    "date": "2014-01-14",
+    "title": "Trouble With Stapled Peptides? A Strong Rebuttal",
+    "score": 6
+  },
+  {
+    "filename": "out_20140115-short-guide-jp-morgan_deepseek-v3.1-n.md",
+    "date": "2014-01-15",
+    "title": "A Short Guide to the JP Morgan Conference",
+    "score": 2
+  },
+  {
+    "filename": "out_20140115-we-had-clear-out-some_deepseek-v3.1-n.md",
+    "date": "2014-01-15",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20140116-merck-pulls-one-out_deepseek-v3.1-n.md",
+    "date": "2014-01-16",
+    "title": "Merck Pulls One Out",
+    "score": 7
+  },
+  {
+    "filename": "out_20140116-should-drug-industry-_deepseek-v3.1-n.md",
+    "date": "2014-01-16",
+    "title": "Should Drug Industry Research All Get Rejected for Publication?",
+    "score": 7
+  },
+  {
+    "filename": "out_20140117-abandoning-chinese-dr_deepseek-v3.1-n.md",
+    "date": "2014-01-17",
+    "title": "Abandoning the Chinese Drug Market",
+    "score": 3
+  },
+  {
+    "filename": "out_20140117-new-olefin-coupling_deepseek-v3.1-n.md",
+    "date": "2014-01-17",
+    "title": "A New Olefin Coupling",
+    "score": 6
+  },
+  {
+    "filename": "out_20140120-long-fight-over-alleg_deepseek-v3.1-n.md",
+    "date": "2014-01-20",
+    "title": "A Long Fight Over Allegations of Fraud",
+    "score": 7
+  },
+  {
+    "filename": "out_20140121-throwing-out-files_deepseek-v3.1-n.md",
+    "date": "2014-01-21",
+    "title": "Throwing Out the Files",
+    "score": 3
+  },
+  {
+    "filename": "out_20140122-new-book-scaffold-hop_deepseek-v3.1-n.md",
+    "date": "2014-01-22",
+    "title": "A New Book on Scaffold Hopping",
+    "score": 7
+  },
+  {
+    "filename": "out_20140122-novartis-continues-cl_deepseek-v3.1-n.md",
+    "date": "2014-01-22",
+    "title": "Novartis Continues Closing and Rearranging",
+    "score": 2
+  },
+  {
+    "filename": "out_20140123-alzheimer-s-therapies_deepseek-v3.1-n.md",
+    "date": "2014-01-23",
+    "title": "Alzheimer's Therapies: A Reasonably Gloomy Update",
+    "score": 8
+  },
+  {
+    "filename": "out_20140123-clicked-dna-works-hum_deepseek-v3.1-n.md",
+    "date": "2014-01-23",
+    "title": "Clicked-DNA Works In Human Cells",
+    "score": 4
+  },
+  {
+    "filename": "out_20140124-are-there-good-writer_deepseek-v3.1-n.md",
+    "date": "2014-01-24",
+    "title": "out_20140124-are-there-good-writer_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20140124-ptc-s-latest-ataluren_deepseek-v3.1-n.md",
+    "date": "2014-01-24",
+    "title": "PTC's Latest Ataluren Woes",
+    "score": 7
+  },
+  {
+    "filename": "out_20140127-2013-crop-new-drugs_deepseek-v3.1-n.md",
+    "date": "2014-01-27",
+    "title": "2013年新药收获",
+    "score": 6
+  },
+  {
+    "filename": "out_20140127-nasty-side-hdl_deepseek-v3.1-n.md",
+    "date": "2014-01-27",
+    "title": "The Nasty Side of HDL",
+    "score": 8
+  },
+  {
+    "filename": "out_20140128-antivirals-i-love-dev_deepseek-v3.1-n.md",
+    "date": "2014-01-28",
+    "title": "Antivirals: I love the deviousness of it all",
+    "score": 3
+  },
+  {
+    "filename": "out_20140128-dacomitinib-doesn-t-c_deepseek-v3.1-n.md",
+    "date": "2014-01-28",
+    "title": "Dacomitinib Doesn't Come Through",
+    "score": 6
+  },
+  {
+    "filename": "out_20140129-astrazeneca-closes-la_deepseek-v3.1-n.md",
+    "date": "2014-01-29",
+    "title": "AstraZeneca Closes a Lab - In India This Time",
+    "score": 3
+  },
+  {
+    "filename": "out_20140129-what-stem-shortage-wh_deepseek-v3.1-n.md",
+    "date": "2014-01-29",
+    "title": "What STEM Shortage? Where? How?",
+    "score": 8
+  },
+  {
+    "filename": "out_20140130-west-virginia-formald_deepseek-v3.1-n.md",
+    "date": "2014-01-30",
+    "title": "The West Virginia Formaldehyde Claim Is Nonsense",
+    "score": 5
+  },
+  {
+    "filename": "out_20140131-beelzebub-pharma-inc_deepseek-v3.1-n.md",
+    "date": "2014-01-31",
+    "title": "Beelzebub Pharma, Inc.",
+    "score": 6
+  },
+  {
+    "filename": "out_20140131-how-not-invest-biopha_deepseek-v3.1-n.md",
+    "date": "2014-01-31",
+    "title": "How Not to Invest in Biopharma",
+    "score": 5
+  },
+  {
+    "filename": "out_20140131-time-had-now-come-att_deepseek-v3.1-n.md",
+    "date": "2014-01-31",
+    "title": "\"The Time Had Now Come to Attempt the First Large-Scale Reaction...\"",
+    "score": 4
+  },
+  {
+    "filename": "out_20140203-new-book_deepseek-v3.1-n.md",
+    "date": "2014-02-03",
+    "title": "A New Book",
+    "score": 1
+  },
+  {
+    "filename": "out_20140203-novartis-does-big-qui_deepseek-v3.1-n.md",
+    "date": "2014-02-03",
+    "title": "Novartis Does A Big, Quiet Reshuffle",
+    "score": 6
+  },
+  {
+    "filename": "out_20140203-return-gene-therapy-a_deepseek-v3.1-n.md",
+    "date": "2014-02-03",
+    "title": "The Return of Gene Therapy (And More) - February 2014",
+    "score": 7
+  },
+  {
+    "filename": "out_20140204-overqualified-job_deepseek-v3.1-n.md",
+    "date": "2014-02-04",
+    "title": "Overqualified For the Job",
+    "score": 4
+  },
+  {
+    "filename": "out_20140204-put-down-white-out-dr_deepseek-v3.1-n.md",
+    "date": "2014-02-04",
+    "title": "Put Down That White-Out; Drop That Photoshop Cursor",
+    "score": 6
+  },
+  {
+    "filename": "out_20140205-evidence-piles-antiox_deepseek-v3.1-n.md",
+    "date": "2014-02-05",
+    "title": "The Evidence Piles Up: Antioxidant Supplements Are Bad For You",
+    "score": 8
+  },
+  {
+    "filename": "out_20140205-more-ligand-efficienc_deepseek-v3.1-n.md",
+    "date": "2014-02-05",
+    "title": "More Ligand Efficiency",
+    "score": 4
+  },
+  {
+    "filename": "out_20140206-astrazeneca-cutting-b_deepseek-v3.1-n.md",
+    "date": "2014-02-06",
+    "title": "AstraZeneca Cutting Back - Some More",
+    "score": 3
+  },
+  {
+    "filename": "out_20140206-crowdfunding-independ_deepseek-v3.1-n.md",
+    "date": "2014-02-06",
+    "title": "Crowdfunding Independent Research",
+    "score": 4
+  },
+  {
+    "filename": "out_20140206-vitamin-c-and-linus-p_deepseek-v3.1-n.md",
+    "date": "2014-02-06",
+    "title": "On Vitamin C, And On Linus Pauling",
+    "score": 6
+  },
+  {
+    "filename": "out_20140207-irisin-and-metabolism_deepseek-v3.1-n.md",
+    "date": "2014-02-07",
+    "title": "Irisin and Metabolism - A New Target Emerges",
+    "score": 6
+  },
+  {
+    "filename": "out_20140207-thermodynamics-life_deepseek-v3.1-n.md",
+    "date": "2014-02-07",
+    "title": "Thermodynamics of Life",
+    "score": 5
+  },
+  {
+    "filename": "out_20140210-how-new-biopharma-ipo_deepseek-v3.1-n.md",
+    "date": "2014-02-10",
+    "title": "How the New BioPharma IPOs Have Been Doing",
+    "score": 6
+  },
+  {
+    "filename": "out_20140210-timeline-cell_deepseek-v3.1-n.md",
+    "date": "2014-02-10",
+    "title": "Cell's 40th anniversary timeline highlights",
+    "score": 4
+  },
+  {
+    "filename": "out_20140210-today-we-have-naming-_deepseek-v3.1-n.md",
+    "date": "2014-02-10",
+    "title": "Today We Have Naming of Parts",
+    "score": 5
+  },
+  {
+    "filename": "out_20140211-drug-discovery-india_deepseek-v3.1-n.md",
+    "date": "2014-02-11",
+    "title": "Drug Discovery in India",
+    "score": 7
+  },
+  {
+    "filename": "out_20140211-pesticide-toxicity_deepseek-v3.1-n.md",
+    "date": "2014-02-11",
+    "title": "Pesticide Toxicity?",
+    "score": 5
+  },
+  {
+    "filename": "out_20140212-bread-rolls-synthesis_deepseek-v3.1-n.md",
+    "date": "2014-02-12",
+    "title": "The Bread Rolls of Synthesis",
+    "score": 8
+  },
+  {
+    "filename": "out_20140212-genius-sheer-genius_deepseek-v3.1-n.md",
+    "date": "2014-02-12",
+    "title": "Genius, Sheer Genius",
+    "score": 6
+  },
+  {
+    "filename": "out_20140213-jobs-he-says_deepseek-v3.1-n.md",
+    "date": "2014-02-13",
+    "title": "Jobs, He Says",
+    "score": 7
+  },
+  {
+    "filename": "out_20140214-it-not-hard-peddle-in_deepseek-v3.1-n.md",
+    "date": "2014-02-14",
+    "title": "It Is Not Hard to Peddle Incoherent Math to Biologists",
+    "score": 7
+  },
+  {
+    "filename": "out_20140217-alan-katritzky-1928-2_deepseek-v3.1-n.md",
+    "date": "2014-02-17",
+    "title": "Alan Katritzky 1928-2014",
+    "score": 5
+  },
+  {
+    "filename": "out_20140217-down-p-values_deepseek-v3.1-n.md",
+    "date": "2014-02-17",
+    "title": "Down With P Values",
+    "score": 7
+  },
+  {
+    "filename": "out_20140217-org-lett-spectral-ham_deepseek-v3.1-n.md",
+    "date": "2014-02-17",
+    "title": "The Org Lett Spectral Hammer Falls Again",
+    "score": 3
+  },
+  {
+    "filename": "out_20140218-not-again-stem-cell-r_deepseek-v3.1-n.md",
+    "date": "2014-02-18",
+    "title": "Article Title",
+    "score": 9
+  },
+  {
+    "filename": "out_20140218-thoughts-overpublishi_deepseek-v3.1-n.md",
+    "date": "2014-02-18",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20140219-ligand-efficiency-res_deepseek-v3.1-n.md",
+    "date": "2014-02-19",
+    "title": "Ligand Efficiency: A Response to Shultz",
+    "score": 7
+  },
+  {
+    "filename": "out_20140219-robo-combing-chemistr_deepseek-v3.1-n.md",
+    "date": "2014-02-19",
+    "title": "Robo-Combing the Chemistry Literature For Mistakes",
+    "score": 5
+  },
+  {
+    "filename": "out_20140220-nih-takes-look-how-mo_deepseek-v3.1-n.md",
+    "date": "2014-02-20",
+    "title": "The NIH Takes a Look At How the Money's Spent",
+    "score": 7
+  },
+  {
+    "filename": "out_20140220-pfizer-seeks-respect_deepseek-v3.1-n.md",
+    "date": "2014-02-20",
+    "title": "Pfizer Seeks Respect",
+    "score": 3
+  },
+  {
+    "filename": "out_20140221-ces3-ces1-inhibition-_deepseek-v3.1-n.md",
+    "date": "2014-02-21",
+    "title": "Ces3 (Ces1) Inhibition As a Drug Target",
+    "score": 3
+  },
+  {
+    "filename": "out_20140221-making-arenes-react-r_deepseek-v3.1-n.md",
+    "date": "2014-02-21",
+    "title": "Making Arenes React, Via Rhodium",
+    "score": 4
+  },
+  {
+    "filename": "out_20140224-acs-webinars-drug-dis_deepseek-v3.1-n.md",
+    "date": "2014-02-24",
+    "title": "out_20140224-acs-webinars-drug-dis_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20140224-another-round-stapled_deepseek-v3.1-n.md",
+    "date": "2014-02-24",
+    "title": "Another Round of Stapled Peptide Wrangling",
+    "score": 7
+  },
+  {
+    "filename": "out_20140224-big-drug-mergers-so-t_deepseek-v3.1-n.md",
+    "date": "2014-02-24",
+    "title": "Big Drug Mergers: So They're OK, Right?",
+    "score": 8
+  },
+  {
+    "filename": "out_20140225-immediate-rewording-u_deepseek-v3.1-n.md",
+    "date": "2014-02-25",
+    "title": "For Immediate Rewording. Uh, Release.",
+    "score": 4
+  },
+  {
+    "filename": "out_20140225-intermune-comes-throu_deepseek-v3.1-n.md",
+    "date": "2014-02-25",
+    "title": "InterMune Comes Through",
+    "score": 7
+  },
+  {
+    "filename": "out_20140226-changes-papers_deepseek-v3.1-n.md",
+    "date": "2014-02-26",
+    "title": "Changes in Papers",
+    "score": 3
+  },
+  {
+    "filename": "out_20140226-instructive-case-gale_deepseek-v3.1-n.md",
+    "date": "2014-02-26",
+    "title": "The Instructive Case of Galena Biopharma",
+    "score": 6
+  },
+  {
+    "filename": "out_20140227-close-look-receptor-s_deepseek-v3.1-n.md",
+    "date": "2014-02-27",
+    "title": "A Close Look at Receptor Signaling",
+    "score": 6
+  },
+  {
+    "filename": "out_20140228-call-rein-phase-iii-t_deepseek-v3.1-n.md",
+    "date": "2014-02-28",
+    "title": "A Call to Rein in Phase III Trials",
+    "score": 7
+  },
+  {
+    "filename": "out_20140228-computational-nirvana_deepseek-v3.1-n.md",
+    "date": "2014-02-28",
+    "title": "Article Title",
+    "score": 7
   },
   {
     "filename": "out_20141103-difficult-measure_deepseek-v3.1-n.md",
@@ -2368,6 +4798,264 @@
     "date": "2014-12-30",
     "title": "Autism and Glyphosate:",
     "score": 3
+  },
+  {
+    "filename": "out_20150202-carl-djerassi-1923-20_deepseek-v3.1-n.md",
+    "date": "2015-02-02",
+    "title": "Carl Djerassi, 1923–2015",
+    "score": 1
+  },
+  {
+    "filename": "out_20150202-more-thiol-reactive-p_deepseek-v3.1-n.md",
+    "date": "2015-02-02",
+    "title": "More Thiol-Reactive PAIN Compounds",
+    "score": 8
+  },
+  {
+    "filename": "out_20150203-pew-survey-and-its-pr_deepseek-v3.1-n.md",
+    "date": "2015-02-03",
+    "title": "That Pew Survey and Its Problems",
+    "score": 6
+  },
+  {
+    "filename": "out_20150203-rogue-biologics-produ_deepseek-v3.1-n.md",
+    "date": "2015-02-03",
+    "title": "Rogue Biologics Production (And Bonus Ignorance)",
+    "score": 7
+  },
+  {
+    "filename": "out_20150204-breakthroughs-aren-t-_deepseek-v3.1-n.md",
+    "date": "2015-02-04",
+    "title": "Breakthroughs Aren't Forever",
+    "score": 7
+  },
+  {
+    "filename": "out_20150204-more-herbal-goodness_deepseek-v3.1-n.md",
+    "date": "2015-02-04",
+    "title": "More Herbal Goodness",
+    "score": 7
+  },
+  {
+    "filename": "out_20150204-old-binding-mode-swit_deepseek-v3.1-n.md",
+    "date": "2015-02-04",
+    "title": "The Old Binding Mode Switcheroo",
+    "score": 5
+  },
+  {
+    "filename": "out_20150205-all-you-d-imagine-the_deepseek-v3.1-n.md",
+    "date": "2015-02-05",
+    "title": "\"From All This You'd Imagine, That There Must Be Something Learned. . .\"",
+    "score": 8
+  },
+  {
+    "filename": "out_20150205-computational-drug-di_deepseek-v3.1-n.md",
+    "date": "2015-02-05",
+    "title": "Computational Drug Discovery Talk",
+    "score": 2
+  },
+  {
+    "filename": "out_20150205-ian-read-s-pfizer-coi_deepseek-v3.1-n.md",
+    "date": "2015-02-05",
+    "title": "Ian Read's Pfizer Coin",
+    "score": 3
+  },
+  {
+    "filename": "out_20150206-english-language-scie_deepseek-v3.1-n.md",
+    "date": "2015-02-06",
+    "title": "English As the Language of Science",
+    "score": 6
+  },
+  {
+    "filename": "out_20150206-new-dual-dna-encoded-_deepseek-v3.1-n.md",
+    "date": "2015-02-06",
+    "title": "A New Dual DNA-Encoded Library Screen",
+    "score": 9
+  },
+  {
+    "filename": "out_20150209-and-just-two-months-a_deepseek-v3.1-n.md",
+    "date": "2015-02-09",
+    "title": "out_20150209-and-just-two-months-a_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20150209-crowdfunding-stem-cel_deepseek-v3.1-n.md",
+    "date": "2015-02-09",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20150210-2014-drug-approvals_deepseek-v3.1-n.md",
+    "date": "2015-02-10",
+    "title": "The 2014 Drug Approvals",
+    "score": 7
+  },
+  {
+    "filename": "out_20150210-hallucinogenic-therap_deepseek-v3.1-n.md",
+    "date": "2015-02-10",
+    "title": "Hallucinogenic Therapy",
+    "score": 7
+  },
+  {
+    "filename": "out_20150211-backlog_deepseek-v3.1-n.md",
+    "date": "2015-02-11",
+    "title": "Backlog",
+    "score": 1
+  },
+  {
+    "filename": "out_20150211-layoffs-sanofi_deepseek-v3.1-n.md",
+    "date": "2015-02-11",
+    "title": "Layoffs at Sanofi",
+    "score": 4
+  },
+  {
+    "filename": "out_20150212-fluorination-review_deepseek-v3.1-n.md",
+    "date": "2015-02-12",
+    "title": "A Fluorination Review",
+    "score": 7
+  },
+  {
+    "filename": "out_20150212-what-compound-will-yo_deepseek-v3.1-n.md",
+    "date": "2015-02-12",
+    "title": "What Compound Will You Never Forget?",
+    "score": 3
+  },
+  {
+    "filename": "out_20150212-where-startup-cash-ha_deepseek-v3.1-n.md",
+    "date": "2015-02-12",
+    "title": "Where the Startup Cash Has Been Going",
+    "score": 7
+  },
+  {
+    "filename": "out_20150213-rapamycin-and-aging-s_deepseek-v3.1-n.md",
+    "date": "2015-02-13",
+    "title": "Rapamycin And Aging: The Spotlight Shines",
+    "score": 7
+  },
+  {
+    "filename": "out_20150213-trick-question_deepseek-v3.1-n.md",
+    "date": "2015-02-13",
+    "title": "A Trick Question",
+    "score": 5
+  },
+  {
+    "filename": "out_20150216-astrazeneca-s-anti-in_deepseek-v3.1-n.md",
+    "date": "2015-02-16",
+    "title": "AstraZeneca's Anti-Infective Woes",
+    "score": 1
+  },
+  {
+    "filename": "out_20150216-targeting-transcripti_deepseek-v3.1-n.md",
+    "date": "2015-02-16",
+    "title": "Targeting a Transcription Factor",
+    "score": 4
+  },
+  {
+    "filename": "out_20150217-chemical-illiteracy-a_deepseek-v3.1-n.md",
+    "date": "2015-02-17",
+    "title": "Chemical Illiteracy, Again",
+    "score": 4
+  },
+  {
+    "filename": "out_20150217-layoffs-boehringer-in_deepseek-v3.1-n.md",
+    "date": "2015-02-17",
+    "title": "Layoffs at Boehringer Ingelheim",
+    "score": 2
+  },
+  {
+    "filename": "out_20150218-new-alzheimer-s-resea_deepseek-v3.1-n.md",
+    "date": "2015-02-18",
+    "title": "New Alzheimer's Research in the UK",
+    "score": 3
+  },
+  {
+    "filename": "out_20150218-spectra-actual-transi_deepseek-v3.1-n.md",
+    "date": "2015-02-18",
+    "title": "Spectra of An Actual Transition State?",
+    "score": 7
+  },
+  {
+    "filename": "out_20150219-experience-phase-iii-_deepseek-v3.1-n.md",
+    "date": "2015-02-19",
+    "title": "Experience Phase III Failure, Twice",
+    "score": 7
+  },
+  {
+    "filename": "out_20150220-bonne-chance-brandico_deepseek-v3.1-n.md",
+    "date": "2015-02-20",
+    "title": "Bonne Chance, Brandicourt",
+    "score": 6
+  },
+  {
+    "filename": "out_20150220-more-price-hikes-obsc_deepseek-v3.1-n.md",
+    "date": "2015-02-20",
+    "title": "More Price Hikes on Obscure Medication",
+    "score": 9
+  },
+  {
+    "filename": "out_20150220-unclick-undone-unsurp_deepseek-v3.1-n.md",
+    "date": "2015-02-20",
+    "title": "Unclick Undone, Unsurprisingly",
+    "score": 3
+  },
+  {
+    "filename": "out_20150223-fep-ready-world_deepseek-v3.1-n.md",
+    "date": "2015-02-23",
+    "title": "Is FEP Ready For the World?",
+    "score": 7
+  },
+  {
+    "filename": "out_20150223-para-chloro-was-good-_deepseek-v3.1-n.md",
+    "date": "2015-02-23",
+    "title": "Para-Chloro Was Good Enough For Them, So It's Good Enough For Me",
+    "score": 7
+  },
+  {
+    "filename": "out_20150224-antibiotic-discovery-_deepseek-v3.1-n.md",
+    "date": "2015-02-24",
+    "title": "An Antibiotic Discovery Prize",
+    "score": 7
+  },
+  {
+    "filename": "out_20150224-cutbacks-merck-serono_deepseek-v3.1-n.md",
+    "date": "2015-02-24",
+    "title": "Cutbacks at Merck Serono",
+    "score": 2
+  },
+  {
+    "filename": "out_20150225-all-cash_deepseek-v3.1-n.md",
+    "date": "2015-02-25",
+    "title": "All That Cash",
+    "score": 8
+  },
+  {
+    "filename": "out_20150226-double-blinded-peer-r_deepseek-v3.1-n.md",
+    "date": "2015-02-26",
+    "title": "Double-Blinded Peer Review",
+    "score": 3
+  },
+  {
+    "filename": "out_20150226-ibrutinib-s-rise_deepseek-v3.1-n.md",
+    "date": "2015-02-26",
+    "title": "Ibrutinib's Rise",
+    "score": 8
+  },
+  {
+    "filename": "out_20150226-latest-fragment-list_deepseek-v3.1-n.md",
+    "date": "2015-02-26",
+    "title": "The Latest Fragment List",
+    "score": 3
+  },
+  {
+    "filename": "out_20150227-az-spins-anti-infecti_deepseek-v3.1-n.md",
+    "date": "2015-02-27",
+    "title": "AZ Spins Off Anti-Infectives",
+    "score": 7
+  },
+  {
+    "filename": "out_20150227-pains-and-good-old-me_deepseek-v3.1-n.md",
+    "date": "2015-02-27",
+    "title": "PAINs And Good Old Med Chem",
+    "score": 7
   },
   {
     "filename": "out_20151001-into-numbers_deepseek-v3.1-n.md",
@@ -2946,9 +5634,369 @@
     "score": 2
   },
   {
-    "filename": "out_20151223-recipe-blogging-jooje_deepseek-v3.1-n.md",
-    "date": "2015-12-23",
-    "title": "Recipe Blogging: Joojeh Kebab",
+    "filename": "out_20160104-more-3-d-drug-printin_deepseek-v3.1-n.md",
+    "date": "2016-01-04",
+    "title": "More 3-D Drug Printing Excitement",
+    "score": 7
+  },
+  {
+    "filename": "out_20160104-pfizer-versus-bms-198_deepseek-v3.1-n.md",
+    "date": "2016-01-04",
+    "title": "Pfizer Versus BMS, Since 1989",
+    "score": 8
+  },
+  {
+    "filename": "out_20160105-darn-viruses_deepseek-v3.1-n.md",
+    "date": "2016-01-05",
+    "title": "Darn Viruses",
     "score": 1
+  },
+  {
+    "filename": "out_20160105-mannkind-s-last-stand_deepseek-v3.1-n.md",
+    "date": "2016-01-05",
+    "title": "Mannkind's Last Stand",
+    "score": 6
+  },
+  {
+    "filename": "out_20160107-getting-indian-drug-s_deepseek-v3.1-n.md",
+    "date": "2016-01-07",
+    "title": "Getting the Indian Drug Scandals Straight",
+    "score": 6
+  },
+  {
+    "filename": "out_20160107-trimethylaluminum-exp_deepseek-v3.1-n.md",
+    "date": "2016-01-07",
+    "title": "Trimethylaluminum Explosion in Massachusetts",
+    "score": 6
+  },
+  {
+    "filename": "out_20160111-pipeline-11016_deepseek-v3.1-n.md",
+    "date": "2016-01-11",
+    "title": "Pipeline: Back On the Air",
+    "score": 3
+  },
+  {
+    "filename": "out_20160111-what-brief-regeneron-_deepseek-v3.1-n.md",
+    "date": "2016-01-11",
+    "title": "What a Brief Regeneron Panic Tells Us",
+    "score": 7
+  },
+  {
+    "filename": "out_20160112-does-antroquinonol-do_deepseek-v3.1-n.md",
+    "date": "2016-01-12",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20160113-fda-s-problem_deepseek-v3.1-n.md",
+    "date": "2016-01-13",
+    "title": "This is the FDA's Problem",
+    "score": 8
+  },
+  {
+    "filename": "out_20160114-crispr-interference-c_deepseek-v3.1-n.md",
+    "date": "2016-01-14",
+    "title": "The CRISPR Interference Case",
+    "score": 8
+  },
+  {
+    "filename": "out_20160114-sad-state-human-dieta_deepseek-v3.1-n.md",
+    "date": "2016-01-14",
+    "title": "The Sad State of Human Dietary Research",
+    "score": 6
+  },
+  {
+    "filename": "out_20160115-clinical-disaster-fra_deepseek-v3.1-n.md",
+    "date": "2016-01-15",
+    "title": "A Clinical Disaster in France",
+    "score": 9
+  },
+  {
+    "filename": "out_20160115-moonshot-they-say_deepseek-v3.1-n.md",
+    "date": "2016-01-15",
+    "title": "Moonshot, They Say",
+    "score": 7
+  },
+  {
+    "filename": "out_20160118-correcting-literature_deepseek-v3.1-n.md",
+    "date": "2016-01-18",
+    "title": "Correcting the Literature: Not Easy",
+    "score": 6
+  },
+  {
+    "filename": "out_20160119-what-does-one-do-thes_deepseek-v3.1-n.md",
+    "date": "2016-01-19",
+    "title": "What Does One Do With These?",
+    "score": 7
+  },
+  {
+    "filename": "out_20160119-why-crispr-article-an_deepseek-v3.1-n.md",
+    "date": "2016-01-19",
+    "title": "Why This CRISPR Article, and Why Now?",
+    "score": 7
+  },
+  {
+    "filename": "out_20160120-how-much-action-shoul_deepseek-v3.1-n.md",
+    "date": "2016-01-20",
+    "title": "How Much Action Should the FDA Take?",
+    "score": 7
+  },
+  {
+    "filename": "out_20160120-state-biohacking_deepseek-v3.1-n.md",
+    "date": "2016-01-20",
+    "title": "The State of Biohacking",
+    "score": 6
+  },
+  {
+    "filename": "out_20160121-dietary-cause-neurode_deepseek-v3.1-n.md",
+    "date": "2016-01-21",
+    "title": "A Dietary Cause for a Neurodegenerative Disease",
+    "score": 6
+  },
+  {
+    "filename": "out_20160121-no-one-will-ever-susp_deepseek-v3.1-n.md",
+    "date": "2016-01-21",
+    "title": "No One Will Ever Suspect!",
+    "score": 3
+  },
+  {
+    "filename": "out_20160122-attack-research-paras_deepseek-v3.1-n.md",
+    "date": "2016-01-22",
+    "title": "Attack of the Research Parasites",
+    "score": 7
+  },
+  {
+    "filename": "out_20160125-arguing-about-zafgen-_deepseek-v3.1-n.md",
+    "date": "2016-01-25",
+    "title": "Arguing About Zafgen's Chances",
+    "score": 8
+  },
+  {
+    "filename": "out_20160125-so-what-exactly-scr7_deepseek-v3.1-n.md",
+    "date": "2016-01-25",
+    "title": "So What Exactly is SCR7?",
+    "score": 2
+  },
+  {
+    "filename": "out_20160126-getting-personal-berg_deepseek-v3.1-n.md",
+    "date": "2016-01-26",
+    "title": "Getting Personal With the Bergman Cyclization",
+    "score": 7
+  },
+  {
+    "filename": "out_20160126-medivation-decides-th_deepseek-v3.1-n.md",
+    "date": "2016-01-26",
+    "title": "Medivation Decides That Their Drug Isn't What They Thought",
+    "score": 7
+  },
+  {
+    "filename": "out_20160127-ag-massachusetts-has-_deepseek-v3.1-n.md",
+    "date": "2016-01-27",
+    "title": "The AG of Massachusetts Has No Chance Against Gilead",
+    "score": 7
+  },
+  {
+    "filename": "out_20160127-new-amine-reaction-fa_deepseek-v3.1-n.md",
+    "date": "2016-01-27",
+    "title": "A New Amine Reaction - In Fact, Several",
+    "score": 9
+  },
+  {
+    "filename": "out_20160128-management-hat_deepseek-v3.1-n.md",
+    "date": "2016-01-28",
+    "title": "The Management Hat",
+    "score": 5
+  },
+  {
+    "filename": "out_20160128-research-parasites-yo_deepseek-v3.1-n.md",
+    "date": "2016-01-28",
+    "title": "Research Parasites, You're OK By Me",
+    "score": 6
+  },
+  {
+    "filename": "out_20160128-unpleasant-alzheimer-_deepseek-v3.1-n.md",
+    "date": "2016-01-28",
+    "title": "Unpleasant Alzheimer's News",
+    "score": 8
+  },
+  {
+    "filename": "out_20160129-alkermes-hits-wall-de_deepseek-v3.1-n.md",
+    "date": "2016-01-29",
+    "title": "Alkermes Hits a Wall in Depression",
+    "score": 7
+  },
+  {
+    "filename": "out_20160201-compassion-drug-price_deepseek-v3.1-n.md",
+    "date": "2016-02-01",
+    "title": "Compassion, Drug Prices, and Money",
+    "score": 8
+  },
+  {
+    "filename": "out_20160202-drugs-purely-academia_deepseek-v3.1-n.md",
+    "date": "2016-02-02",
+    "title": "Drugs Purely From Academia",
+    "score": 7
+  },
+  {
+    "filename": "out_20160203-baran-strikes-again-d_deepseek-v3.1-n.md",
+    "date": "2016-02-03",
+    "title": "Baran Strikes Again (Decarboxylative Coupling)",
+    "score": 6
+  },
+  {
+    "filename": "out_20160203-someone-not-telling-t_deepseek-v3.1-n.md",
+    "date": "2016-02-03",
+    "title": "Someone Is Not Telling the Truth About Valeant",
+    "score": 8
+  },
+  {
+    "filename": "out_20160204-clouding-biology-verb_deepseek-v3.1-n.md",
+    "date": "2016-02-04",
+    "title": "Clouding Biology: That Verb Cuts Both Ways",
+    "score": 8
+  },
+  {
+    "filename": "out_20160205-three-not-so-reproduc_deepseek-v3.1-n.md",
+    "date": "2016-02-05",
+    "title": "Three Not-So-Reproducible Papers",
+    "score": 6
+  },
+  {
+    "filename": "out_20160208-two-drug-companies-re_deepseek-v3.1-n.md",
+    "date": "2016-02-08",
+    "title": "Two Drug Companies Rewrite Some Cancer Biochemistry",
+    "score": 8
+  },
+  {
+    "filename": "out_20160209-cubane-rescue_deepseek-v3.1-n.md",
+    "date": "2016-02-09",
+    "title": "Cubane to the Rescue",
+    "score": 4
+  },
+  {
+    "filename": "out_20160209-retracting-phd-degree_deepseek-v3.1-n.md",
+    "date": "2016-02-09",
+    "title": "Retracting a PhD Degree, and Heading to Court",
+    "score": 4
+  },
+  {
+    "filename": "out_20160210-chloroquine-story-can_deepseek-v3.1-n.md",
+    "date": "2016-02-10",
+    "title": "The Chloroquine Story in Cancer Continues",
+    "score": 3
+  },
+  {
+    "filename": "out_20160210-inhaled-insulin-strik_deepseek-v3.1-n.md",
+    "date": "2016-02-10",
+    "title": "Inhaled Insulin Strikes (Out) Again",
+    "score": 4
+  },
+  {
+    "filename": "out_20160211-park-your-drug-right-_deepseek-v3.1-n.md",
+    "date": "2016-02-11",
+    "title": "Park Your Drug Right Here For a While",
+    "score": 8
+  },
+  {
+    "filename": "out_20160212-scanning-through-sulf_deepseek-v3.1-n.md",
+    "date": "2016-02-12",
+    "title": "Scanning Through Sulfonyl Fluorides",
+    "score": 6
+  },
+  {
+    "filename": "out_20160212-x-ray-future-and-othe_deepseek-v3.1-n.md",
+    "date": "2016-02-12",
+    "title": "The X-Ray Future, And Others",
+    "score": 7
+  },
+  {
+    "filename": "out_20160215-solo-chemistry_deepseek-v3.1-n.md",
+    "date": "2016-02-15",
+    "title": "Solo Chemistry",
+    "score": 5
+  },
+  {
+    "filename": "out_20160216-thoughts-sci-hub_deepseek-v3.1-n.md",
+    "date": "2016-02-16",
+    "title": "Thoughts on Sci-Hub",
+    "score": 8
+  },
+  {
+    "filename": "out_20160217-update-catalyst-pharm_deepseek-v3.1-n.md",
+    "date": "2016-02-17",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20160218-terrific-paper-proble_deepseek-v3.1-n.md",
+    "date": "2016-02-18",
+    "title": "A Terrific Paper on the Problems in Drug Discovery",
+    "score": 9
+  },
+  {
+    "filename": "out_20160219-pipeline-11181_deepseek-v3.1-n.md",
+    "date": "2016-02-19",
+    "title": "Day Off",
+    "score": 0
+  },
+  {
+    "filename": "out_20160222-generics-get-cheaper-_deepseek-v3.1-n.md",
+    "date": "2016-02-22",
+    "title": "Generics Get Cheaper, As They Should",
+    "score": 6
+  },
+  {
+    "filename": "out_20160222-making-cells-do-your-_deepseek-v3.1-n.md",
+    "date": "2016-02-22",
+    "title": "Making Cells Do Your Work (Also, The Revenge of the Yeast)",
+    "score": 7
+  },
+  {
+    "filename": "out_20160223-bright-chemical-matte_deepseek-v3.1-n.md",
+    "date": "2016-02-23",
+    "title": "Bright Chemical Matter?",
+    "score": 7
+  },
+  {
+    "filename": "out_20160223-busy-day-life_deepseek-v3.1-n.md",
+    "date": "2016-02-23",
+    "title": "A (Busy) Day in the Life",
+    "score": 3
+  },
+  {
+    "filename": "out_20160224-codexis-says-they-ve-_deepseek-v3.1-n.md",
+    "date": "2016-02-24",
+    "title": "Article Title",
+    "score": 4
+  },
+  {
+    "filename": "out_20160224-more-binding-sites-ar_deepseek-v3.1-n.md",
+    "date": "2016-02-24",
+    "title": "More Binding Sites Than Are Dreamt of in Your Philosophy",
+    "score": 7
+  },
+  {
+    "filename": "out_20160224-pipeline-11194_deepseek-v3.1-n.md",
+    "date": "2016-02-24",
+    "title": "Pipeline-11194",
+    "score": 1
+  },
+  {
+    "filename": "out_20160225-warnings-about-french_deepseek-v3.1-n.md",
+    "date": "2016-02-25",
+    "title": "Warnings About the French Clinical Trial Disaster",
+    "score": 8
+  },
+  {
+    "filename": "out_20160226-new-chemotherapy-idea_deepseek-v3.1-n.md",
+    "date": "2016-02-26",
+    "title": "A New Chemotherapy Idea",
+    "score": 7
+  },
+  {
+    "filename": "out_20160229-what-s-label_deepseek-v3.1-n.md",
+    "date": "2016-02-29",
+    "title": "What's On the Label",
+    "score": 3
   }
 ]
