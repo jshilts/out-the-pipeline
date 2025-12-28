@@ -65,17 +65,52 @@ def extract_title_from_h1(text):
     return None
 
 def extract_score(text):
-    # common patterns: "Score: 7", "**Score: 7**", "Score - 7"
-    m = re.search(r'Score\s*[:\-]\s*(\d+)', text, re.IGNORECASE)
+    if not text:
+        return None
+
+    # Pattern 1: "Score: 7", "Score - 7", "Rating: 8", "Rating:9.5", case-insensitive
+    # Handles optional spaces around : or -
+    m = re.search(r'(Score|Rating)\s*[:\-]?\s*(\d+(?:\.\d+)?)', text, re.IGNORECASE)
     if m:
         try:
-            return int(m.group(1))
+            value = m.group(2)
+            return int(value) if '.' not in value else float(value)
         except ValueError:
-            return None
-    # fallback: any standalone "Score: <num>" with bold or markdown wrappers
-    m2 = re.search(r'\*\*Score:\s*(\d+)\*\*', text, re.IGNORECASE)
+            pass
+
+    # Pattern 2: Bold full score like "**Score: 7**" or "**Rating: 8**"
+    m2 = re.search(r'\*\*(Score|Rating):\s*(\d+(?:\.\d+)?)\*\*', text, re.IGNORECASE)
     if m2:
-        return int(m2.group(1))
+        try:
+            value = m2.group(2)
+            return int(value) if '.' not in value else float(value)
+        except ValueError:
+            pass
+
+    # Pattern 3: Bold out-of format like "**8/10**", "**9.5/10**", "**7 / something**"
+    m3 = re.search(r'\*\*\s*(\d+(?:\.\d+)?)\s*/', text)
+    if m3:
+        try:
+            value = m3.group(1)
+            return int(value) if '.' not in value else float(value)
+        except ValueError:
+            pass
+
+    # Pattern 4: "Rating: 8/10" or "Rating:8/10" (with or without space)
+    m4 = re.search(r'(Rating)\s*[:\-]?\s*(\d+(?:\.\d+)?)\s*/', text, re.IGNORECASE)
+    if m4:
+        try:
+            value = m4.group(2)
+            return int(value) if '.' not in value else float(value)
+        except ValueError:
+            pass
+
+    # Pattern 5: **Score**: 7, **Score:** 7, **Score**:7, **Rating**: 8/10
+    m1 = re.search(r'\*\*(Score|Rating)\s*:?\s*\*\*\s*(\d+(?:\.\d+)?)\s*(?:/.*)?', text, re.IGNORECASE)
+    if m1:
+        value = m1.group(2)
+        return int(value) if '.' not in value else float(value)
+
     return None
 
 def process_file(path, fname):
