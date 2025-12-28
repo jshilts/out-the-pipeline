@@ -265,7 +265,11 @@ listEl.addEventListener('click', ev=>{
   ev.preventDefault(); const f=a.dataset.filename;
   if (location.hash.slice(1)!==f) location.hash=f;
   loadArticle(f);
-  if (matchMedia('(max-width:600px)').matches) { sidebar.classList.remove('expanded'); peekHandle.setAttribute('aria-expanded','false'); }
+  if (matchMedia('(max-width:600px)').matches) {
+  sidebar.classList.remove('expanded');
+  peekHandle.setAttribute('aria-expanded','false');
+  sidebar.scrollTop = 0; // reset menu scroll so "Menu" button is visible next time
+}
 });
 
 peekHandle.addEventListener('click', ev=>{
