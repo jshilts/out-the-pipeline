@@ -7,6 +7,8 @@
 
 # to do - 
 #   add some simple checks of the LLM's output (e.g. did it follow the structure, and other ideas for checks that come out of manually looking through some examples). If fails the check, then repeats up to 3 times. If a repeat passes, then saves that. If none do, take the last output and give it slightly different filename prefix so can filter out those malformed outputs
+#    also eventually re-run all the articles since first-pass run with Nov+Dec of 2010 - 2015 had some periodic bugs
+
 
 import os
 import re

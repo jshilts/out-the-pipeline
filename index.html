@@ -59,7 +59,7 @@
         <div id="wheelView" class="wheel-view" tabindex="0" role="spinbutton" aria-label="Year" aria-valuenow="">
           <div id="wheelList" class="wheel-list"></div>
         </div>
-        <button id="yearDown" class="wheel-btn" aria-label="Next year">V</button>
+        <button id="yearDown" class="wheel-btn" aria-label="Next year">v</button>
       </div>
 
       <!-- Month buttons -->
@@ -182,10 +182,11 @@ function renderWheel() {
   }
   wheelList.appendChild(frag);
 
-  const center = Math.floor(VISIBLE_COUNT/2);
-  wheelList.querySelectorAll('.wheel-item').forEach((el,i)=>{
-    el.classList.toggle('center', i===center);
-  });
+	const selectedIdx = (selectedYear != null) ? years.indexOf(selectedYear) : -1;
+	wheelList.querySelectorAll('.wheel-item').forEach((el,i)=>{
+	  const absIdx = yearWindowStart + i;
+	  el.classList.toggle('center', absIdx === selectedIdx);
+	});
 
   if (selectedYear!=null) wheelView.setAttribute('aria-valuenow', String(selectedYear));
 }
