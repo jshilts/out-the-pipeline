@@ -17,7 +17,7 @@ In 2018, TauRx announced top-level results from the second Phase III trial in mi
   - Later developments: TauRx did not achieve market leadership; its trials did not succeed and other (primarily amyloid-targeting) therapies advanced instead.
 
 ## 4. INTEREST
-4/9
+**4/9**
 Interest is moderate: the piece captures an important Phase III milestone and financing for a novel tau-based approach, but LMTX ultimately did not succeed, while other mechanisms eventually reached patients. The tau hypothesis itself remains scientifically relevant beyond this program.
 
 

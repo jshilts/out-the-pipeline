@@ -111,6 +111,32 @@ def extract_score(text):
         value = m1.group(2)
         return int(value) if '.' not in value else float(value)
 
+    # Pattern 6: "INTERST\n**7..." or "INTERST\r\n**9.5..."
+    m6 = re.search(
+        r'INTEREST\s*[\r\n]+\s*\*\*(.*?)\*\*',
+        text,
+        re.DOTALL
+    )
+    if m6:
+        bold_content = m6.group(1).strip()
+        
+        # Try to extract a numeric value from the bold content
+        # Handles formats like "Score: 7", "8/10", "8 out of 9", "7"
+        num_match = re.search(r'(\d+(?:\.\d+)?)', bold_content)
+        if num_match:
+            value = num_match.group(1)
+            return int(value) if '.' not in value else float(value)
+    
+    # Pattern 5 with better handling of newline and whitespace?
+    m6 = re.search(
+    r'INTEREST\s*[\r\n]+.*?\*\*(Score|Rating)\*\*\s*:\s*(\d+(?:\.\d+)?)',
+    text,
+    re.DOTALL
+    )
+    if m6:
+        value = m6.group(2)
+        return int(value) if '.' not in value else float(value)
+
     return None
 
 def process_file(path, fname):
