@@ -278,23 +278,73 @@ async function loadIndex() {
     populateYearList();
     populateMonthsRow();
 
-    // Initial selection — try to respect hash if present
+    // Initial selection — prefer URL hash, otherwise pick the article closest to (today - 10 years)
     const initialHash = location.hash ? location.hash.slice(1) : null;
     let initialFilename = initialHash || (indexData[0] && indexData[0].filename);
+
+    // If there's no hash, prefer the article closest to today's date 10 years ago.
+    if (!initialHash) {
+      // compute target date (UTC) = today minus 10 years
+      const now = new Date();
+      const targetUTC = new Date(Date.UTC(now.getUTCFullYear() - 10, now.getUTCMonth(), now.getUTCDate()));
+
+      // helper to convert item.date -> Date (UTC)
+      function parseToUTCDate(d) {
+        const p = parseDateParts(d);
+        if (!p) return null;
+        return new Date(Date.UTC(p.year, p.month - 1, p.day));
+      }
+
+      let closest = null;
+      let minDiff = Infinity;
+      indexData.forEach(it => {
+        const dt = parseToUTCDate(it.date);
+        if (!dt) return;
+        const diff = Math.abs(dt - targetUTC);
+        if (diff < minDiff) { minDiff = diff; closest = it; }
+      });
+      if (closest) initialFilename = closest.filename;
+    }
+
+    // If we found an initial filename, set selectedYear/selectedMonth to its date if possible
     if (initialFilename) {
-      const found = indexData.find(it=>it.filename===initialFilename);
+      const found = indexData.find(it => it.filename === initialFilename);
       if (found) {
         const p = parseDateParts(found.date);
         if (p) { selectedYear = p.year; selectedMonth = p.month - 1; }
       }
     }
-    // If nothing found, default to most recent year/month
+
+	// Hard fallback: force a specific article if nothing else selected
+	if (selectedYear === null && selectedMonth === null) {
+	  const forcedFilename = 'out_20151013-artificial-intelligen_deepseek-v3.1-n.md';
+	  const forced = indexData.find(it => it.filename === forcedFilename);
+	  if (forced) {
+		const p = parseDateParts(forced.date);
+		if (p) {
+		  selectedYear = p.year;
+		  selectedMonth = p.month - 1;
+		}
+	  }
+	}
+    // fallback defaults (most recent if other fallback not found)
     if (selectedYear === null) selectedYear = years.length ? years[0] : null;
     if (selectedMonth === null) {
       const monthsForYear = grouped[selectedYear] || {};
       const available = Object.keys(monthsForYear).map(k=>+k).sort((a,b)=>a-b);
       selectedMonth = available.length ? available[0] : 0;
     }
+
+    // update UI and render
+    if (selectedYear) {
+      yearButton.textContent = String(selectedYear);
+      updateMonthButtons();
+      renderMonthList(selectedYear, selectedMonth);
+    }
+
+    // load article if a filename was chosen by hash or the closest-date logic
+    if (initialFilename) loadArticle(initialFilename);
+
 
     // update UI and render
     if (selectedYear) {
