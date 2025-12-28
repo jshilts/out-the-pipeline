@@ -300,7 +300,7 @@ def process_url_list(urls: List[str]):
         try:
             for idx, url in enumerate(urls, start=1):
                 try:
-                    print(f"Processing ({idx}/{len(urls)}): {url}", file=sys.stderr)
+                    print(f"Processing ({idx}/{len(urls)}): {url}", file=sys.stderr, flush = True)
                     wait_random(0.5, 2.0)
                     html, final_url = fetch_rendered_html_polite_with_browser(p, headless_browser, url, headful_fallback=True)
                     if not html:
@@ -361,10 +361,10 @@ def main():
     with open("./weblinks/all_links.txt", "r") as f_in:
         full_url_list = [line.strip() for line in f_in.readlines()]
     #end 
-    url_list = full_url_list[3600:3800]
+    url_list = full_url_list[5000:5100]
     # breaking up into chunks since there is over 6,600 articles. Each group of 10 taking a couple minutes
     # pattern is first 10 (0:10) then next 10 (10:20) etc
-    # DONE 2000:3800
+    # DONE 2000:5100
     # (must repeat last number when do next one, since python 0:10 means 0-9)
     
     
