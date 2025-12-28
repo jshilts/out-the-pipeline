@@ -1,0 +1,28 @@
+
+https://www.science.org/content/blog-post/another-round-stapled-peptide-wrangling
+# Another Round of Stapled Peptide Wrangling (February 2014)
+
+## 1. SUMMARY
+This blog post describes an ongoing scientific dispute around “stapled peptides”—peptides chemically cross-linked (“stapled”) to stabilize their alpha-helical structure and enhance cell penetration. At the time, two groups were debating the activity and mechanism of stapled Bim BH3 peptides intended to modulate Bcl-2 protein interactions involved in apoptosis. 
+
+Specifically, researchers from Genentech, the Walter and Eliza Hall Institute (WEHI), and La Trobe University critiqued certain stapled peptides’ cellular activity and binding. They reported that a 20-mer stapled peptide was inactive in cells, while the response from Walensky’s group clarified that the intended active construct was a 21-mer in some cell lines. The critics then countered with evidence suggesting the 21-mer remained inactive in other cell lines, and further argued that an unstapled modified 21-mer performed comparably, which could imply the staple itself wasn’t the key factor. They also disputed binding data and suggested the 21-mer showed poor binding despite earlier explanations that the 20-mer had been designed for lower affinity. The post noted these exchanges as part of a longer-running debate over Bcl-2/BAX/BAK interactions in apoptosis research.
+
+## 2. HISTORY
+After the 2014 exchanges, the stapled peptide field continued to evolve both scientifically and translationally. Avironpion (founded by Loren Walensky) continued developing stapled peptides targeting the BCL-2 family and other pathways. By 2017, their lead stapled-peptide MCL-1 inhibitor (A-1210477) was licensed to AstraZeneca and advanced as AZD5991 into Phase 1 trials for hematologic malignancies (NCT03218683). However, development was halted in 2019 after a patient death due to drug-related cardiac arrest, underscoring the clinical risks and the difficulty of translating stapled peptides into safe medicines. Separately, Avironpion’s ALRN-6924 (a stapled p53-MDM2/MDMX dual inhibitor) reached Phase 2 trials for various cancers and as a chemoprotectant; as of late 2024, it remains in development but has not yet gained FDA approval.
+
+Scientifically, subsequent work confirmed that alpha-helicity and cell penetration are necessary but insufficient for activity—successful stapled peptides require precise designs that balance affinity, proteolytic stability, membrane permeability, and target engagement. Studies following the 2012–2014 debates also clarified that the Bim BH3 helix binds BCL-2 prosurvival proteins in a helical conformation (not as an unstructured peptide), and that local amphipathicity and charge distribution affect both binding and cellular uptake.
+
+While the field did not deliver a broad wave of approved drugs, there are preclinical successes and diverse clinical candidates beyond Avironpion’s portfolio (e.g., in infectious disease and metabolic targets). Cell-permeable stapled peptides have also become tool compounds in chemical biology for modulating intracellular protein–protein interactions. The 2014 dispute about Bim BH3 constructs did not halt the field but highlighted the need for more rigorous controls, standardized assays, and careful chemical optimization, which spurred methodical SAR efforts and better biophysical characterization. No sweeping policy changes followed these specific debates; industry and academia incorporated more nuanced design principles and orthogonal validation to improve reproducibility for peptide therapeutics.
+
+## 3. PREDICTIONS
+- **Near-term reply from Walensky group**: The article anticipated that Walensky’s team would respond to Okamoto et al.’s short communication, likely addressing the unstapled peptide activity and helical character. This expectation proved correct; the debate continued with detailed rebuttals discussing the roles of sequence context, staple positioning, and measured helicity in both on-target binding and cell penetration, reinforcing that simple binary tests could mislead.
+- **Continued “battlefield” over BCL-2 proteins**: The article predicted that the blowup reflected a long-running dispute over BCL-2/BAX/BAK peptides and apoptosis. This remained true in the following years, with additional follow-up studies refining models of BCL-2 family interactions, modalities beyond peptides (e.g., PROTACs), and further mechanistic controversy regarding apoptotic pore-formation by BAX/BAK.
+- **Implications for the stapled peptide field**: The article implied that these critiques could temper hype around stapled peptides. Translationally, that largely held true: although some candidates advanced into clinical trials, none achieved blockbuster status, and safety issues surfaced (e.g., AZD5991’s cardiac toxicity), showing that practical hurdles and risk remained high despite promising preclinical data.
+
+## 4. INTEREST
+Rating: **7/10**
+This exchange and the emergence of clinical candidates elevated the discussion from a methodology dispute into a cautionary case study on translational risk, balancing early promise with the realities of therapeutic development.
+
+
+----
+_model_params = {'model': 'nex-agi/deepseek-v3.1-nex-n1:free', 'input': '20140224-another-round-stapled-peptide-wrangling.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_

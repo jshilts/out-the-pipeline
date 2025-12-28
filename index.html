@@ -34,7 +34,7 @@
   /* Small screens */
   @media (max-width:600px) {
     body { flex-direction:column; height:auto; }
-    nav { width:100%; max-height:200px; overflow:hidden; transition:max-height .26s ease, box-shadow .18s ease; border-right:none; border-bottom:1px solid #ddd; }  /* change max-height to change height on mobile */
+    nav { width:100%; max-height:250px; overflow:hidden; transition:max-height .26s ease, box-shadow .18s ease; border-right:none; border-bottom:1px solid #ddd; }  /* change max-height to change height on mobile */
     nav.expanded { max-height:80vh; overflow:auto; box-shadow:0 6px 16px rgba(0,0,0,0.06); }
     .nav-peek-handle { position:absolute; right:12px; top:12px; z-index:3; padding:6px 8px; font-size:13px; border-radius:6px; border:1px solid #ccc; background:white; cursor:pointer; }
     nav::after { content:""; position:absolute; left:0; right:0; bottom:0; height:36px; pointer-events:none; background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); }
