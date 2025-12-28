@@ -15,7 +15,7 @@
 
   /* Year wheel */
   .year-wheel { display:flex; flex-direction:column; align-items:center; gap:6px; width:110px; }
-  .wheel-btn { width:100%; padding:6px 8px; border-radius:6px; border:1px solid #ddd; background:white; cursor:pointer; }
+  .wheel-btn { width:100%; padding:6px 8px; border-radius:6px; border:1px solid #ddd; background:white; cursor:pointer; font-size:16px; }
   .wheel-view { width:100%; height:72px; overflow:hidden; border-radius:8px; border:1px solid #e6e6e6; display:flex; align-items:center; justify-content:center; position:relative; background:#fafafa; }
   .wheel-list { position:absolute; left:0; right:0; display:flex; flex-direction:column; align-items:center; transition:transform .18s cubic-bezier(.2,.9,.2,1); }
   .wheel-item { width:100%; padding:6px 8px; text-align:center; font-weight:600; opacity:0.45; font-size:0.95em; }
@@ -34,7 +34,7 @@
   /* Small screens */
   @media (max-width:600px) {
     body { flex-direction:column; height:auto; }
-    nav { width:100%; max-height:160px; overflow:hidden; transition:max-height .26s ease, box-shadow .18s ease; border-right:none; border-bottom:1px solid #ddd; }  /* edit max-height here for mobile preview size */
+    nav { width:100%; max-height:200px; overflow:hidden; transition:max-height .26s ease, box-shadow .18s ease; border-right:none; border-bottom:1px solid #ddd; }  /* change max-height to change height on mobile */
     nav.expanded { max-height:80vh; overflow:auto; box-shadow:0 6px 16px rgba(0,0,0,0.06); }
     .nav-peek-handle { position:absolute; right:12px; top:12px; z-index:3; padding:6px 8px; font-size:13px; border-radius:6px; border:1px solid #ccc; background:white; cursor:pointer; }
     nav::after { content:""; position:absolute; left:0; right:0; bottom:0; height:36px; pointer-events:none; background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); }
@@ -55,11 +55,11 @@
     <div class="controls">
       <!-- Year wheel selector -->
       <div class="year-wheel" aria-label="Year selector">
-        <button id="yearUp" class="wheel-btn" aria-label="Previous year">Up</button>
+        <button id="yearUp" class="wheel-btn" aria-label="Previous year">^</button>
         <div id="wheelView" class="wheel-view" tabindex="0" role="spinbutton" aria-label="Year" aria-valuenow="">
           <div id="wheelList" class="wheel-list"></div>
         </div>
-        <button id="yearDown" class="wheel-btn" aria-label="Next year">Down</button>
+        <button id="yearDown" class="wheel-btn" aria-label="Next year">V</button>
       </div>
 
       <!-- Month buttons -->
@@ -166,14 +166,18 @@ let yearWindowStart = 0;
 function renderWheel() {
   wheelList.innerHTML = '';
   if (!years.length) return;
-  yearWindowStart = Math.max(0, Math.min(yearWindowStart, years.length - VISIBLE_COUNT));
+
+  // clamp yearWindowStart so the window fits inside the years array
+  const maxStart = Math.max(0, years.length - VISIBLE_COUNT);
+  yearWindowStart = Math.max(0, Math.min(yearWindowStart, maxStart));
 
   const frag = document.createDocumentFragment();
   for (let i=0;i<VISIBLE_COUNT;i++) {
     const idx = yearWindowStart + i;
     const d = document.createElement('div');
     d.className = 'wheel-item';
-    d.textContent = years[idx] ?? '';
+    d.textContent = (idx >= 0 && idx < years.length) ? String(years[idx]) : '';
+    d.dataset.index = String(idx);
     frag.appendChild(d);
   }
   wheelList.appendChild(frag);
@@ -186,34 +190,73 @@ function renderWheel() {
   if (selectedYear!=null) wheelView.setAttribute('aria-valuenow', String(selectedYear));
 }
 
-function refreshWheel() {
-  const idx = years.indexOf(selectedYear);
-  if (idx>=0) yearWindowStart = idx - Math.floor(VISIBLE_COUNT/2);
+function refreshWheelAroundIndex(index) {
+  // center the window on index when possible
+  const center = Math.floor(VISIBLE_COUNT/2);
+  let start = index - center;
+  const maxStart = Math.max(0, years.length - VISIBLE_COUNT);
+  if (start < 0) start = 0;
+  if (start > maxStart) start = maxStart;
+  yearWindowStart = start;
   renderWheel();
 }
 
 function stepYear(delta) {
+  if (!years.length) return;
+  // find current index (default to 0 if missing)
   let idx = years.indexOf(selectedYear);
-  if (idx<0) idx = 0;
-  idx = Math.max(0, Math.min(years.length-1, idx+delta));
-  selectedYear = years[idx];
+  if (idx === -1) idx = 0;
+  // move index by delta (positive => toward later array indices)
+  let newIdx = idx + delta;
+  if (newIdx < 0) newIdx = 0;
+  if (newIdx > years.length - 1) newIdx = years.length - 1;
+  selectedYear = years[newIdx];
 
+  // ensure selectedMonth is valid for the new year
   const monthsForYear = grouped[selectedYear] || {};
   const available = Object.keys(monthsForYear).map(Number).sort((a,b)=>a-b);
-  if (!available.includes(selectedMonth)) selectedMonth = available[0] ?? 0;
+  if (!available.length) {
+    selectedMonth = 0;
+  } else if (!available.includes(selectedMonth)) {
+    selectedMonth = available[0];
+  }
 
-  refreshWheel();
+  refreshWheelAroundIndex(newIdx);
   updateMonthButtons();
   renderMonthList(selectedYear, selectedMonth);
 }
 
+// wire controls: note '^' should move to earlier index (-1) and 'V' to +1
 yearUp.addEventListener('click', ()=>stepYear(-1));
 yearDown.addEventListener('click', ()=>stepYear(1));
+
+// keyboard and wheel on the wheelView
 wheelView.addEventListener('keydown', ev=>{
   if (ev.key==='ArrowUp') { ev.preventDefault(); stepYear(-1); }
   if (ev.key==='ArrowDown') { ev.preventDefault(); stepYear(1); }
 });
-wheelView.addEventListener('wheel', ev=>{ ev.preventDefault(); stepYear(Math.sign(ev.deltaY)); });
+wheelView.addEventListener('wheel', ev=>{
+  ev.preventDefault();
+  const d = Math.sign(ev.deltaY) || 0;
+  // deltaY > 0 means wheel scrolled down, so move index +1
+  stepYear(d);
+});
+
+// allow clicking an item in the wheel to jump there
+wheelList.addEventListener('click', ev=>{
+  const item = ev.target.closest('.wheel-item');
+  if (!item) return;
+  const idx = Number(item.dataset.index);
+  if (!Number.isFinite(idx) || idx < 0 || idx >= years.length) return;
+  selectedYear = years[idx];
+  // adjust selected month
+  const monthsForYear = grouped[selectedYear] || {};
+  const available = Object.keys(monthsForYear).map(Number).sort((a,b)=>a-b);
+  selectedMonth = available.length ? available[0] : 0;
+  refreshWheelAroundIndex(idx);
+  updateMonthButtons();
+  renderMonthList(selectedYear, selectedMonth);
+});
 
 // Sidebar interactions
 listEl.addEventListener('click', ev=>{
@@ -234,38 +277,79 @@ async function loadArticle(filename) {
   if (!filename) return;
   contentEl.innerHTML = '<p>Loading...</p>';
   if (articleCache.has(filename)) { contentEl.innerHTML = articleCache.get(filename); return; }
-  const r = await fetch('responses/'+filename);
-  const md = await r.text();
-  const html = marked.parse(md);
-  articleCache.set(filename, html);
-  contentEl.innerHTML = html;
+  try {
+    const r = await fetch('responses/'+filename);
+    if (!r.ok) { contentEl.innerHTML = '<p>Cannot load file.</p>'; return; }
+    const md = await r.text();
+    const html = marked.parse(md);
+    articleCache.set(filename, html);
+    contentEl.innerHTML = html;
+    window.scrollTo(0,0);
+  } catch (err) {
+    console.error(err);
+    contentEl.innerHTML = '<p>Error loading.</p>';
+  }
 }
 
 async function loadIndex() {
-  const res = await fetch('index.json');
-  indexData = await res.json();
+  try {
+    const res = await fetch('index.json');
+    if (!res.ok) throw new Error('index.json not found');
+    indexData = await res.json();
 
-  grouped = {};
-  indexData.forEach(it=>{
-    const p = parseDateParts(it.date); if (!p) return;
-    const y=p.year, m=p.month-1;
-    grouped[y] = grouped[y] || {};
-    grouped[y][m] = grouped[y][m] || [];
-    grouped[y][m].push(it);
-  });
-  Object.keys(grouped).forEach(y=>Object.keys(grouped[y]).forEach(m=>{
-    grouped[y][m].sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-  }));
+    grouped = {};
+    indexData.forEach(it=>{
+      const p = parseDateParts(it.date); if (!p) return;
+      const y=p.year, m=p.month-1;
+      grouped[y] = grouped[y] || {};
+      grouped[y][m] = grouped[y][m] || [];
+      grouped[y][m].push(it);
+    });
+    Object.keys(grouped).forEach(y=>Object.keys(grouped[y]).forEach(m=>{
+      grouped[y][m].sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+    }));
 
-  years = Object.keys(grouped).map(Number).sort((a,b)=>b-a);
-  populateMonthsRow();
+    years = Object.keys(grouped).map(Number).sort((a,b)=>b-a); // descending
+    populateMonthsRow();
 
-  selectedYear = years[0] ?? null;
-  selectedMonth = 0;
+    // choose initial selection: prefer hash, otherwise most recent year
+    const initialHash = location.hash ? location.hash.slice(1) : null;
+    let initialFilename = initialHash || (indexData[0] && indexData[0].filename);
 
-  refreshWheel();
-  updateMonthButtons();
-  if (selectedYear!=null) renderMonthList(selectedYear, selectedMonth);
+    if (initialFilename) {
+      const found = indexData.find(it=>it.filename===initialFilename);
+      if (found) {
+        const p = parseDateParts(found.date);
+        if (p) { selectedYear = p.year; selectedMonth = p.month - 1; }
+      }
+    }
+
+    // fallback to most recent year/month
+    if (selectedYear === null) selectedYear = years.length ? years[0] : null;
+    if (selectedMonth === null) {
+      const monthsForYear = grouped[selectedYear] || {};
+      const available = Object.keys(monthsForYear).map(k=>+k).sort((a,b)=>a-b);
+      selectedMonth = available.length ? available[0] : 0;
+    }
+
+    // ensure selectedYear exists in years array
+    if (!years.includes(selectedYear)) selectedYear = years[0] ?? null;
+    const idx = years.indexOf(selectedYear);
+    refreshWheelAroundIndex(Math.max(0, idx));
+    updateMonthButtons();
+    if (selectedYear != null) renderMonthList(selectedYear, selectedMonth);
+
+    if (initialFilename) loadArticle(initialFilename);
+
+    window.addEventListener('hashchange', () => {
+      const f = location.hash.slice(1);
+      if (f) loadArticle(f);
+    });
+
+  } catch (err) {
+    console.error(err);
+    contentEl.innerHTML = '<p>Cannot load index.</p>';
+  }
 }
 
 loadIndex();
