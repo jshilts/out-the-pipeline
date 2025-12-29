@@ -28,29 +28,17 @@ with open("openrouter-api-key.shh", "r") as f:
 
 BASE_URL = "https://openrouter.ai/api/v1"
 
-# load prompt template
-with open("./prompts/prompt-engineering/" + SELECTED_PROMPT, "r", encoding="utf-8", errors="replace") as f:
-    PROMPT_TEMPLATE = f.read()
-
-if not IF_WEB_SEARCH:
-    PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
-    PROMPT_TEMPLATE = re.sub(r'5\. CITATIONS.*?(?=---|\n\n|$)', '', PROMPT_TEMPLATE, flags=re.DOTALL)
 
 
-def generate_prompt(article_text: str, prompt_template=PROMPT_TEMPLATE):
-    if len(article_text) < 10:
-        print("---article not found")
-    if article_text[0:4].upper() == "HTTP":
-        article_text = article_text.split("\n", maxsplit=1)[1] if "\n" in article_text else ""
-    return "\n".join([prompt_template, article_text])
-
-
+#### define model to use ####
 model_parameters = {
-    "model": "nex-agi/deepseek-v3.1-nex-n1:free",
+    "model": "openai/gpt-oss-120b:free",  # "nex-agi/deepseek-v3.1-nex-n1:free", 
     "input": "",
     "reasoning": {"effort": "high"},
     "text": {"verbosity": "medium"}
 }
+# warning - if use openai model, then on https://openrouter.ai/settings/privacy must permit "enable endpoints that may publish prompts"
+
 if IF_WEB_SEARCH:
     model_parameters["tools"] = [{
         "type": "web_search",
@@ -60,6 +48,31 @@ if IF_WEB_SEARCH:
     }]
     model_parameters["tool_choice"] = "required"
 
+
+#### load prompt template ####
+with open("./prompts/prompt-engineering/" + SELECTED_PROMPT, "r", encoding="utf-8", errors="replace") as f:
+    PROMPT_TEMPLATE = f.read()
+
+if not IF_WEB_SEARCH:
+    PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', 
+                             'Since you do not have internet access, be careful to avoid hallucination. It would be unlikely you would have memorized exact details about niche topics\n', PROMPT_TEMPLATE)
+    PROMPT_TEMPLATE = re.sub(r'5\. CITATIONS.*?(?=---|\n\n|$)', '', PROMPT_TEMPLATE, flags=re.DOTALL)
+
+if model_parameters["model"] == "openai/gpt-oss-120b:free":   # model-specific pathology where uses some absurd tables even when nonsensical
+    PROMPT_TEMPLATE = re.sub(r"Markdown format ",
+                             "Markdown format (without using any tables) ", PROMPT_TEMPLATE)
+
+def generate_prompt(article_text: str, prompt_template=PROMPT_TEMPLATE):
+    if len(article_text) < 10:
+        print("---article not found")
+    if article_text[0:4].upper() == "HTTP":
+        article_text = article_text.split("\n", maxsplit=1)[1] if "\n" in article_text else ""
+    return "\n".join([prompt_template, article_text])
+
+
+
+
+#### script ####
 
 article_list = os.listdir("./prompts/")
 article_list = [filename for filename in article_list if isinstance(filename, str) and filename.endswith(".txt")]
@@ -91,7 +104,9 @@ def worker_task(task_tuple):
 
         response = local_client.responses.create(**params)
         response_text = getattr(response, "output_text", None)
+        
         if response_text is None:
+            print('--not finding response text')
             # fallback if output_text not present
             # try to reconstruct if the SDK returns structured output
             try:
@@ -99,13 +114,16 @@ def worker_task(task_tuple):
             except Exception:
                 response_text = str(response)
 
-        simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + params["model"].split("/")[1][:15]
+        simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + params["model"].split("/")[1][:15] + f"{'-web' if IF_WEB_SEARCH else ''}"
+        simplified_output_name = re.sub(r'[^A-Za-z0-9._-]', '', simplified_output_name)  # must sanitize name otherwise will get no output if contains something like a colon
         original_url = article_source.split("-", 1)[1] if "-" in article_source else article_source
         original_url = ("https://www.science.org/content/blog-post/" + original_url[:-4]) if original_url.endswith(".txt") else original_url
 
         # write result file
         out_path = os.path.join("./responses", simplified_output_name + ".md")
+        print(out_path)
         os.makedirs("./responses", exist_ok=True)
+        print(response_text)
         with open(out_path, "w", encoding="utf-8") as f:
             params_to_write = dict(params)
             params_to_write["input"] = article_source
@@ -172,5 +190,12 @@ deepseq 3.1 free
     - also slower of around 20 seconds even without web search
     - surprisingly gave almost just as good output as deepseq 3.2 despite all citations being hallucinations and having no website access. However this may be partly luck since started 'yes merger happend but'... then corrected itself
     - costs 0 though risky that makes plausible-sounding text that may not be real    
+    - when added web access, surprisingly did not do any better on the 'vanderbilt-heads' or 'nativis-lives' challenging benchmark examples. Still missed Nativis rename, and the Vanderbilt article just became bland and had almost non meaningful content anymore
+
+openai/gpt-oss-120b:free
+    - compared to deepseq 3.1, gives fewer hallucinations. Deepseq 3.1 rate is not terrible, but it will overconfidently make up extremely price details that aren't true when given a very niche subject (e.g. about Vanderbilt's VU319 fairly obscure drug). Thought deepseq does very well on anything at least semi-famous (i.e. company mergers, mainstream pharma's drug pipelines)
+    - over-uses tables to a damaging degree. Even when remake prompt to get this model to stop, it still will use tables very frequently even when makes text very hard to read and follow
+    - compared to deepseq 3.1, gives somewhat less interesting responses. Look into more examples, but so far on ones like Vanderbilt article, the openAI model just commented narrowly about their specific drug, while Deepseek also addressed the broader question of others who tried the same drug target. 
+    - both deepseq and gpt-oss miss some important details, like neither finding Nativis renamed (which admitedly is a niche fact, so at least neither hallucinated there)
 
 '''

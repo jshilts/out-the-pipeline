@@ -14,7 +14,7 @@ Give a short summary of 1-2 paragraphs for what the article said. Provide enough
 Research what happened subsequent to the article being published and summarize those later developments. Focus on concrete impact and the real-world implications that evolved, and avoid repeating hype or buzzwords. For examples, Did it lead to approved drugs (or lead to clinical failures) ; Is the method widely adopted among scientists or drugs in the pipeline ; If a drug was FDA-approved, did it actually have wide uptake on patients ; Did public policy change in concrete ways ; What growth or failures happened to the businesses mentioned.
 
 ## 3. PREDICTIONS
-Sometimes an article will have included predictions about the future. These may have been predictions by the author, or by others described in the article. If you find predictions, then in bullet points describe those predictions and how they compared to what actually later happened. When evaluating predictions, stay focused on empirical facts and avoid generic statements.
+Sometimes an article will have included predictions about the future. These may have been predictions by the author, or by others described in the article. If you find predictions, then in bullet points describe those predictions and how they compared to what actually later happened. When evaluating predictions, stay focused on empirical facts and avoid generic statements. Answer boths the specifics and bigger picture - for example, if a drug is mentioned, give its outcomes and whether the drug target or mechanism overall has found success.
 
 ## 4. INTEREST 
 Rating: **score/10**

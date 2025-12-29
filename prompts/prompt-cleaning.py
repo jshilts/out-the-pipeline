@@ -15,8 +15,8 @@ import os
 PROMPTS_DIR = './'  # './prompts/'
 
 # start and candidate end tokens (exact strings as requested)
-START_TOKEN = 'Home (https://www.science.org/)'
-END_TOKENS = [
+MEDIA_START_TOKEN = 'Home (https://www.science.org/)'
+MEDIA_END_TOKENS = [
     '(https://www.science.org/#email) Email',
     '(https://www.science.org/#whatsapp) Whatsapp',
     '(https://www.science.org/#wechat) Wechat',
@@ -25,15 +25,17 @@ END_TOKENS = [
     '(https://www.science.org/#facebook) Facebook',
 ]
 
-AUTHOR_TOKEN = 'About the author Derek Lowe'
+SIGNOFF_TOKENS = ['About the author Derek Lowe',
+                "Comments IN THE PIPELINE \n Derek Lowe’s commentary",
+                "Comments IN THE PIPELINE \nDerek Lowe’s commentary"]
 
 def process_text(text: str) -> str:
     # 1) Remove Home(...) block up through the last matching end token, if present.
-    start_idx = text.find(START_TOKEN)
+    start_idx = text.find(MEDIA_START_TOKEN)
     if start_idx != -1:
         # find the last occurrence (global) of any END_TOKEN that occurs after start_idx
         last_end = -1
-        for t in END_TOKENS:
+        for t in MEDIA_END_TOKENS:
             i = text.rfind(t)  # rfind global last occurrence
             if i != -1 and i + len(t) > last_end:
                 last_end = i + len(t)
@@ -46,7 +48,12 @@ def process_text(text: str) -> str:
             text = text.replace('\r\n', '\n').replace('\r', '\n')
 
     # 2) If "About the author Derek Lowe" is present, remove it and everything after.
-    aidx = text.find(AUTHOR_TOKEN)
+    aidx = -1
+    for t in SIGNOFF_TOKENS:
+        i = text.find(t)
+        if i != -1 and i + len(t) > aidx:
+            aidx = i + len(t)
+        
     if aidx != -1:
         text = text[:aidx]
 
