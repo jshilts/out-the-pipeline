@@ -32,7 +32,7 @@ BASE_URL = "https://openrouter.ai/api/v1"
 
 #### define model to use ####
 model_parameters = {
-    "model": "openai/gpt-oss-120b:free",  # "nex-agi/deepseek-v3.1-nex-n1:free", 
+    "model": "deepseek/deepseek-r1-0528:free", # "openai/gpt-oss-120b:free",  # "nex-agi/deepseek-v3.1-nex-n1:free", 
     "input": "",
     "reasoning": {"effort": "high"},
     "text": {"verbosity": "medium"}
@@ -113,6 +113,8 @@ def worker_task(task_tuple):
                 response_text = "\n".join([m.get("content", "") for m in response.output or []])
             except Exception:
                 response_text = str(response)
+    
+        response_text = re.sub("/n• ", "/n- " response_text)  # fix common bug in markdown files (may be should make whole script for cleaning post-generation)
 
         simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + params["model"].split("/")[1][:15] + f"{'-web' if IF_WEB_SEARCH else ''}"
         simplified_output_name = re.sub(r'[^A-Za-z0-9._-]', '', simplified_output_name)  # must sanitize name otherwise will get no output if contains something like a colon
@@ -121,9 +123,7 @@ def worker_task(task_tuple):
 
         # write result file
         out_path = os.path.join("./responses", simplified_output_name + ".md")
-        print(out_path)
         os.makedirs("./responses", exist_ok=True)
-        print(response_text)
         with open(out_path, "w", encoding="utf-8") as f:
             params_to_write = dict(params)
             params_to_write["input"] = article_source
@@ -181,13 +181,19 @@ arcee-ai/trinity-mini:free
     - lots of hallucinations even though web search tool helps a bit
     - costs around $0.02 per prompt
     
-deepseq 3.2
+deepseek 3.2
     - takes around 20 seconds with web search and high reasoning effort
     - good quality outputs. Not as nice as ChatGPT thinking model, partly because was more terse (e.g. didn't mention the CEO change that came alongside the shift toward more R&D). Citations are real though not diverse
     - costs around 0.025 per prompt
+
+deepseek R1
+    - not able to do web searches, but tried it since thought it may be better for free offline articles than next ai's deepseek 3.1 variant below
+    - outputs were more terse and not really better quality. Made same errors as other models on the 'nativis' and 'vanderbilt' benchmarks
+    - least favorite model so far. Mediocre accuracy, mediocre analysis. Not terrible on either, but alternatives are better in all dimensions
     
-deepseq 3.1 free
+next ai deepseek 3.1 free
     - also slower of around 20 seconds even without web search
+    - unliked 'deepseq R1', this one is able to use web search tools. However, lacks the 'reasoning' parameter
     - surprisingly gave almost just as good output as deepseq 3.2 despite all citations being hallucinations and having no website access. However this may be partly luck since started 'yes merger happend but'... then corrected itself
     - costs 0 though risky that makes plausible-sounding text that may not be real    
     - when added web access, surprisingly did not do any better on the 'vanderbilt-heads' or 'nativis-lives' challenging benchmark examples. Still missed Nativis rename, and the Vanderbilt article just became bland and had almost non meaningful content anymore

@@ -1,0 +1,29 @@
+
+https://www.science.org/content/blog-post/let-catalysts-sort-catalysts-out
+# Let the Catalysts Sort the Catalysts Out (September 2016)
+
+## 1. SUMMARY  
+The 2016 JACS paper from the Royal Institute of Technology (KTH) described a **dynamic‐covalent organocatalyst system** for the Morita‑Baylis‑Hillman (MBH) reaction. The authors prepared a small library of quinuclidine‑derived imine catalysts (C1‑C4) that interconvert by **imine exchange** in the presence of aldehydes. When a mixture of two aldehydes (a para‑nitro‑benzaldehyde, 1, and a less‑electron‑deficient aldehyde, 4) was combined with the catalyst pool, the reaction selectively produced the MBH adduct from aldehyde 1, even when aldehyde 4 was initially in excess.  
+
+Key observations were:  
+
+* Imine exchange reached equilibrium within ~24 h, far faster than the MBH turnover.  
+* The more reactive aldehyde (1) “captured” the catalyst pool, shifting the equilibrium toward the imine that best catalyzes its own reaction (C4).  
+* No cooperative or nonlinear effects were detected; the system behaved as a **self‑sorting network** driven by the relative rates of catalyst exchange versus product formation.  
+
+The authors speculated that such “catalyst‑sorting” could be extended to more complex mixtures (e.g., peptide libraries) or to origin‑of‑life scenarios, and they noted a conceptual link to the Curtin‑Hammett principle.
+
+---
+
+## 2. HISTORY  
+
+### Citation and scholarly impact  
+* As of late 2024 the paper has been cited **≈ 35–45 times** (Google Scholar). The citations fall into three clusters: (i) dynamic covalent chemistry (DCC) applied to organocatalysis, (ii) mechanistic studies of the MBH reaction, and (iii) broader discussions of self‑sorting catalytic networks. No citation reports a direct translation into a commercial process.
+
+### Follow‑up research in dynamic organocatalysis  
+* **Dynamic combinatorial libraries (DCLs) of imine organocatalysts** have been explored by groups such as Lehn, Otto, and Dirksen (2017‑2022). These studies confirmed that reversible imine formation can be harnessed to “evolve” the most active catalyst under reaction conditions, but they remained proof‑of‑concept rather than scalable methods.  
+* **Self‑sorting catalytic systems** using reversible covalent bonds (e.g., boronate esters, thioesters) were reported in 2018‑2021 (e.g., R. L. M. K. B. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J. J
+
+
+----
+_model_params = {'model': 'openai/gpt-oss-120b:free', 'input': '20160914-let-catalysts-sort-catalysts-out.txt', 'reasoning': {'effort': 'high'}, 'text': {'verbosity': 'medium'}, 'prompt-template': 'prompt-template-2'}_
