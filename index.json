@@ -5998,5 +5998,479 @@
     "date": "2016-02-29",
     "title": "What's On the Label",
     "score": 3
+  },
+  {
+    "filename": "out_20161101-dupeless-needication_deepseek-v3.1-n.md",
+    "date": "2016-11-01",
+    "title": "Dupeless Needication",
+    "score": 7
+  },
+  {
+    "filename": "out_20161101-pfizer-bails-pcsk9-an_deepseek-v3.1-n.md",
+    "date": "2016-11-01",
+    "title": "Pfizer Bails on PCSK9 antibodies",
+    "score": 6
+  },
+  {
+    "filename": "out_20161102-indistinguishable-mag_deepseek-v3.1-n.md",
+    "date": "2016-11-02",
+    "title": "Indistinguishable From Magic?",
+    "score": 7
+  },
+  {
+    "filename": "out_20161103-antibiotics-are-hard-_deepseek-v3.1-n.md",
+    "date": "2016-11-03",
+    "title": "Antibiotics Are Hard, Continued",
+    "score": 7
+  },
+  {
+    "filename": "out_20161104-best-beta-secretase-i_deepseek-v3.1-n.md",
+    "date": "2016-11-04",
+    "title": "The Best Beta-Secretase Inhibitor Yet in Alzheimer's",
+    "score": 7
+  },
+  {
+    "filename": "out_20161107-politics-unfortunatel_deepseek-v3.1-n.md",
+    "date": "2016-11-07",
+    "title": "Politics, Unfortunately",
+    "score": 9
+  },
+  {
+    "filename": "out_20161108-calculating-few-too-m_deepseek-v3.1-n.md",
+    "date": "2016-11-08",
+    "title": "Calculating A Few Too Many New Compounds",
+    "score": 7
+  },
+  {
+    "filename": "out_20161109-all-right-then_deepseek-v3.1-n.md",
+    "date": "2016-11-09",
+    "title": "All Right, Then",
+    "score": 6
+  },
+  {
+    "filename": "out_20161110-chemical-storage-good_deepseek-v3.1-n.md",
+    "date": "2016-11-10",
+    "title": "Chemical Storage, Good and Not So Good",
+    "score": 4
+  },
+  {
+    "filename": "out_20161111-wholesale-clinical-da_deepseek-v3.1-n.md",
+    "date": "2016-11-11",
+    "title": "Wholesale Clinical Data Fabrication",
+    "score": 7
+  },
+  {
+    "filename": "out_20161114-david-weininger-and-c_deepseek-v3.1-n.md",
+    "date": "2016-11-14",
+    "title": "David Weininger and Chemical Names",
+    "score": 7
+  },
+  {
+    "filename": "out_20161115-if-design-govern-thin_deepseek-v3.1-n.md",
+    "date": "2016-11-15",
+    "title": "If Design Govern in a Thing So Small",
+    "score": 7
+  },
+  {
+    "filename": "out_20161116-long-saga-apo-a1-mila_deepseek-v3.1-n.md",
+    "date": "2016-11-16",
+    "title": "The Long Saga of Apo-A1 Milano",
+    "score": 8
+  },
+  {
+    "filename": "out_20161117-new-way-make-gsk3-inh_deepseek-v3.1-n.md",
+    "date": "2016-11-17",
+    "title": "A New Way to Make GSK3 Inhibitors",
+    "score": 8
+  },
+  {
+    "filename": "out_20161118-unbowed-theranos_deepseek-v3.1-n.md",
+    "date": "2016-11-18",
+    "title": "Unbowed at Theranos",
+    "score": 9
+  },
+  {
+    "filename": "out_20161121-all-forgiven-1000-deg_deepseek-v3.1-n.md",
+    "date": "2016-11-21",
+    "title": "All Is Forgiven At 1000 Degrees",
+    "score": 3
+  },
+  {
+    "filename": "out_20161122-upcoming-holidays_deepseek-v3.1-n.md",
+    "date": "2016-11-22",
+    "title": "Upcoming Holidays",
+    "score": 0
+  },
+  {
+    "filename": "out_20161123-eli-lilly-s-alzheimer_deepseek-v3.1-n.md",
+    "date": "2016-11-23",
+    "title": "Eli Lilly's Alzheimer's Antibody Does Not Work",
+    "score": 8
+  },
+  {
+    "filename": "out_20161123-more-juno-car-t-death_deepseek-v3.1-n.md",
+    "date": "2016-11-23",
+    "title": "More Juno CAR-T Deaths",
+    "score": 7
+  },
+  {
+    "filename": "out_20161128-education-versus-nons_deepseek-v3.1-n.md",
+    "date": "2016-11-28",
+    "title": "Education Versus Nonsense",
+    "score": 7
+  },
+  {
+    "filename": "out_20161129-vanderbilt-heads-clin_deepseek-v3.1-n.md",
+    "date": "2016-11-29",
+    "title": "Vanderbilt Heads Into the Clinic for Alzheimer's",
+    "score": 6
+  },
+  {
+    "filename": "out_20161130-medicinal-chemistry-b_deepseek-v3.1-n.md",
+    "date": "2016-11-30",
+    "title": "Medicinal Chemistry Books",
+    "score": 4
+  },
+  {
+    "filename": "out_20161201-boehringer-ingleheim-_deepseek-v3.1-n.md",
+    "date": "2016-12-01",
+    "title": "Boehringer Ingelheim Shuts Down Ridgefield Med-Chem",
+    "score": 4
+  },
+  {
+    "filename": "out_20161201-clinical-trials-and-v_deepseek-v3.1-n.md",
+    "date": "2016-12-01",
+    "title": "Clinical Trials, Up and Very Much Down",
+    "score": 7
+  },
+  {
+    "filename": "out_20161201-those-australian-stud_deepseek-v3.1-n.md",
+    "date": "2016-12-01",
+    "title": "Those Australian Students And Their Daraprim",
+    "score": 7
+  },
+  {
+    "filename": "out_20161202-field-guide-authorshi_deepseek-v3.1-n.md",
+    "date": "2016-12-02",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20161205-21st-century-cures-ac_deepseek-v3.1-n.md",
+    "date": "2016-12-05",
+    "title": "The 21st Century Cures Act: A Giant Piñata",
+    "score": 8
+  },
+  {
+    "filename": "out_20161206-chemistry-themed-book_deepseek-v3.1-n.md",
+    "date": "2016-12-06",
+    "title": "Chemistry-Themed Books for Non-Chemist Readers",
+    "score": 1
+  },
+  {
+    "filename": "out_20161206-one-more-chemistry-bo_deepseek-v3.1-n.md",
+    "date": "2016-12-06",
+    "title": "One More Chemistry Book",
+    "score": 1
+  },
+  {
+    "filename": "out_20161207-out-ideas_deepseek-v3.1-n.md",
+    "date": "2016-12-07",
+    "title": "Out of Ideas?",
+    "score": 7
+  },
+  {
+    "filename": "out_20161208-nitration-isn-t-so-si_deepseek-v3.1-n.md",
+    "date": "2016-12-08",
+    "title": "Article Title",
+    "score": 4
+  },
+  {
+    "filename": "out_20161209-politics-21st-century_deepseek-v3.1-n.md",
+    "date": "2016-12-09",
+    "title": "The Politics of the 21st Century Cures Act",
+    "score": 7
+  },
+  {
+    "filename": "out_20161212-watson-and-pfizer_deepseek-v3.1-n.md",
+    "date": "2016-12-12",
+    "title": "Watson and Pfizer",
+    "score": 8
+  },
+  {
+    "filename": "out_20161213-not-fun-reading_deepseek-v3.1-n.md",
+    "date": "2016-12-13",
+    "title": "Not Fun Reading",
+    "score": 8
+  },
+  {
+    "filename": "out_20161213-reworking-bristol-mye_deepseek-v3.1-n.md",
+    "date": "2016-12-13",
+    "title": "Reworking Bristol-Myers Squibb Some More",
+    "score": 3
+  },
+  {
+    "filename": "out_20161214-simple-right_deepseek-v3.1-n.md",
+    "date": "2016-12-14",
+    "title": "Simple, Right?",
+    "score": 8
+  },
+  {
+    "filename": "out_20161215-trifluoromethylate-lo_deepseek-v3.1-n.md",
+    "date": "2016-12-15",
+    "title": "Trifluoromethylate The Lot of 'Em",
+    "score": 6
+  },
+  {
+    "filename": "out_20161219-cellular-rejuvenation_deepseek-v3.1-n.md",
+    "date": "2016-12-19",
+    "title": "Cellular Rejuvenation, For Real",
+    "score": 9
+  },
+  {
+    "filename": "out_20161220-end-year_deepseek-v3.1-n.md",
+    "date": "2016-12-20",
+    "title": "End of a Year",
+    "score": 4
+  },
+  {
+    "filename": "out_20161229-cold-weather-food-rin_deepseek-v3.1-n.md",
+    "date": "2016-12-29",
+    "title": "Cold-Weather Food: Rindsrouladen",
+    "score": 0
+  },
+  {
+    "filename": "out_20170103-pipeline-12092_deepseek-v3.1-n.md",
+    "date": "2017-01-03",
+    "title": "Back To It",
+    "score": 2
+  },
+  {
+    "filename": "out_20170104-you-wouldn-t-be-lying_deepseek-v3.1-n.md",
+    "date": "2017-01-04",
+    "title": "You Wouldn't Be Lying About That, Would You?",
+    "score": 4
+  },
+  {
+    "filename": "out_20170105-what-passes-positive-_deepseek-v3.1-n.md",
+    "date": "2017-01-05",
+    "title": "What Passes For Positive Data",
+    "score": 7
+  },
+  {
+    "filename": "out_20170106-amgen-will-see-you-co_deepseek-v3.1-n.md",
+    "date": "2017-01-06",
+    "title": "Amgen Will See You In Court - Again",
+    "score": 7
+  },
+  {
+    "filename": "out_20170110-pyridine-doesn-t-do-w_deepseek-v3.1-n.md",
+    "date": "2017-01-10",
+    "title": "Pyridine Doesn't Do What You Think It Does",
+    "score": 3
+  },
+  {
+    "filename": "out_20170111-vivek-ramaswamy-s-pla_deepseek-v3.1-n.md",
+    "date": "2017-01-11",
+    "title": "Vivek Ramaswamy's Plans",
+    "score": 8
+  },
+  {
+    "filename": "out_20170112-curcumin-will-waste-y_deepseek-v3.1-n.md",
+    "date": "2017-01-12",
+    "title": "Curcumin Will Waste Your Time",
+    "score": 8
+  },
+  {
+    "filename": "out_20170113-all-way-down-hydrogen_deepseek-v3.1-n.md",
+    "date": "2017-01-13",
+    "title": "All The Way Down to the Hydrogens",
+    "score": 7
+  },
+  {
+    "filename": "out_20170117-weirdness-ebselen_deepseek-v3.1-n.md",
+    "date": "2017-01-17",
+    "title": "The Weirdness of Ebselen",
+    "score": 4
+  },
+  {
+    "filename": "out_20170118-unicorn-software-drug_deepseek-v3.1-n.md",
+    "date": "2017-01-18",
+    "title": "Unicorn Software for Drug Discovery",
+    "score": 8
+  },
+  {
+    "filename": "out_20170119-first-look-reproducib_deepseek-v3.1-n.md",
+    "date": "2017-01-19",
+    "title": "A First Look at Reproducibility in Cancer Biology",
+    "score": 7
+  },
+  {
+    "filename": "out_20170119-graduate-school-situa_deepseek-v3.1-n.md",
+    "date": "2017-01-19",
+    "title": "A Graduate School Situation For the Record Books",
+    "score": 7
+  },
+  {
+    "filename": "out_20170120-be-sure-funds-are-dep_deepseek-v3.1-n.md",
+    "date": "2017-01-20",
+    "title": "Be Sure The Funds Are Deposited",
+    "score": 8
+  },
+  {
+    "filename": "out_20170123-i-do-hate-tell-you_deepseek-v3.1-n.md",
+    "date": "2017-01-23",
+    "title": "I Do Hate To Tell You This, But. . .",
+    "score": 8
+  },
+  {
+    "filename": "out_20170124-hollywood-analogy_deepseek-v3.1-n.md",
+    "date": "2017-01-24",
+    "title": "The Hollywood Analogy",
+    "score": 8
+  },
+  {
+    "filename": "out_20170125-eli-lilly-biologics-c_deepseek-v3.1-n.md",
+    "date": "2017-01-25",
+    "title": "Eli Lilly Is a Biologics Company",
+    "score": 7
+  },
+  {
+    "filename": "out_20170126-are-phase-i-trials-et_deepseek-v3.1-n.md",
+    "date": "2017-01-26",
+    "title": "Are Phase I Trials Ethical?",
+    "score": 7
+  },
+  {
+    "filename": "out_20170127-how-not-do-it-dosing-_deepseek-v3.1-n.md",
+    "date": "2017-01-27",
+    "title": "How Not to Do It: Dosing Volunteers",
+    "score": 7
+  },
+  {
+    "filename": "out_20170130-predatory-publishers-_deepseek-v3.1-n.md",
+    "date": "2017-01-30",
+    "title": "The Predatory Publishers List Goes Dark",
+    "score": 6
+  },
+  {
+    "filename": "out_20170131-allotropes-allotropes_deepseek-v3.1-n.md",
+    "date": "2017-01-31",
+    "title": "Allotropes, Allotropes Everywhere",
+    "score": 6
+  },
+  {
+    "filename": "out_20170201-flightosome_deepseek-v3.1-n.md",
+    "date": "2017-02-01",
+    "title": "The Flightosome",
+    "score": 7
+  },
+  {
+    "filename": "out_20170202-more-spring-loaded-re_deepseek-v3.1-n.md",
+    "date": "2017-02-02",
+    "title": "More Spring-Loaded Reagents",
+    "score": 4
+  },
+  {
+    "filename": "out_20170203-thoughts-corruption_deepseek-v3.1-n.md",
+    "date": "2017-02-03",
+    "title": "Thoughts on Corruption",
+    "score": 7
+  },
+  {
+    "filename": "out_20170206-industry-teaching_deepseek-v3.1-n.md",
+    "date": "2017-02-06",
+    "title": "From Industry Into Teaching?",
+    "score": 1
+  },
+  {
+    "filename": "out_20170207-no-easy-road-getting-_deepseek-v3.1-n.md",
+    "date": "2017-02-07",
+    "title": "No Easy Road to Getting Rid of PAINS",
+    "score": 6
+  },
+  {
+    "filename": "out_20170209-not-quite-what-friend_deepseek-v3.1-n.md",
+    "date": "2017-02-09",
+    "title": "Not Quite What Friends Are For",
+    "score": 3
+  },
+  {
+    "filename": "out_20170210-call-academic-drug-co_deepseek-v3.1-n.md",
+    "date": "2017-02-10",
+    "title": "A Call For Academic Drug Companies",
+    "score": 7
+  },
+  {
+    "filename": "out_20170210-case-marathon-pharmac_deepseek-v3.1-n.md",
+    "date": "2017-02-10",
+    "title": "The Case of Marathon Pharmaceuticals",
+    "score": 7
+  },
+  {
+    "filename": "out_20170213-marathon-s-real-costs_deepseek-v3.1-n.md",
+    "date": "2017-02-13",
+    "title": "Marathon's Real Costs",
+    "score": 6
+  },
+  {
+    "filename": "out_20170213-phil-baran-takes-crow_deepseek-v3.1-n.md",
+    "date": "2017-02-13",
+    "title": "Phil Baran Takes on the Crowd",
+    "score": 3
+  },
+  {
+    "filename": "out_20170214-soon-shiong-hype-mach_deepseek-v3.1-n.md",
+    "date": "2017-02-14",
+    "title": "The Soon-Shiong Hype Machine",
+    "score": 7
+  },
+  {
+    "filename": "out_20170215-guess-how-latest-alzh_deepseek-v3.1-n.md",
+    "date": "2017-02-15",
+    "title": "Guess How This Latest Alzheimer's Trial Came Out",
+    "score": 8
+  },
+  {
+    "filename": "out_20170216-how-not-do-it-tatp_deepseek-v3.1-n.md",
+    "date": "2017-02-16",
+    "title": "How Not to Do It: TATP",
+    "score": 4
+  },
+  {
+    "filename": "out_20170220-ibm-watson-collaborat_deepseek-v3.1-n.md",
+    "date": "2017-02-20",
+    "title": "An IBM-Watson Collaboration Goes Under",
+    "score": 7
+  },
+  {
+    "filename": "out_20170221-triangulene-force_deepseek-v3.1-n.md",
+    "date": "2017-02-21",
+    "title": "Triangulene, By Force",
+    "score": 8
+  },
+  {
+    "filename": "out_20170222-past-limits_deepseek-v3.1-n.md",
+    "date": "2017-02-22",
+    "title": "Past the Limits",
+    "score": 8
+  },
+  {
+    "filename": "out_20170223-good-sides-and-bad-si_deepseek-v3.1-n.md",
+    "date": "2017-02-23",
+    "title": "The Good Sides and Bad Sides of Polar Compounds",
+    "score": 7
+  },
+  {
+    "filename": "out_20170227-methionine-now-your-f_deepseek-v3.1-n.md",
+    "date": "2017-02-27",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20170228-nativis-lives-life_deepseek-v3.1-n.md",
+    "date": "2017-02-28",
+    "title": "Nativis Lives the Life",
+    "score": 4
   }
 ]

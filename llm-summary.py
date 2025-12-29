@@ -12,118 +12,136 @@
 
 import os
 import re
+from copy import deepcopy
 from openai import OpenAI   # pip install openai
+import concurrent.futures
+import traceback
 
 #### user inputs ####
 IF_WEB_SEARCH = False
 SELECTED_PROMPT = "prompt-template-2.txt"
-
+MAX_WORKERS = 8  # adjust this to control concurrency
 
 #### script ####
 with open("openrouter-api-key.shh", "r") as f:
-    API_KEY = f.read()
+    API_KEY = f.read().strip()
 
-client = OpenAI(
-  base_url = "https://openrouter.ai/api/v1",
-  api_key = API_KEY,
-)
+BASE_URL = "https://openrouter.ai/api/v1"
 
-
-global PROMPT_TEMPLATE # making explicit that is global variable
-with open("./prompts/prompt-engineering/" + SELECTED_PROMPT) as f:
+# load prompt template
+with open("./prompts/prompt-engineering/" + SELECTED_PROMPT, "r", encoding="utf-8", errors="replace") as f:
     PROMPT_TEMPLATE = f.read()
-    
 
-if not IF_WEB_SEARCH: # remove parts of prompt about internet searches
+if not IF_WEB_SEARCH:
     PROMPT_TEMPLATE = re.sub(r'Use internet searches [^\n]*\n', '', PROMPT_TEMPLATE)
     PROMPT_TEMPLATE = re.sub(r'5\. CITATIONS.*?(?=---|\n\n|$)', '', PROMPT_TEMPLATE, flags=re.DOTALL)
-#end
 
-def generate_prompt(article_text: str, 
-                    prompt_template = PROMPT_TEMPLATE):
-    # produces the prompt for the LLM
-    
-    if len(article_text) < 10 :
-        print("---article not found")  # revise this to give the URL of the missed article in the future
-    #end
-    
-    if article_text[0:4].upper() == "HTTP" :
-        article_text.split("\n", maxsplit = 1)[1]  # remove the first line
-    #end
-    
-    lines = [
-    prompt_template,
-    article_text
-    ]
-    
-    return "\n".join(lines)
-#end
 
-# def convert_article_date(article_timestamp: str):
-#     # converts dates in the article to the YYYYMMMDD format (in the future can consider using library to do this more robustly)
-#     return article_timestamp[7:11] + article_timestamp[3:6] + article_timestamp[0:2]
-# #end
+def generate_prompt(article_text: str, prompt_template=PROMPT_TEMPLATE):
+    if len(article_text) < 10:
+        print("---article not found")
+    if article_text[0:4].upper() == "HTTP":
+        article_text = article_text.split("\n", maxsplit=1)[1] if "\n" in article_text else ""
+    return "\n".join([prompt_template, article_text])
+
 
 model_parameters = {
-    "model" :"nex-agi/deepseek-v3.1-nex-n1:free",#"deepseek/deepseek-v3.2",#"arcee-ai/trinity-mini:free",
-    "input" : "",
-    "reasoning" : {"effort": "high"},
+    "model": "nex-agi/deepseek-v3.1-nex-n1:free",
+    "input": "",
+    "reasoning": {"effort": "high"},
     "text": {"verbosity": "medium"}
-    }
+}
 if IF_WEB_SEARCH:
-    model_parameters["tools"] = [ {
-        "type": "web_search",  # warning - this will make 'free' tier models no longer free
+    model_parameters["tools"] = [{
+        "type": "web_search",
         "max_results": 20,
         "include_text": True,
         "include_highlights": True
-        } ]
-    model_parameters["tool_choice"] = "required"  # cannot attempt to answer without doing some web searching
-#end    
+    }]
+    model_parameters["tool_choice"] = "required"
 
 
-article_list = os.listdir("./prompts/")  # by default analyzes everything. If want a subset, put the others not to be processed into the 'storage' folder (since not recursive file finding here)
+article_list = os.listdir("./prompts/")
 article_list = [filename for filename in article_list if isinstance(filename, str) and filename.endswith(".txt")]
 
-for i, article_source in enumerate(article_list):
-    #article_source = "Valeant-Bound-to-be-a-Good-Explanation-Right.txt"
-
-    with open("./prompts/%s"%article_source, "r", encoding="utf-8", errors="replace") as f_in:
+# prepare tasks (read files first to minimise I/O contention during concurrent requests)
+tasks = []
+for article_source in article_list:
+    with open("./prompts/%s" % article_source, "r", encoding="utf-8", errors="replace") as f_in:
         article_fulltext = f_in.read()
-    article_fulltext = article_fulltext.replace("\\'", "'")  # replace escape characters found in apostraphes so tokenizer doesn't see weird things like "I\'m not sure they\'re going"
-
+    article_fulltext = article_fulltext.replace("\\'", "'")
     query_prompt = generate_prompt(article_fulltext)
-    
-    model_parameters["input"] = query_prompt
-    
-    
-    response = client.responses.create( 
-        **model_parameters)
-    
-    response_text = response.output_text
-    #print(response_text)
-    
-    simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + model_parameters["model"].split("/")[1][:15]   # convert_article_date(article_fulltext.split('\n')[1]) + 
-    
-    original_url = article_source.split("-", 1)[1]
-    original_url = "https://www.science.org/content/blog-post/" + original_url[:-4] if original_url.endswith(".txt") else original_url
+    tasks.append((article_source, article_fulltext, query_prompt))
 
-    with open("./responses/" + simplified_output_name + ".md", "w", encoding="utf-8") as f:
-        params_to_write = dict(model_parameters)
-        params_to_write["input"] = article_source
-        params_to_write["prompt-template"] = SELECTED_PROMPT.split(".")[0]
-        f.write("\n") # start with light gap
-        f.write(original_url)
-        f.write("\n")
-        f.write(response_text)
-        f.write("\n\n\n----\n")
-        f.write("_model_params = ")
-        f.write(repr(params_to_write))
-        f.write("_") # end the italic markdown
-    #end
-    
-    print(f"{i+1} out of {len(article_list)} complete ({100.0 * (i+1) / len(article_list):.2f}%) ")
-#end
+def worker_task(task_tuple):
+    """
+    Each worker:
+      - creates its own OpenAI client (avoids client thread-safety issues)
+      - deepcopies model params and sets input
+      - calls responses.create
+      - returns (article_source, response_text) or raises
+    """
+    article_source, article_fulltext, query_prompt = task_tuple
+    try:
+        # create a fresh client per worker
+        local_client = OpenAI(base_url=BASE_URL, api_key=API_KEY)
 
+        params = deepcopy(model_parameters)
+        params["input"] = query_prompt
+
+        response = local_client.responses.create(**params)
+        response_text = getattr(response, "output_text", None)
+        if response_text is None:
+            # fallback if output_text not present
+            # try to reconstruct if the SDK returns structured output
+            try:
+                response_text = "\n".join([m.get("content", "") for m in response.output or []])
+            except Exception:
+                response_text = str(response)
+
+        simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + params["model"].split("/")[1][:15]
+        original_url = article_source.split("-", 1)[1] if "-" in article_source else article_source
+        original_url = ("https://www.science.org/content/blog-post/" + original_url[:-4]) if original_url.endswith(".txt") else original_url
+
+        # write result file
+        out_path = os.path.join("./responses", simplified_output_name + ".md")
+        os.makedirs("./responses", exist_ok=True)
+        with open(out_path, "w", encoding="utf-8") as f:
+            params_to_write = dict(params)
+            params_to_write["input"] = article_source
+            params_to_write["prompt-template"] = SELECTED_PROMPT.split(".")[0]
+            f.write("\n")
+            f.write(original_url + "\n")
+            f.write(response_text + "\n\n\n----\n")
+            f.write("_model_params = ")
+            f.write(repr(params_to_write))
+            f.write("_")  # end of the italic markdown for the params
+        return (article_source, None)  # None indicates success, we already wrote file
+    except Exception as e:
+        tb = traceback.format_exc()
+        # write an error file for later inspection
+        err_name = "err_" + article_source.split(".")[0][:30]
+        err_path = os.path.join("./responses", err_name + ".err.txt")
+        with open(err_path, "w", encoding="utf-8") as ef:
+            ef.write("Error processing: %s\n\n" % article_source)
+            ef.write(str(e) + "\n\n")
+            ef.write(tb)
+        return (article_source, e)
+
+# run concurrently
+total = len(tasks)
+completed = 0
+with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    future_to_task = {executor.submit(worker_task, t): t for t in tasks}
+    for fut in concurrent.futures.as_completed(future_to_task):
+        article_source, error = fut.result()
+        completed += 1
+        if error is None:
+            print(f"{completed} out of {total} complete ({100.0 * completed / total:.2f}%) - {article_source} succeeded")
+        else:
+            print(f"{completed} out of {total} complete ({100.0 * completed / total:.2f}%) - {article_source} failed: {error}")
+
+print("All done.")
 
 #### pipeline could be quick calls via a free model to gauge which articles of interest to analyze (outputing just a few tokens of the interest score) then thinking LLM analyzes those texts in the second pass
 

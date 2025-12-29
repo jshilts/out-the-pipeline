@@ -10,6 +10,9 @@ from datetime import datetime
 
 RESP_DIR = "./responses"
 OUT_PATH = os.path.join("./index.json")
+if_omit_misformed = True  # if False, then articles that have no correctly formated score will still appear. If 'True', removes articles that could not be filtered
+ # (generally want to start with this as 'False' in case any bug is causing correct articles to have small formatting issues, and only set to 'True' once doing production run and want to remove articles with truly no content)
+
 
 MONTHS = {
     'january': '01','february': '02','march': '03','april': '04','may': '05','june': '06',
@@ -181,6 +184,9 @@ def main():
             return '9999-12-31'  # push None dates to end
 
     entries = sorted(entries, key=date_key)
+
+    if if_omit_misformed:
+        entries = [entry for entry in entries if entry['score'] != ""]
 
     # write index.json
     with open(OUT_PATH, 'w', encoding='utf-8') as out:
