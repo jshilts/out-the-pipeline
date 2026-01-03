@@ -12,6 +12,7 @@
 
 import os
 import re
+import time
 from copy import deepcopy
 from openai import OpenAI   # pip install openai
 import concurrent.futures
@@ -20,7 +21,7 @@ import traceback
 #### user inputs ####
 IF_WEB_SEARCH = False
 SELECTED_PROMPT = "prompt-template-2.txt"
-MAX_WORKERS = 8  # adjust this to control concurrency
+MAX_WORKERS = 4  # adjust this to control concurrency
 
 #### script ####
 with open("openrouter-api-key.shh", "r") as f:
@@ -32,7 +33,7 @@ BASE_URL = "https://openrouter.ai/api/v1"
 
 #### define model to use ####
 model_parameters = {
-    "model": "deepseek/deepseek-r1-0528:free", # "openai/gpt-oss-120b:free",  # "nex-agi/deepseek-v3.1-nex-n1:free", 
+    "model": "nex-agi/deepseek-v3.1-nex-n1:free", # "openai/gpt-oss-120b:free", 
     "input": "",
     "reasoning": {"effort": "high"},
     "text": {"verbosity": "medium"}
@@ -102,6 +103,7 @@ def worker_task(task_tuple):
         params = deepcopy(model_parameters)
         params["input"] = query_prompt
 
+        time.sleep(0.5)  # avoid rate-limit
         response = local_client.responses.create(**params)
         response_text = getattr(response, "output_text", None)
         
@@ -114,7 +116,7 @@ def worker_task(task_tuple):
             except Exception:
                 response_text = str(response)
     
-        response_text = re.sub("/n• ", "/n- " response_text)  # fix common bug in markdown files (may be should make whole script for cleaning post-generation)
+        response_text = re.sub("/n• ", "/n- ", response_text)  # fix common bug in markdown files (may be should make whole script for cleaning post-generation)
 
         simplified_output_name = "out_" + article_source.split(".")[0][:30] + "_" + params["model"].split("/")[1][:15] + f"{'-web' if IF_WEB_SEARCH else ''}"
         simplified_output_name = re.sub(r'[^A-Za-z0-9._-]', '', simplified_output_name)  # must sanitize name otherwise will get no output if contains something like a colon

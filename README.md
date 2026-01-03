@@ -10,7 +10,7 @@ The folder "weblinks"  provides code for finding all the 'in the pipeline' artic
 
 The script "webpage-extractor.py"   then takes a link and extracts the article text. These are output in the webarticles folder (currently hidden from github via .gitignore)
 
-The folder "prompts" contains the claims from the article which will be feed into the LLM for analysis
+The folder "prompts" contains the claims from the article which will be feed into the LLM for analysis. In that folder is also 'prompt-cleaning.py' as a short script to fix the formatting of a few of the web files.
 
 The script "llm-summary.py"  then uses the LLM to analyze the scientific claims in the article and its subsequent history. Any model can be used via the flexible interface at OpenRouter
 

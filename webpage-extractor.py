@@ -361,10 +361,10 @@ def main():
     with open("./weblinks/all_links.txt", "r") as f_in:
         full_url_list = [line.strip() for line in f_in.readlines()]
     #end 
-    url_list = full_url_list[5500:5700]
+    url_list = full_url_list[6000:]
     # breaking up into chunks since there is over 6,600 articles. Each group of 10 taking a couple minutes
     # pattern is first 10 (0:10) then next 10 (10:20) etc
-    # DONE 1000:5700
+    # DONE 1000:6000
     # (must repeat last number when do next one, since python 0:10 means 0-9). Higher indexes are older.
     
     
