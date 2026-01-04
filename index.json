@@ -1,5 +1,1943 @@
 [
   {
+    "filename": "out_20020207-latest-thing_deepseek-v3.1-n.md",
+    "date": "2002-02-07",
+    "title": "The Latest Thing",
+    "score": 7
+  },
+  {
+    "filename": "out_20020214-modeling-brain_deepseek-v3.1-n.md",
+    "date": "2002-02-14",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20020218-couple-days_deepseek-v3.1-n.md",
+    "date": "2002-02-18",
+    "title": "A Couple of Days Off",
+    "score": 2
+  },
+  {
+    "filename": "out_20020220-giordano-bruno_deepseek-v3.1-n.md",
+    "date": "2002-02-20",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20020222-cartesian-aging_deepseek-v3.1-n.md",
+    "date": "2002-02-22",
+    "title": "Cartesian Aging",
+    "score": 4
+  },
+  {
+    "filename": "out_20020224-toxicolottery_deepseek-v3.1-n.md",
+    "date": "2002-02-24",
+    "title": "Toxicolottery",
+    "score": 0
+  },
+  {
+    "filename": "out_20020225-all-not-so-myriad-way_deepseek-v3.1-n.md",
+    "date": "2002-02-25",
+    "title": "All the Not-So-Myriad Ways",
+    "score": 7
+  },
+  {
+    "filename": "out_20020226-certain-tension-air_deepseek-v3.1-n.md",
+    "date": "2002-02-26",
+    "title": "A Certain Tension in the Air",
+    "score": 8
+  },
+  {
+    "filename": "out_20020226-new-drugs-hiv_deepseek-v3.1-n.md",
+    "date": "2002-02-26",
+    "title": "New Drugs for HIV",
+    "score": 8
+  },
+  {
+    "filename": "out_20020227-more-imclone-more-foo_deepseek-v3.1-n.md",
+    "date": "2002-02-27",
+    "title": "More Imclone, More Food for Thought",
+    "score": 6
+  },
+  {
+    "filename": "out_20020227-who-dares-wins_deepseek-v3.1-n.md",
+    "date": "2002-02-27",
+    "title": "Who Dares, Wins?",
+    "score": 8
+  },
+  {
+    "filename": "out_20021103-cholesterol-lowering-_deepseek-v3.1-n.md",
+    "date": "2002-11-03",
+    "title": "Cholesterol Lowering, One Way or Another",
+    "score": 8
+  },
+  {
+    "filename": "out_20021104-generic-prilosec-sequ_deepseek-v3.1-n.md",
+    "date": "2002-11-04",
+    "title": "Generic Prilosec - the Sequel",
+    "score": 4
+  },
+  {
+    "filename": "out_20021104-good-old-days-really-_deepseek-v3.1-n.md",
+    "date": "2002-11-04",
+    "title": "The Good Old Days of Really Bad Teeth, Revisited",
+    "score": 3
+  },
+  {
+    "filename": "out_20021104-it-ll-be-while_deepseek-v3.1-n.md",
+    "date": "2002-11-04",
+    "title": "It'll Be a While",
+    "score": 3
+  },
+  {
+    "filename": "out_20021104-pneumonia-all-things_deepseek-v3.1-n.md",
+    "date": "2002-11-04",
+    "title": "Pneumonia, of All Things",
+    "score": 7
+  },
+  {
+    "filename": "out_20021107-measure-measure_deepseek-v3.1-n.md",
+    "date": "2002-11-07",
+    "title": "\"Measure for Measure\"",
+    "score": 5
+  },
+  {
+    "filename": "out_20021110-mismeasure-mismeasure_deepseek-v3.1-n.md",
+    "date": "2002-11-10",
+    "title": "Mismeasure for Mismeasure",
+    "score": 7
+  },
+  {
+    "filename": "out_20021111-thalidomide-mirror_deepseek-v3.1-n.md",
+    "date": "2002-11-11",
+    "title": "Thalidomide in the Mirror",
+    "score": 8
+  },
+  {
+    "filename": "out_20021112-y-all-are-going-think_deepseek-v3.1-n.md",
+    "date": "2002-11-12",
+    "title": "Y'all Are Going to Think I'm Nuts, But. . .",
+    "score": 6
+  },
+  {
+    "filename": "out_20021114-left-and-right-revisi_deepseek-v3.1-n.md",
+    "date": "2002-11-14",
+    "title": "Left and Right, Revisited",
+    "score": 5
+  },
+  {
+    "filename": "out_20021114-statins-and-multiple-_deepseek-v3.1-n.md",
+    "date": "2002-11-14",
+    "title": "Statins and Multiple Sclerosis",
+    "score": 6
+  },
+  {
+    "filename": "out_20021117-new-improved-now-stic_deepseek-v3.1-n.md",
+    "date": "2002-11-17",
+    "title": "\"New! Improved! Now With Stickier Lumps!\"",
+    "score": 7
+  },
+  {
+    "filename": "out_20021118-multitasking_deepseek-v3.1-n.md",
+    "date": "2002-11-18",
+    "title": "Multitasking",
+    "score": 2
+  },
+  {
+    "filename": "out_20021119-ah-marketing_deepseek-v3.1-n.md",
+    "date": "2002-11-19",
+    "title": "Ah, Marketing",
+    "score": 9
+  },
+  {
+    "filename": "out_20021120-what-i-um-meant-um-sa_deepseek-v3.1-n.md",
+    "date": "2002-11-20",
+    "title": "What I, um, Meant to, um, Say",
+    "score": 0
+  },
+  {
+    "filename": "out_20021121-future-and-its-friend_deepseek-v3.1-n.md",
+    "date": "2002-11-21",
+    "title": "The Future and Its Friends",
+    "score": 7
+  },
+  {
+    "filename": "out_20021124-new-form-hype-uh-life_deepseek-v3.1-n.md",
+    "date": "2002-11-24",
+    "title": "A New Form of Hype, uh, Life?",
+    "score": 8
+  },
+  {
+    "filename": "out_20021125-chemical-wish-list_deepseek-v3.1-n.md",
+    "date": "2002-11-25",
+    "title": "A Chemical Wish List",
+    "score": 7
+  },
+  {
+    "filename": "out_20021126-unequivocal-good-news_deepseek-v3.1-n.md",
+    "date": "2002-11-26",
+    "title": "Unequivocal Good News",
+    "score": 4
+  },
+  {
+    "filename": "out_20021201-place-your-bets_deepseek-v3.1-n.md",
+    "date": "2002-12-01",
+    "title": "Place Your Bets",
+    "score": 6
+  },
+  {
+    "filename": "out_20021202-europe-again_deepseek-v3.1-n.md",
+    "date": "2002-12-02",
+    "title": "Europe, Again",
+    "score": 6
+  },
+  {
+    "filename": "out_20021203-doing-justice-thimero_deepseek-v3.1-n.md",
+    "date": "2002-12-03",
+    "title": "Doing Justice to Thimerosal",
+    "score": 7
+  },
+  {
+    "filename": "out_20021203-pipeline-170_deepseek-v3.1-n.md",
+    "date": "2002-12-03",
+    "title": "Doing Justice to Thimerosal, and the Story",
+    "score": 7
+  },
+  {
+    "filename": "out_20021204-neurotoxins_deepseek-v3.1-n.md",
+    "date": "2002-12-04",
+    "title": "Neurotoxins",
+    "score": 7
+  },
+  {
+    "filename": "out_20021204-pipeline-172_deepseek-v3.1-n.md",
+    "date": "2002-12-04",
+    "title": "Neurotoxins",
+    "score": 6
+  },
+  {
+    "filename": "out_20021205-more-autism-and-mercu_deepseek-v3.1-n.md",
+    "date": "2002-12-05",
+    "title": "More on Autism (And Mercury)",
+    "score": 3
+  },
+  {
+    "filename": "out_20021205-pipeline-174_deepseek-v3.1-n.md",
+    "date": "2002-12-05",
+    "title": "A Quick Tour Through the Mudhole",
+    "score": 6
+  },
+  {
+    "filename": "out_20021205-pipeline-175_deepseek-v3.1-n.md",
+    "date": "2002-12-05",
+    "title": "More on Autism and Mercury",
+    "score": 7
+  },
+  {
+    "filename": "out_20021205-quick-tour-through-mu_deepseek-v3.1-n.md",
+    "date": "2002-12-05",
+    "title": "A Quick Tour Through the Mudhole",
+    "score": 6
+  },
+  {
+    "filename": "out_20021209-proteinocentrism_deepseek-v3.1-n.md",
+    "date": "2002-12-09",
+    "title": "Proteinocentrism",
+    "score": 7
+  },
+  {
+    "filename": "out_20021209-sweet-maybe-trouble-t_deepseek-v3.1-n.md",
+    "date": "2002-12-09",
+    "title": "Sweet Maybe, But Trouble, Too",
+    "score": 4
+  },
+  {
+    "filename": "out_20021210-don-t-wait-patent-tod_deepseek-v3.1-n.md",
+    "date": "2002-12-10",
+    "title": "Don't Wait - Patent Today!",
+    "score": 5
+  },
+  {
+    "filename": "out_20021211-quick-one-while-he-s-_deepseek-v3.1-n.md",
+    "date": "2002-12-11",
+    "title": "A Quick One While He's Away",
+    "score": 1
+  },
+  {
+    "filename": "out_20021212-rough-business_deepseek-v3.1-n.md",
+    "date": "2002-12-12",
+    "title": "A Rough Business",
+    "score": 6
+  },
+  {
+    "filename": "out_20021216-attitude_deepseek-v3.1-n.md",
+    "date": "2002-12-16",
+    "title": "Attitude",
+    "score": 7
+  },
+  {
+    "filename": "out_20021217-looking-back-looking-_deepseek-v3.1-n.md",
+    "date": "2002-12-17",
+    "title": "out_20021217-looking-back-looking-_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20021218-hypertension-and-mark_deepseek-v3.1-n.md",
+    "date": "2002-12-18",
+    "title": "Hypertension and Marketing",
+    "score": 6
+  },
+  {
+    "filename": "out_20021220-trials-trials_deepseek-v3.1-n.md",
+    "date": "2002-12-20",
+    "title": "Trials of Trials",
+    "score": 7
+  },
+  {
+    "filename": "out_20021222-clearance-sale_deepseek-v3.1-n.md",
+    "date": "2002-12-22",
+    "title": "Clearance Sale",
+    "score": 5
+  },
+  {
+    "filename": "out_20021222-pipeline-187_deepseek-v3.1-n.md",
+    "date": "2002-12-22",
+    "title": "Clearance Sale",
+    "score": 5
+  },
+  {
+    "filename": "out_20021222-pipeline-188_deepseek-v3.1-n.md",
+    "date": "2002-12-22",
+    "title": "out_20021222-pipeline-188_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20021222-thimerosal-chemical-p_deepseek-v3.1-n.md",
+    "date": "2002-12-22",
+    "title": "out_20021222-thimerosal-chemical-p_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20021230-pipeline-191_deepseek-v3.1-n.md",
+    "date": "2002-12-30",
+    "title": "Back on the Air",
+    "score": 8
+  },
+  {
+    "filename": "out_20030102-rate-autism_deepseek-v3.1-n.md",
+    "date": "2003-01-02",
+    "title": "The Rate of Autism",
+    "score": 6
+  },
+  {
+    "filename": "out_20030105-ratio-rationalization_deepseek-v3.1-n.md",
+    "date": "2003-01-05",
+    "title": "Ratio Rationalizations",
+    "score": 7
+  },
+  {
+    "filename": "out_20030106-compare-and-contrast_deepseek-v3.1-n.md",
+    "date": "2003-01-06",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20030106-pipeline-195_deepseek-v3.1-n.md",
+    "date": "2003-01-06",
+    "title": "Article Title",
+    "score": 2
+  },
+  {
+    "filename": "out_20030107-ricin_deepseek-v3.1-n.md",
+    "date": "2003-01-07",
+    "title": "Article Title",
+    "score": 6
+  },
+  {
+    "filename": "out_20030108-library-babel_deepseek-v3.1-n.md",
+    "date": "2003-01-08",
+    "title": "The Library of Babel",
+    "score": 5
+  },
+  {
+    "filename": "out_20030108-more-ricin_deepseek-v3.1-n.md",
+    "date": "2003-01-08",
+    "title": "More Ricin",
+    "score": 3
+  },
+  {
+    "filename": "out_20030109-back-stacks_deepseek-v3.1-n.md",
+    "date": "2003-01-09",
+    "title": "Back in the Stacks",
+    "score": 6
+  },
+  {
+    "filename": "out_20030112-easy-parts-and-hard-p_deepseek-v3.1-n.md",
+    "date": "2003-01-12",
+    "title": "Easy Parts and Hard Parts",
+    "score": 6
+  },
+  {
+    "filename": "out_20030803-per-fits-and-starts-a_deepseek-v3.1-n.md",
+    "date": "2003-08-03",
+    "title": "Per Fits and Starts, Ad Astra",
+    "score": 2
+  },
+  {
+    "filename": "out_20031128-waiting-metaphorical-_deepseek-v3.1-n.md",
+    "date": "2003-11-28",
+    "title": "Waiting for the Metaphorical Phone to Ring",
+    "score": 7
+  },
+  {
+    "filename": "out_20031207-good-news-backing-slo_deepseek-v3.1-n.md",
+    "date": "2003-12-07",
+    "title": "Good News, Backing Slowly Through the Door?",
+    "score": 3
+  },
+  {
+    "filename": "out_20040107-good-sense-wins-round_deepseek-v3.1-n.md",
+    "date": "2004-01-07",
+    "title": "out_20040107-good-sense-wins-round_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20040107-secretin_deepseek-v3.1-n.md",
+    "date": "2004-01-07",
+    "title": "Secretin",
+    "score": 7
+  },
+  {
+    "filename": "out_20040108-request-biology_deepseek-v3.1-n.md",
+    "date": "2004-01-08",
+    "title": "A Request From Biology",
+    "score": 6
+  },
+  {
+    "filename": "out_20040111-new-cancer-target-may_deepseek-v3.1-n.md",
+    "date": "2004-01-11",
+    "title": "A New Cancer Target - Maybe",
+    "score": 7
+  },
+  {
+    "filename": "out_20040112-if-doesn-t-work-there_deepseek-v3.1-n.md",
+    "date": "2004-01-12",
+    "title": "If This Doesn't Work, There's Only Reality To Fall Back On",
+    "score": 2
+  },
+  {
+    "filename": "out_20040113-pipeline-209_deepseek-v3.1-n.md",
+    "date": "2004-01-13",
+    "title": "Here and There",
+    "score": 5
+  },
+  {
+    "filename": "out_20040114-pricing-weapon_deepseek-v3.1-n.md",
+    "date": "2004-01-14",
+    "title": "The Pricing Weapon",
+    "score": 8
+  },
+  {
+    "filename": "out_20040115-and-now-something-com_deepseek-v3.1-n.md",
+    "date": "2004-01-15",
+    "title": "And Now for Something Completely Different",
+    "score": 3
+  },
+  {
+    "filename": "out_20040118-all-bets-are-now-offi_deepseek-v3.1-n.md",
+    "date": "2004-01-18",
+    "title": "All Bets Are Now Officially Off",
+    "score": 4
+  },
+  {
+    "filename": "out_20040119-there-d-better-not-be_deepseek-v3.1-n.md",
+    "date": "2004-01-19",
+    "title": "There'd Better Not Be an Argon Receptor",
+    "score": 7
+  },
+  {
+    "filename": "out_20040120-weinberg-s-golden-les_deepseek-v3.1-n.md",
+    "date": "2004-01-20",
+    "title": "Steven Weinberg's \"Four Golden Lessons\" for Scientists",
+    "score": 7
+  },
+  {
+    "filename": "out_20040121-your-huddled-pharmas-_deepseek-v3.1-n.md",
+    "date": "2004-01-21",
+    "title": "\"Your Huddled Pharmas Yearning to Breathe Free\"",
+    "score": 6
+  },
+  {
+    "filename": "out_20040122-dr-lowe-i-have-your-h_deepseek-v3.1-n.md",
+    "date": "2004-01-22",
+    "title": "Dr. Lowe? I Have Your Hypothesis on Line Two",
+    "score": 3
+  },
+  {
+    "filename": "out_20040125-little-ambiguity-woul_deepseek-v3.1-n.md",
+    "date": "2004-01-25",
+    "title": "A Little Ambiguity Would Be Welcome Right About Now",
+    "score": 0
+  },
+  {
+    "filename": "out_20040126-allons-pharmas-de-la-_deepseek-v3.1-n.md",
+    "date": "2004-01-26",
+    "title": "Allons Pharmas de la Patrie!",
+    "score": 7
+  },
+  {
+    "filename": "out_20040128-best-bad-news-he-ever_deepseek-v3.1-n.md",
+    "date": "2004-01-28",
+    "title": "The Best Bad News He Ever Had",
+    "score": 6
+  },
+  {
+    "filename": "out_20040128-not-my-european-back-_deepseek-v3.1-n.md",
+    "date": "2004-01-28",
+    "title": "Not in My European Back Yard",
+    "score": 4
+  },
+  {
+    "filename": "out_20040129-each-according-their-_deepseek-v3.1-n.md",
+    "date": "2004-01-29",
+    "title": "From Each According To Their Creativity, To Each According To Their Difficulty?",
+    "score": 7
+  },
+  {
+    "filename": "out_20040201-deal-me_deepseek-v3.1-n.md",
+    "date": "2004-02-01",
+    "title": "Deal Me In",
+    "score": 5
+  },
+  {
+    "filename": "out_20040201-pipeline-222_deepseek-v3.1-n.md",
+    "date": "2004-02-01",
+    "title": "Ricin Redux",
+    "score": 6
+  },
+  {
+    "filename": "out_20040202-how-be-inventor_deepseek-v3.1-n.md",
+    "date": "2004-02-02",
+    "title": "How to Be an Inventor",
+    "score": 4
+  },
+  {
+    "filename": "out_20040203-ricin-redux_deepseek-v3.1-n.md",
+    "date": "2004-02-03",
+    "title": "Ricin Redux",
+    "score": 6
+  },
+  {
+    "filename": "out_20040204-our-friend-carbon-alu_deepseek-v3.1-n.md",
+    "date": "2004-02-04",
+    "title": "Our Friend, the Carbon-Aluminum Bond",
+    "score": 4
+  },
+  {
+    "filename": "out_20040205-sic-transit-gloria-mu_deepseek-v3.1-n.md",
+    "date": "2004-02-05",
+    "title": "Sic Transit Gloria Mundi",
+    "score": 7
+  },
+  {
+    "filename": "out_20040208-darn-those-r-d-costs-_deepseek-v3.1-n.md",
+    "date": "2004-02-08",
+    "title": "Darn Those R&D Costs, Anyway",
+    "score": 6
+  },
+  {
+    "filename": "out_20040209-i-will-do-such-things_deepseek-v3.1-n.md",
+    "date": "2004-02-09",
+    "title": "I will do such things - What they are yet I know not. . .",
+    "score": 7
+  },
+  {
+    "filename": "out_20040211-contact-sport-cost-ac_deepseek-v3.1-n.md",
+    "date": "2004-02-11",
+    "title": "The Contact Sport of Cost Accounting",
+    "score": 3
+  },
+  {
+    "filename": "out_20040212-cold-equations_deepseek-v3.1-n.md",
+    "date": "2004-02-12",
+    "title": "The Cold Equations",
+    "score": 7
+  },
+  {
+    "filename": "out_20040212-more-prices-high-and-_deepseek-v3.1-n.md",
+    "date": "2004-02-12",
+    "title": "More on Prices, High and Otherwise",
+    "score": 7
+  },
+  {
+    "filename": "out_20040215-drug-prices-and-costs_deepseek-v3.1-n.md",
+    "date": "2004-02-15",
+    "title": "Drug Prices and Costs - From the Mail",
+    "score": 7
+  },
+  {
+    "filename": "out_20040215-easterbrook-post-upda_deepseek-v3.1-n.md",
+    "date": "2004-02-15",
+    "title": "Easterbrook Post Updated",
+    "score": 0
+  },
+  {
+    "filename": "out_20040216-old-days-some-older-o_deepseek-v3.1-n.md",
+    "date": "2004-02-16",
+    "title": "The Old Days, Some Older Than Others",
+    "score": 2
+  },
+  {
+    "filename": "out_20040218-how-drugs-die_deepseek-v3.1-n.md",
+    "date": "2004-02-18",
+    "title": "How Drugs Die",
+    "score": 8
+  },
+  {
+    "filename": "out_20040219-all-fixed_deepseek-v3.1-n.md",
+    "date": "2004-02-19",
+    "title": "All Fixed Up",
+    "score": 4
+  },
+  {
+    "filename": "out_20040219-pipeline-237_deepseek-v3.1-n.md",
+    "date": "2004-02-19",
+    "title": "One Of Us Is Hallucinating",
+    "score": 6
+  },
+  {
+    "filename": "out_20040222-reimportation-s-just-_deepseek-v3.1-n.md",
+    "date": "2004-02-22",
+    "title": "Reimportation's Just the Beginning",
+    "score": 6
+  },
+  {
+    "filename": "out_20040223-one-us-hallucinating_deepseek-v3.1-n.md",
+    "date": "2004-02-23",
+    "title": "One Of Us Is Hallucinating",
+    "score": 6
+  },
+  {
+    "filename": "out_20040224-beginning-it-s-right-_deepseek-v3.1-n.md",
+    "date": "2004-02-24",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20040225-ezetimibe-press-and-m_deepseek-v3.1-n.md",
+    "date": "2004-02-25",
+    "title": "Ezetimibe, The Press, and More",
+    "score": 6
+  },
+  {
+    "filename": "out_20040226-putting-price-proving_deepseek-v3.1-n.md",
+    "date": "2004-02-26",
+    "title": "Putting A Price on Proving It",
+    "score": 6
+  },
+  {
+    "filename": "out_20040229-more-me-too-front_deepseek-v3.1-n.md",
+    "date": "2004-02-29",
+    "title": "More From the Me-Too Front",
+    "score": 7
+  },
+  {
+    "filename": "out_20041101-pipeline-427_deepseek-v3.1-n.md",
+    "date": "2004-11-01",
+    "title": "With The Great Taste of Fish",
+    "score": 0
+  },
+  {
+    "filename": "out_20041102-let-s-see-sharks-thin_deepseek-v3.1-n.md",
+    "date": "2004-11-02",
+    "title": "Let's See What the Sharks Think of These Steaks!",
+    "score": 8
+  },
+  {
+    "filename": "out_20041103-don-t-ask-just-trade_deepseek-v3.1-n.md",
+    "date": "2004-11-03",
+    "title": "Don't Ask; Just Trade",
+    "score": 7
+  },
+  {
+    "filename": "out_20041105-visit-academia_deepseek-v3.1-n.md",
+    "date": "2004-11-05",
+    "title": "A Visit To Academia",
+    "score": 2
+  },
+  {
+    "filename": "out_20041107-take-off_deepseek-v3.1-n.md",
+    "date": "2004-11-07",
+    "title": "Take it Off!",
+    "score": 3
+  },
+  {
+    "filename": "out_20041108-merck-s-state-mind_deepseek-v3.1-n.md",
+    "date": "2004-11-08",
+    "title": "Merck's State of Mind",
+    "score": 7
+  },
+  {
+    "filename": "out_20041109-gumming-up-amyloid-wo_deepseek-v3.1-n.md",
+    "date": "2004-11-09",
+    "title": "Gumming Up the Amyloid Works",
+    "score": 8
+  },
+  {
+    "filename": "out_20041110-cui-bono_deepseek-v3.1-n.md",
+    "date": "2004-11-10",
+    "title": "Cui Bono?",
+    "score": 8
+  },
+  {
+    "filename": "out_20041111-alexander-would-have-_deepseek-v3.1-n.md",
+    "date": "2004-11-11",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20041114-i-ll-have-lot_deepseek-v3.1-n.md",
+    "date": "2004-11-14",
+    "title": "I'll Have the Lot",
+    "score": 6
+  },
+  {
+    "filename": "out_20041115-keep-yourself_deepseek-v3.1-n.md",
+    "date": "2004-11-15",
+    "title": "Keep It To Yourself",
+    "score": 7
+  },
+  {
+    "filename": "out_20041116-things-i-won-t-work-o_deepseek-v3.1-n.md",
+    "date": "2004-11-16",
+    "title": "Things I Won't Work With: Ozonides",
+    "score": 6
+  },
+  {
+    "filename": "out_20041117-rnai-awkward-age_deepseek-v3.1-n.md",
+    "date": "2004-11-17",
+    "title": "RNAi: The Awkward Age",
+    "score": 8
+  },
+  {
+    "filename": "out_20041118-nine-things-i-m-havin_deepseek-v3.1-n.md",
+    "date": "2004-11-18",
+    "title": "Nine Things I'm Having Trouble Imagining",
+    "score": 4
+  },
+  {
+    "filename": "out_20041121-safe-and-other-four-l_deepseek-v3.1-n.md",
+    "date": "2004-11-21",
+    "title": "Safe, And Other Four-Letter Words",
+    "score": 7
+  },
+  {
+    "filename": "out_20041123-chemistry-geekery_deepseek-v3.1-n.md",
+    "date": "2004-11-23",
+    "title": "Chemistry Geekery",
+    "score": 0
+  },
+  {
+    "filename": "out_20041123-i-don-t-see-qualifies_deepseek-v3.1-n.md",
+    "date": "2004-11-23",
+    "title": "I Don't See How This Qualifies As Bliss",
+    "score": 1
+  },
+  {
+    "filename": "out_20041128-some-perspective_deepseek-v3.1-n.md",
+    "date": "2004-11-28",
+    "title": "Some Perspective",
+    "score": 5
+  },
+  {
+    "filename": "out_20041129-archaeologists-announ_deepseek-v3.1-n.md",
+    "date": "2004-11-29",
+    "title": "Article Title",
+    "score": 4
+  },
+  {
+    "filename": "out_20041130-more-woodward_deepseek-v3.1-n.md",
+    "date": "2004-11-30",
+    "title": "More on Woodward",
+    "score": 7
+  },
+  {
+    "filename": "out_20041201-strangers-train_deepseek-v3.1-n.md",
+    "date": "2004-12-01",
+    "title": "Strangers on a Train",
+    "score": 1
+  },
+  {
+    "filename": "out_20041202-blurry-copies_deepseek-v3.1-n.md",
+    "date": "2004-12-02",
+    "title": "Blurry Copies",
+    "score": 7
+  },
+  {
+    "filename": "out_20041205-beg-differ_deepseek-v3.1-n.md",
+    "date": "2004-12-05",
+    "title": "Beg to Differ",
+    "score": 6
+  },
+  {
+    "filename": "out_20041206-tarceva-targets_deepseek-v3.1-n.md",
+    "date": "2004-12-06",
+    "title": "Tarceva Targets",
+    "score": 7
+  },
+  {
+    "filename": "out_20041207-alex-tabarrok-me-too-_deepseek-v3.1-n.md",
+    "date": "2004-12-07",
+    "title": "Alex Tabarrok on Me-Too Drugs",
+    "score": 6
+  },
+  {
+    "filename": "out_20041207-check-please_deepseek-v3.1-n.md",
+    "date": "2004-12-07",
+    "title": "Check, Please",
+    "score": 9
+  },
+  {
+    "filename": "out_20041208-experiment-progress_deepseek-v3.1-n.md",
+    "date": "2004-12-08",
+    "title": "An Experiment in Progress?",
+    "score": 3
+  },
+  {
+    "filename": "out_20041208-follow-which-money-wh_deepseek-v3.1-n.md",
+    "date": "2004-12-08",
+    "title": "out_20041208-follow-which-money-wh_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20041209-housecleaning_deepseek-v3.1-n.md",
+    "date": "2004-12-09",
+    "title": "Housecleaning",
+    "score": 3
+  },
+  {
+    "filename": "out_20041210-economist-who-gets-it_deepseek-v3.1-n.md",
+    "date": "2004-12-10",
+    "title": "An Economist Who Gets It",
+    "score": 7
+  },
+  {
+    "filename": "out_20041212-stocking-stuffers-sor_deepseek-v3.1-n.md",
+    "date": "2004-12-12",
+    "title": "Stocking Stuffers, of a Sort",
+    "score": 0
+  },
+  {
+    "filename": "out_20041213-fixing-drug-industry_deepseek-v3.1-n.md",
+    "date": "2004-12-13",
+    "title": "Fixing the Drug Industry?",
+    "score": 4
+  },
+  {
+    "filename": "out_20041214-coming-oncology_deepseek-v3.1-n.md",
+    "date": "2004-12-14",
+    "title": "The Coming Oncology",
+    "score": 9
+  },
+  {
+    "filename": "out_20041215-die-oxin_deepseek-v3.1-n.md",
+    "date": "2004-12-15",
+    "title": "Die-oxin?",
+    "score": 4
+  },
+  {
+    "filename": "out_20041216-lab-future_deepseek-v3.1-n.md",
+    "date": "2004-12-16",
+    "title": "Lab of the Future!",
+    "score": 5
+  },
+  {
+    "filename": "out_20041217-black-friday-one-damn_deepseek-v3.1-n.md",
+    "date": "2004-12-17",
+    "title": "Black Friday: One Damn Thing After Another",
+    "score": 7
+  },
+  {
+    "filename": "out_20041217-fda-weighs_deepseek-v3.1-n.md",
+    "date": "2004-12-17",
+    "title": "The FDA Weighs In",
+    "score": 7
+  },
+  {
+    "filename": "out_20041217-other-cox-2-shoe-drop_deepseek-v3.1-n.md",
+    "date": "2004-12-17",
+    "title": "The Other COX-2 Shoe Drops",
+    "score": 6
+  },
+  {
+    "filename": "out_20041219-boarding-windows_deepseek-v3.1-n.md",
+    "date": "2004-12-19",
+    "title": "Boarding Up the Windows",
+    "score": 5
+  },
+  {
+    "filename": "out_20041221-no-drug-island_deepseek-v3.1-n.md",
+    "date": "2004-12-21",
+    "title": "No Drug Is An Island",
+    "score": 6
+  },
+  {
+    "filename": "out_20041221-optioning-drug-portfo_deepseek-v3.1-n.md",
+    "date": "2004-12-21",
+    "title": "Optioning the Drug Portfolio",
+    "score": 4
+  },
+  {
+    "filename": "out_20041223-holiday-blogging_deepseek-v3.1-n.md",
+    "date": "2004-12-23",
+    "title": "Holiday Blogging",
+    "score": 0
+  },
+  {
+    "filename": "out_20041227-back-under-sheets-me_deepseek-v3.1-n.md",
+    "date": "2004-12-27",
+    "title": "Back Under the Sheets For Me",
+    "score": 4
+  },
+  {
+    "filename": "out_20041229-schedule-update_deepseek-v3.1-n.md",
+    "date": "2004-12-29",
+    "title": "Schedule Update",
+    "score": 0
+  },
+  {
+    "filename": "out_20050102-finishing-and-startin_deepseek-v3.1-n.md",
+    "date": "2005-01-02",
+    "title": "Article Title",
+    "score": 5
+  },
+  {
+    "filename": "out_20050103-nor-am-i-out-it_deepseek-v3.1-n.md",
+    "date": "2005-01-03",
+    "title": "\". . .Nor Am I Out of It\"",
+    "score": 8
+  },
+  {
+    "filename": "out_20050104-tadpoles-rescue_deepseek-v3.1-n.md",
+    "date": "2005-01-04",
+    "title": "Tadpoles to the Rescue?",
+    "score": 2
+  },
+  {
+    "filename": "out_20050105-moving-furniture-acro_deepseek-v3.1-n.md",
+    "date": "2005-01-05",
+    "title": "Like Moving Furniture Across a Tightrope",
+    "score": 4
+  },
+  {
+    "filename": "out_20050106-more-fun-dna_deepseek-v3.1-n.md",
+    "date": "2005-01-06",
+    "title": "More Fun With DNA",
+    "score": 6
+  },
+  {
+    "filename": "out_20050110-example-claritin_deepseek-v3.1-n.md",
+    "date": "2005-01-10",
+    "title": "The Example of Claritin",
+    "score": 7
+  },
+  {
+    "filename": "out_20050110-success-has-thousand-_deepseek-v3.1-n.md",
+    "date": "2005-01-10",
+    "title": "Success Has A Thousand Fathers",
+    "score": 5
+  },
+  {
+    "filename": "out_20050111-right-front-you_deepseek-v3.1-n.md",
+    "date": "2005-01-11",
+    "title": "Right In Front of You",
+    "score": 0
+  },
+  {
+    "filename": "out_20050112-our-friend-nitrogen-a_deepseek-v3.1-n.md",
+    "date": "2005-01-12",
+    "title": "Our Friend the Nitrogen Atom",
+    "score": 6
+  },
+  {
+    "filename": "out_20050113-samuel-johnson-was-ri_deepseek-v3.1-n.md",
+    "date": "2005-01-13",
+    "title": "Samuel Johnson Was Right",
+    "score": 4
+  },
+  {
+    "filename": "out_20050114-how-often-do-we-land-_deepseek-v3.1-n.md",
+    "date": "2005-01-14",
+    "title": "How Often Do We Land on Another World?",
+    "score": 7
+  },
+  {
+    "filename": "out_20050116-more-titan_deepseek-v3.1-n.md",
+    "date": "2005-01-16",
+    "title": "More on Titan",
+    "score": 8
+  },
+  {
+    "filename": "out_20050117-don-t-become-scientis_deepseek-v3.1-n.md",
+    "date": "2005-01-17",
+    "title": "Don't Become A Scientist?",
+    "score": 6
+  },
+  {
+    "filename": "out_20050118-model-systems-inside-_deepseek-v3.1-n.md",
+    "date": "2005-01-18",
+    "title": "Model Systems, From Inside and Out",
+    "score": 8
+  },
+  {
+    "filename": "out_20050119-bonfire-wonder-drugs_deepseek-v3.1-n.md",
+    "date": "2005-01-19",
+    "title": "Bonfire of the Wonder Drugs",
+    "score": 5
+  },
+  {
+    "filename": "out_20050120-through-looking-plast_deepseek-v3.1-n.md",
+    "date": "2005-01-20",
+    "title": "Through the Looking Plastic",
+    "score": 4
+  },
+  {
+    "filename": "out_20050121-and-now-word_deepseek-v3.1-n.md",
+    "date": "2005-01-21",
+    "title": "And Now A Word. . .",
+    "score": 2
+  },
+  {
+    "filename": "out_20050123-trial-too-far_deepseek-v3.1-n.md",
+    "date": "2005-01-23",
+    "title": "A Trial Too Far",
+    "score": 6
+  },
+  {
+    "filename": "out_20050124-what-we-are-pleased-c_deepseek-v3.1-n.md",
+    "date": "2005-01-24",
+    "title": "What We Are Pleased to Call State of the Art",
+    "score": 8
+  },
+  {
+    "filename": "out_20050125-novartis-way_deepseek-v3.1-n.md",
+    "date": "2005-01-25",
+    "title": "The Novartis Way",
+    "score": 7
+  },
+  {
+    "filename": "out_20050126-glassware-geek_deepseek-v3.1-n.md",
+    "date": "2005-01-26",
+    "title": "Glassware Geek",
+    "score": 2
+  },
+  {
+    "filename": "out_20050127-hope-drum_deepseek-v3.1-n.md",
+    "date": "2005-01-27",
+    "title": "Hope in a Drum",
+    "score": 4
+  },
+  {
+    "filename": "out_20050130-welcome-world-i-hope_deepseek-v3.1-n.md",
+    "date": "2005-01-30",
+    "title": "Welcome to the World, I Hope",
+    "score": 3
+  },
+  {
+    "filename": "out_20050131-does-your-labmate-hav_deepseek-v3.1-n.md",
+    "date": "2005-01-31",
+    "title": "Does Your Labmate Have the Hands?",
+    "score": 4
+  },
+  {
+    "filename": "out_20050201-merck-takes-another-o_deepseek-v3.1-n.md",
+    "date": "2005-02-01",
+    "title": "Merck Takes Another One",
+    "score": 7
+  },
+  {
+    "filename": "out_20050202-there-and-down-here_deepseek-v3.1-n.md",
+    "date": "2005-02-02",
+    "title": "Up There, and Down Here",
+    "score": 3
+  },
+  {
+    "filename": "out_20050203-elbow-room_deepseek-v3.1-n.md",
+    "date": "2005-02-03",
+    "title": "Elbow Room",
+    "score": 3
+  },
+  {
+    "filename": "out_20050206-technical-question_deepseek-v3.1-n.md",
+    "date": "2005-02-06",
+    "title": "A Technical Question",
+    "score": 0
+  },
+  {
+    "filename": "out_20050207-one-problem-solved-an_deepseek-v3.1-n.md",
+    "date": "2005-02-07",
+    "title": "One Problem Solved, Anyway",
+    "score": 1
+  },
+  {
+    "filename": "out_20050208-maybe-they-should-fir_deepseek-v3.1-n.md",
+    "date": "2005-02-08",
+    "title": "Maybe They Should Fire Them All?",
+    "score": 8
+  },
+  {
+    "filename": "out_20050209-d-we-end-up-here-anyw_deepseek-v3.1-n.md",
+    "date": "2005-02-09",
+    "title": "How'd We End Up Here, Anyway?",
+    "score": 7
+  },
+  {
+    "filename": "out_20050210-bones-world_deepseek-v3.1-n.md",
+    "date": "2005-02-10",
+    "title": "The Bones of the World",
+    "score": 4
+  },
+  {
+    "filename": "out_20050213-pfizer-s-prospects_deepseek-v3.1-n.md",
+    "date": "2005-02-13",
+    "title": "Pfizer's Prospects",
+    "score": 7
+  },
+  {
+    "filename": "out_20050214-pipeline-504_deepseek-v3.1-n.md",
+    "date": "2005-02-14",
+    "title": "Bigger and Greasier",
+    "score": 7
+  },
+  {
+    "filename": "out_20050216-dysfunctional-disclos_deepseek-v3.1-n.md",
+    "date": "2005-02-16",
+    "title": "Dysfunctional Disclosure",
+    "score": 3
+  },
+  {
+    "filename": "out_20050216-glaxo-v-pfizer-sales-_deepseek-v3.1-n.md",
+    "date": "2005-02-16",
+    "title": "Glaxo v. Pfizer: Sales Force Stand-Down?",
+    "score": 7
+  },
+  {
+    "filename": "out_20050217-law-and-disorder_deepseek-v3.1-n.md",
+    "date": "2005-02-17",
+    "title": "Law and Disorder",
+    "score": 2
+  },
+  {
+    "filename": "out_20050218-waiting-fda_deepseek-v3.1-n.md",
+    "date": "2005-02-18",
+    "title": "Waiting for the FDA",
+    "score": 8
+  },
+  {
+    "filename": "out_20050220-cox-2-aftermath_deepseek-v3.1-n.md",
+    "date": "2005-02-20",
+    "title": "COX-2 Aftermath",
+    "score": 6
+  },
+  {
+    "filename": "out_20050221-can-med-chem-help-bir_deepseek-v3.1-n.md",
+    "date": "2005-02-21",
+    "title": "Can Med-Chem Help With Bird Flu?",
+    "score": 7
+  },
+  {
+    "filename": "out_20050222-antiviral-example_deepseek-v3.1-n.md",
+    "date": "2005-02-22",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20050223-exobiochemistry_deepseek-v3.1-n.md",
+    "date": "2005-02-23",
+    "title": "Exobiochemistry",
+    "score": 6
+  },
+  {
+    "filename": "out_20050224-getting-faster-phd_deepseek-v3.1-n.md",
+    "date": "2005-02-24",
+    "title": "Getting a Faster PhD?",
+    "score": 7
+  },
+  {
+    "filename": "out_20050227-law-number-one_deepseek-v3.1-n.md",
+    "date": "2005-02-27",
+    "title": "Law Number One",
+    "score": 5
+  },
+  {
+    "filename": "out_20050228-tysabri-s-fall_deepseek-v3.1-n.md",
+    "date": "2005-02-28",
+    "title": "Tysabri's Fall",
+    "score": 8
+  },
+  {
+    "filename": "out_20051101-molecular-modeling-ca_deepseek-v3.1-n.md",
+    "date": "2005-11-01",
+    "title": "Molecular Modeling Cage Match",
+    "score": 7
+  },
+  {
+    "filename": "out_20051102-flu-plan-part-one-vac_deepseek-v3.1-n.md",
+    "date": "2005-11-02",
+    "title": "The Flu Plan, Part One: Vaccines",
+    "score": 8
+  },
+  {
+    "filename": "out_20051102-flu-plan-part-two-ant_deepseek-v3.1-n.md",
+    "date": "2005-11-02",
+    "title": "The Flu Plan, Part Two: Antiviral Drugs",
+    "score": 7
+  },
+  {
+    "filename": "out_20051103-merck-mat_deepseek-v3.1-n.md",
+    "date": "2005-11-03",
+    "title": "Merck Off the Mat",
+    "score": 7
+  },
+  {
+    "filename": "out_20051106-dover-decision_deepseek-v3.1-n.md",
+    "date": "2005-11-06",
+    "title": "The Dover Decision",
+    "score": 7
+  },
+  {
+    "filename": "out_20051107-intelligent-design-mo_deepseek-v3.1-n.md",
+    "date": "2005-11-07",
+    "title": "Intelligent Design, Molecule By Molecule",
+    "score": 6
+  },
+  {
+    "filename": "out_20051108-university-drug-disco_deepseek-v3.1-n.md",
+    "date": "2005-11-08",
+    "title": "University of Drug Discovery?",
+    "score": 6
+  },
+  {
+    "filename": "out_20051109-cash-vaccines_deepseek-v3.1-n.md",
+    "date": "2005-11-09",
+    "title": "Cash For Vaccines",
+    "score": 8
+  },
+  {
+    "filename": "out_20051110-and-settles_deepseek-v3.1-n.md",
+    "date": "2005-11-10",
+    "title": "\"And That Settles It\"",
+    "score": 3
+  },
+  {
+    "filename": "out_20051111-gene-drug-you-bet_deepseek-v3.1-n.md",
+    "date": "2005-11-11",
+    "title": "Gene to Drug: You Bet",
+    "score": 7
+  },
+  {
+    "filename": "out_20051113-arcadia-s-furnishings_deepseek-v3.1-n.md",
+    "date": "2005-11-13",
+    "title": "Arcadia's Furnishings",
+    "score": 3
+  },
+  {
+    "filename": "out_20051114-one-darn-miracle-afte_deepseek-v3.1-n.md",
+    "date": "2005-11-14",
+    "title": "One Darn Miracle After Another",
+    "score": 3
+  },
+  {
+    "filename": "out_20051115-statin-showdown_deepseek-v3.1-n.md",
+    "date": "2005-11-15",
+    "title": "Statin Showdown",
+    "score": 6
+  },
+  {
+    "filename": "out_20051116-sort-training_deepseek-v3.1-n.md",
+    "date": "2005-11-16",
+    "title": "What Sort of Training?",
+    "score": 6
+  },
+  {
+    "filename": "out_20051117-man-book-and-plan-sev_deepseek-v3.1-n.md",
+    "date": "2005-11-17",
+    "title": "A Man, A Book, and a Plan. Several Plans.",
+    "score": 6
+  },
+  {
+    "filename": "out_20051120-sir2-surprise_deepseek-v3.1-n.md",
+    "date": "2005-11-20",
+    "title": "Sir2 Surprise",
+    "score": 7
+  },
+  {
+    "filename": "out_20051121-old-standbys_deepseek-v3.1-n.md",
+    "date": "2005-11-21",
+    "title": "Old Standbys",
+    "score": 3
+  },
+  {
+    "filename": "out_20051121-run-do-not-walk-neare_deepseek-v3.1-n.md",
+    "date": "2005-11-21",
+    "title": "Run, Do Not Walk, To The Nearest Exit",
+    "score": 7
+  },
+  {
+    "filename": "out_20051122-serono-s-suitors_deepseek-v3.1-n.md",
+    "date": "2005-11-22",
+    "title": "Serono's Suitors",
+    "score": 6
+  },
+  {
+    "filename": "out_20051125-instead-working_deepseek-v3.1-n.md",
+    "date": "2005-11-25",
+    "title": "Instead of Working",
+    "score": 1
+  },
+  {
+    "filename": "out_20051127-hire-thoroughbreds_deepseek-v3.1-n.md",
+    "date": "2005-11-27",
+    "title": "Hire the Thoroughbreds?",
+    "score": 0
+  },
+  {
+    "filename": "out_20051128-merck-finally_deepseek-v3.1-n.md",
+    "date": "2005-11-28",
+    "title": "Merck, Finally",
+    "score": 7
+  },
+  {
+    "filename": "out_20051129-ghrelin-and-obestatin_deepseek-v3.1-n.md",
+    "date": "2005-11-29",
+    "title": "Ghrelin and Obestatin",
+    "score": 6
+  },
+  {
+    "filename": "out_20051130-merck-update_deepseek-v3.1-n.md",
+    "date": "2005-11-30",
+    "title": "Merck Update",
+    "score": 3
+  },
+  {
+    "filename": "out_20051130-okadaic-acid-makes-va_deepseek-v3.1-n.md",
+    "date": "2005-11-30",
+    "title": "\"Okadaic Acid Makes Vanity Fair\"",
+    "score": 3
+  },
+  {
+    "filename": "out_20051201-rigel-s-puzzling-fail_deepseek-v3.1-n.md",
+    "date": "2005-12-01",
+    "title": "Rigel's Puzzling Failure",
+    "score": 7
+  },
+  {
+    "filename": "out_20051202-bell-finally-tolls-pe_deepseek-v3.1-n.md",
+    "date": "2005-12-02",
+    "title": "The Bell Finally Tolls for Peter Rost",
+    "score": 3
+  },
+  {
+    "filename": "out_20051204-not-same-page_deepseek-v3.1-n.md",
+    "date": "2005-12-04",
+    "title": "Not On the Same Page",
+    "score": 7
+  },
+  {
+    "filename": "out_20051205-home-sweet-home_deepseek-v3.1-n.md",
+    "date": "2005-12-05",
+    "title": "Home Sweet Home",
+    "score": 1
+  },
+  {
+    "filename": "out_20051206-grand-rounds-today-an_deepseek-v3.1-n.md",
+    "date": "2005-12-06",
+    "title": "Grand Rounds Today, and Next Week",
+    "score": 3
+  },
+  {
+    "filename": "out_20051206-well-rounded_deepseek-v3.1-n.md",
+    "date": "2005-12-06",
+    "title": "Well-Rounded?",
+    "score": 7
+  },
+  {
+    "filename": "out_20051207-hard-news-cancer_deepseek-v3.1-n.md",
+    "date": "2005-12-07",
+    "title": "Article Title",
+    "score": 8
+  },
+  {
+    "filename": "out_20051209-vioxx-bomb-drops-does_deepseek-v3.1-n.md",
+    "date": "2005-12-09",
+    "title": "A Vioxx Bomb Drops. Or Does It?",
+    "score": 8
+  },
+  {
+    "filename": "out_20051212-play-play-lab_deepseek-v3.1-n.md",
+    "date": "2005-12-12",
+    "title": "Play by Play in the Lab",
+    "score": 1
+  },
+  {
+    "filename": "out_20051213-grand-rounds_deepseek-v3.1-n.md",
+    "date": "2005-12-13",
+    "title": "Grand Rounds",
+    "score": 3
+  },
+  {
+    "filename": "out_20051213-new-england-journal-l_deepseek-v3.1-n.md",
+    "date": "2005-12-13",
+    "title": "The New England Journal of Legal Immunity?",
+    "score": 6
+  },
+  {
+    "filename": "out_20051214-expensive-way-back-ce_deepseek-v3.1-n.md",
+    "date": "2005-12-14",
+    "title": "An Expensive Way Back for Celebrex",
+    "score": 6
+  },
+  {
+    "filename": "out_20051215-attack-angry-viruses_deepseek-v3.1-n.md",
+    "date": "2005-12-15",
+    "title": "Attack of the Angry Viruses",
+    "score": 3
+  },
+  {
+    "filename": "out_20051217-not-do-bromine_deepseek-v3.1-n.md",
+    "date": "2005-12-17",
+    "title": "How Not to Do It: Bromine",
+    "score": 3
+  },
+  {
+    "filename": "out_20051220-does-celebrex-have-fu_deepseek-v3.1-n.md",
+    "date": "2005-12-20",
+    "title": "Does Celebrex Have A Future At All?",
+    "score": 7
+  },
+  {
+    "filename": "out_20051220-dover-decision-comes-_deepseek-v3.1-n.md",
+    "date": "2005-12-20",
+    "title": "The Dover Decision Comes Down",
+    "score": 7
+  },
+  {
+    "filename": "out_20051221-another-shot-cancer_deepseek-v3.1-n.md",
+    "date": "2005-12-21",
+    "title": "Another Shot at Cancer",
+    "score": 7
+  },
+  {
+    "filename": "out_20051222-poor-put-upon-intelli_deepseek-v3.1-n.md",
+    "date": "2005-12-22",
+    "title": "Poor Put-Upon Intelligent Design",
+    "score": 6
+  },
+  {
+    "filename": "out_20051223-sort-like-wine-cellar_deepseek-v3.1-n.md",
+    "date": "2005-12-23",
+    "title": "Sort Of Like A Wine Cellar",
+    "score": 3
+  },
+  {
+    "filename": "out_20051227-makes-ugly-molecule_deepseek-v3.1-n.md",
+    "date": "2005-12-27",
+    "title": "What Makes an Ugly Molecule?",
+    "score": 7
+  },
+  {
+    "filename": "out_20051229-outside-reading_deepseek-v3.1-n.md",
+    "date": "2005-12-29",
+    "title": "Outside Reading",
+    "score": 0
+  },
+  {
+    "filename": "out_20060102-scientist-s-resolutio_deepseek-v3.1-n.md",
+    "date": "2006-01-02",
+    "title": "A Scientist's Resolutions",
+    "score": 3
+  },
+  {
+    "filename": "out_20060103-comments-welcome-real_deepseek-v3.1-n.md",
+    "date": "2006-01-03",
+    "title": "Comments Welcome - Really",
+    "score": 2
+  },
+  {
+    "filename": "out_20060103-pemoline-problems_deepseek-v3.1-n.md",
+    "date": "2006-01-03",
+    "title": "Pemoline Problems",
+    "score": 6
+  },
+  {
+    "filename": "out_20060104-mice-humans-and-cance_deepseek-v3.1-n.md",
+    "date": "2006-01-04",
+    "title": "Mice, Humans, and Cancer",
+    "score": 7
+  },
+  {
+    "filename": "out_20060105-ugly-but-effective_deepseek-v3.1-n.md",
+    "date": "2006-01-05",
+    "title": "Ugly, But Effective",
+    "score": 7
+  },
+  {
+    "filename": "out_20060108-my-shopping-list_deepseek-v3.1-n.md",
+    "date": "2006-01-08",
+    "title": "My Shopping List",
+    "score": 6
+  },
+  {
+    "filename": "out_20060109-stem-cell-disaster_deepseek-v3.1-n.md",
+    "date": "2006-01-09",
+    "title": "Stem Cell Disaster",
+    "score": 7
+  },
+  {
+    "filename": "out_20060112-plenty-tar-go-around_deepseek-v3.1-n.md",
+    "date": "2006-01-12",
+    "title": "Plenty of Tar to Go Around",
+    "score": 4
+  },
+  {
+    "filename": "out_20060113-not-do-ether-peroxide_deepseek-v3.1-n.md",
+    "date": "2006-01-13",
+    "title": "How Not to Do It: Ether Peroxides",
+    "score": 3
+  },
+  {
+    "filename": "out_20060115-fda-loosens-its-tie_deepseek-v3.1-n.md",
+    "date": "2006-01-15",
+    "title": "The FDA Loosens Its Tie",
+    "score": 6
+  },
+  {
+    "filename": "out_20060116-various-updates_deepseek-v3.1-n.md",
+    "date": "2006-01-16",
+    "title": "Various Updates",
+    "score": 0
+  },
+  {
+    "filename": "out_20060117-dangerous-thoughts_deepseek-v3.1-n.md",
+    "date": "2006-01-17",
+    "title": "Article Title",
+    "score": null
+  },
+  {
+    "filename": "out_20060117-gimme-old-time-reacti_deepseek-v3.1-n.md",
+    "date": "2006-01-17",
+    "title": "Gimme That Old Time Reaction",
+    "score": 7
+  },
+  {
+    "filename": "out_20060118-scientific-aptitude-t_deepseek-v3.1-n.md",
+    "date": "2006-01-18",
+    "title": "A Scientific Aptitude Test?",
+    "score": 7
+  },
+  {
+    "filename": "out_20060119-but-his-name-lives_deepseek-v3.1-n.md",
+    "date": "2006-01-19",
+    "title": "But His Name Lives On. . .",
+    "score": 7
+  },
+  {
+    "filename": "out_20060119-tamiflu-good-anything_deepseek-v3.1-n.md",
+    "date": "2006-01-19",
+    "title": "Tamiflu: Good For Anything, Or Not?",
+    "score": 7
+  },
+  {
+    "filename": "out_20060122-pipeline-757_deepseek-v3.1-n.md",
+    "date": "2006-01-22",
+    "title": "Full Disclosure",
+    "score": 5
+  },
+  {
+    "filename": "out_20060123-merck-versus-new-engl_deepseek-v3.1-n.md",
+    "date": "2006-01-23",
+    "title": "Merck versus the New England Journal",
+    "score": 6
+  },
+  {
+    "filename": "out_20060124-examiner-finally-snap_deepseek-v3.1-n.md",
+    "date": "2006-01-24",
+    "title": "The Examiner Finally Snaps",
+    "score": 6
+  },
+  {
+    "filename": "out_20060125-if-s-not-one-thing_deepseek-v3.1-n.md",
+    "date": "2006-01-25",
+    "title": "If It's Not One Thing. . .",
+    "score": 8
+  },
+  {
+    "filename": "out_20060126-ah-s-fine-just-send-d_deepseek-v3.1-n.md",
+    "date": "2006-01-26",
+    "title": "Article Title",
+    "score": 3
+  },
+  {
+    "filename": "out_20060129-name-reactions-one-th_deepseek-v3.1-n.md",
+    "date": "2006-01-29",
+    "title": "Name Reactions for One Thousand, Alex",
+    "score": 3
+  },
+  {
+    "filename": "out_20060130-forecast-rain-eventua_deepseek-v3.1-n.md",
+    "date": "2006-01-30",
+    "title": "Article Title",
+    "score": 3
+  },
+  {
+    "filename": "out_20060131-here-s-shovel-could-y_deepseek-v3.1-n.md",
+    "date": "2006-01-31",
+    "title": "Here's A Shovel. Could You Dig Yourself In Some More?",
+    "score": 2
+  },
+  {
+    "filename": "out_20060201-good-new-days_deepseek-v3.1-n.md",
+    "date": "2006-02-01",
+    "title": "out_20060201-good-new-days_deepseek-v3.1-n",
+    "score": null
+  },
+  {
+    "filename": "out_20060202-nanotech-wonder-water_deepseek-v3.1-n.md",
+    "date": "2006-02-02",
+    "title": "Nanotech Wonder Water?",
+    "score": 2
+  },
+  {
+    "filename": "out_20060205-stream-consciousness_deepseek-v3.1-n.md",
+    "date": "2006-02-05",
+    "title": "Stream of Consciousness",
+    "score": 3
+  },
+  {
+    "filename": "out_20060206-j-j-shakes-things-up_deepseek-v3.1-n.md",
+    "date": "2006-02-06",
+    "title": "J&J Shakes Things Up",
+    "score": 2
+  },
+  {
+    "filename": "out_20060207-return-neowater_deepseek-v3.1-n.md",
+    "date": "2006-02-07",
+    "title": "Return of Neowater",
+    "score": 3
+  },
+  {
+    "filename": "out_20060208-garnier-strikes-back_deepseek-v3.1-n.md",
+    "date": "2006-02-08",
+    "title": "Garnier Strikes Back",
+    "score": 3
+  },
+  {
+    "filename": "out_20060209-ban-intelligent-desig_deepseek-v3.1-n.md",
+    "date": "2006-02-09",
+    "title": "Ban Intelligent Design?",
+    "score": 4
+  },
+  {
+    "filename": "out_20060212-kinase-inhibitors-doo_deepseek-v3.1-n.md",
+    "date": "2006-02-12",
+    "title": "Kinase Inhibitors: Doomed From the Start?",
+    "score": 8
+  },
+  {
+    "filename": "out_20060213-heart-warming-stories_deepseek-v3.1-n.md",
+    "date": "2006-02-13",
+    "title": "Heart-Warming Stories of Success",
+    "score": 4
+  },
+  {
+    "filename": "out_20060214-first-slide-please_deepseek-v3.1-n.md",
+    "date": "2006-02-14",
+    "title": "First Slide, Please",
+    "score": 0
+  },
+  {
+    "filename": "out_20060215-pfizer-takes-deep-bre_deepseek-v3.1-n.md",
+    "date": "2006-02-15",
+    "title": "Pfizer Takes a Deep Breath",
+    "score": 8
+  },
+  {
+    "filename": "out_20060216-what-s-it-worth-you_deepseek-v3.1-n.md",
+    "date": "2006-02-16",
+    "title": "What's It Worth to You?",
+    "score": 8
+  },
+  {
+    "filename": "out_20060219-because-i-never-lie-a_deepseek-v3.1-n.md",
+    "date": "2006-02-19",
+    "title": "Because I Never Lie, and I'm Always Right",
+    "score": 5
+  },
+  {
+    "filename": "out_20060220-rimonabant-bangs-some_deepseek-v3.1-n.md",
+    "date": "2006-02-20",
+    "title": "Rimonabant Bangs Into. . .Something",
+    "score": 8
+  },
+  {
+    "filename": "out_20060221-gold-and-lasers_deepseek-v3.1-n.md",
+    "date": "2006-02-21",
+    "title": "Gold and Lasers",
+    "score": 6
+  },
+  {
+    "filename": "out_20060222-nejm-vs-its-contribut_deepseek-v3.1-n.md",
+    "date": "2006-02-22",
+    "title": "NEJM vs. Its Contributors, Round Two",
+    "score": 8
+  },
+  {
+    "filename": "out_20060223-blogroll-revamp_deepseek-v3.1-n.md",
+    "date": "2006-02-23",
+    "title": "Blogroll Revamp",
+    "score": 2
+  },
+  {
+    "filename": "out_20060224-s-french-trust-us_deepseek-v3.1-n.md",
+    "date": "2006-02-24",
+    "title": "What's French for",
+    "score": 7
+  },
+  {
+    "filename": "out_20060226-tied-mast_deepseek-v3.1-n.md",
+    "date": "2006-02-26",
+    "title": "Tied to the Mast",
+    "score": 6
+  },
+  {
+    "filename": "out_20060227-but-my-back-i-always-_deepseek-v3.1-n.md",
+    "date": "2006-02-27",
+    "title": "Why Small-Molecule Chemists Should Be Worried",
+    "score": 7
+  },
+  {
+    "filename": "out_20060228-more-outsourcing_deepseek-v3.1-n.md",
+    "date": "2006-02-28",
+    "title": "More on Outsourcing",
+    "score": 3
+  },
+  {
+    "filename": "out_20061101-and-thee-o-time_deepseek-v3.1-n.md",
+    "date": "2006-11-01",
+    "title": "And Thee, O Time",
+    "score": 8
+  },
+  {
+    "filename": "out_20061101-you-can-t-make-money-_deepseek-v3.1-n.md",
+    "date": "2006-11-01",
+    "title": "You Can't Make Money If You Don't Get Paid",
+    "score": 7
+  },
+  {
+    "filename": "out_20061102-hope-springing-eterna_deepseek-v3.1-n.md",
+    "date": "2006-11-02",
+    "title": "Hope, Springing Eternal And All That",
+    "score": 8
+  },
+  {
+    "filename": "out_20061106-chinese-med-chem-chin_deepseek-v3.1-n.md",
+    "date": "2006-11-06",
+    "title": "Chinese Med-Chem - In China, For Once",
+    "score": 8
+  },
+  {
+    "filename": "out_20061106-it-went-instead-down_deepseek-v3.1-n.md",
+    "date": "2006-11-06",
+    "title": "It Went Up Instead of Down",
+    "score": 7
+  },
+  {
+    "filename": "out_20061108-links-and-such_deepseek-v3.1-n.md",
+    "date": "2006-11-08",
+    "title": "Links and Such",
+    "score": 3
+  },
+  {
+    "filename": "out_20061108-watch-space_deepseek-v3.1-n.md",
+    "date": "2006-11-08",
+    "title": "Watch This Space",
+    "score": 0
+  },
+  {
+    "filename": "out_20061109-help-wanted-i-hope_deepseek-v3.1-n.md",
+    "date": "2006-11-09",
+    "title": "Help Wanted - I Hope",
+    "score": 2
+  },
+  {
+    "filename": "out_20061110-publish-then-perish_deepseek-v3.1-n.md",
+    "date": "2006-11-10",
+    "title": "Publish, Then Perish",
+    "score": 2
+  },
+  {
+    "filename": "out_20061113-race_deepseek-v3.1-n.md",
+    "date": "2006-11-13",
+    "title": "The Race Is On",
+    "score": 5
+  },
+  {
+    "filename": "out_20061114-do-all-chemicals-go_deepseek-v3.1-n.md",
+    "date": "2006-11-14",
+    "title": "Where Do All The Chemicals Go?",
+    "score": 7
+  },
+  {
+    "filename": "out_20061114-elsewhere_deepseek-v3.1-n.md",
+    "date": "2006-11-14",
+    "title": "Article Title",
+    "score": 5
+  },
+  {
+    "filename": "out_20061115-vial-thirty-three-war_deepseek-v3.1-n.md",
+    "date": "2006-11-15",
+    "title": "Vial Thirty-Three: Warp Drive",
+    "score": 3
+  },
+  {
+    "filename": "out_20061117-ah-heck-error-bars_deepseek-v3.1-n.md",
+    "date": "2006-11-17",
+    "title": "Ah, the Heck With the Error Bars",
+    "score": 5
+  },
+  {
+    "filename": "out_20061120-sell-it-s-not-just-me_deepseek-v3.1-n.md",
+    "date": "2006-11-20",
+    "title": "Sell! (It's Not Just Me)",
+    "score": 5
+  },
+  {
+    "filename": "out_20061121-paper-mountain_deepseek-v3.1-n.md",
+    "date": "2006-11-21",
+    "title": "The Paper Mountain",
+    "score": 3
+  },
+  {
+    "filename": "out_20061127-litvinenko-case-more-_deepseek-v3.1-n.md",
+    "date": "2006-11-27",
+    "title": "The Litvinenko Case: More On Polonium and Alpha Particles",
+    "score": 7
+  },
+  {
+    "filename": "out_20061127-polonium-poisoning_deepseek-v3.1-n.md",
+    "date": "2006-11-27",
+    "title": "Polonium Poisoning",
+    "score": 2
+  },
+  {
+    "filename": "out_20061129-bad-interviews_deepseek-v3.1-n.md",
+    "date": "2006-11-29",
+    "title": "Bad Interviews",
+    "score": 4
+  },
+  {
+    "filename": "out_20061130-other-side-table_deepseek-v3.1-n.md",
+    "date": "2006-11-30",
+    "title": "The Other Side of the Table",
+    "score": 3
+  },
+  {
+    "filename": "out_20061201-pfizer-s-sizing_deepseek-v3.1-n.md",
+    "date": "2006-12-01",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20061203-torcetrapib-catastrop_deepseek-v3.1-n.md",
+    "date": "2006-12-03",
+    "title": "The Torcetrapib Catastrophe",
+    "score": 8
+  },
+  {
+    "filename": "out_20061204-too-near-sun_deepseek-v3.1-n.md",
+    "date": "2006-12-04",
+    "title": "Too Near the Sun?",
+    "score": 7
+  },
+  {
+    "filename": "out_20061206-bigger-and-greasier_deepseek-v3.1-n.md",
+    "date": "2006-12-06",
+    "title": "Bigger And Greasier",
+    "score": 9
+  },
+  {
+    "filename": "out_20061207-are-you-experienced_deepseek-v3.1-n.md",
+    "date": "2006-12-07",
+    "title": "Are You Experienced?",
+    "score": 3
+  },
+  {
+    "filename": "out_20061208-shameless-self-promot_deepseek-v3.1-n.md",
+    "date": "2006-12-08",
+    "title": "Shameless Self-Promotion",
+    "score": 0
+  },
+  {
+    "filename": "out_20061211-old-school-same-schoo_deepseek-v3.1-n.md",
+    "date": "2006-12-11",
+    "title": "Old School? Same School!",
+    "score": 3
+  },
+  {
+    "filename": "out_20061211-torcetrapib-foil-line_deepseek-v3.1-n.md",
+    "date": "2006-12-11",
+    "title": "Torcetrapib: The Foil-Lined Hat Perspective",
+    "score": 7
+  },
+  {
+    "filename": "out_20061213-ars-longa-instruction_deepseek-v3.1-n.md",
+    "date": "2006-12-13",
+    "title": "Ars Longa, But Instructions to Authors Say",
+    "score": 3
+  },
+  {
+    "filename": "out_20061214-love-and-anger_deepseek-v3.1-n.md",
+    "date": "2006-12-14",
+    "title": "Love and Anger",
+    "score": 7
+  },
+  {
+    "filename": "out_20061218-icos-pieces_deepseek-v3.1-n.md",
+    "date": "2006-12-18",
+    "title": "ICOS In Pieces?",
+    "score": 5
+  },
+  {
+    "filename": "out_20061219-hi-my-name_deepseek-v3.1-n.md",
+    "date": "2006-12-19",
+    "title": "Hi, My Name Is [...]",
+    "score": 2
+  },
+  {
+    "filename": "out_20061220-injustice_deepseek-v3.1-n.md",
+    "date": "2006-12-20",
+    "title": "Injustice",
+    "score": 7
+  },
+  {
+    "filename": "out_20061221-holiday-schedule_deepseek-v3.1-n.md",
+    "date": "2006-12-21",
+    "title": "Holiday Schedule",
+    "score": 0
+  },
+  {
+    "filename": "out_20061226-work-home-it-s-easy-i_deepseek-v3.1-n.md",
+    "date": "2006-12-26",
+    "title": "Work At Home! It's Easy; It's Fun!",
+    "score": 5
+  },
+  {
+    "filename": "out_20061228-cleans-down-what-shou_deepseek-v3.1-n.md",
+    "date": "2006-12-28",
+    "title": "Cleans Down to What Should Be the Shine",
+    "score": 2
+  },
+  {
     "filename": "out_20070102-and-winner_deepseek-v3.1-n.md",
     "date": "2007-01-02",
     "title": "The Winner Is. . .",
@@ -13060,5 +14998,731 @@
     "date": "2019-12-31",
     "title": "Let's Get To It",
     "score": 7
+  },
+  {
+    "filename": "out_20200102-if-you-want-degrade-y_deepseek-v3.1-n.md",
+    "date": "2020-01-02",
+    "title": "If You Want to Degrade, You Have to Get In the Door",
+    "score": 7
+  },
+  {
+    "filename": "out_20200103-very-public-retractio_deepseek-v3.1-n.md",
+    "date": "2020-01-03",
+    "title": "A Very Public Retraction. Good.",
+    "score": 7
+  },
+  {
+    "filename": "out_20200106-march-raman-images_deepseek-v3.1-n.md",
+    "date": "2020-01-06",
+    "title": "Article Title",
+    "score": 3
+  },
+  {
+    "filename": "out_20200107-evading-chemotherapy-_deepseek-v3.1-n.md",
+    "date": "2020-01-07",
+    "title": "Evading Chemotherapy, Bacteria-Style",
+    "score": 6
+  },
+  {
+    "filename": "out_20200108-big-news-cancer-versu_deepseek-v3.1-n.md",
+    "date": "2020-01-08",
+    "title": "Big News in Cancer, Versus Big Talk About It",
+    "score": 7
+  },
+  {
+    "filename": "out_20200109-making-large-rings-ca_deepseek-v3.1-n.md",
+    "date": "2020-01-09",
+    "title": "Making The Large Rings Catalytically",
+    "score": 7
+  },
+  {
+    "filename": "out_20200110-cancer-numbers_deepseek-v3.1-n.md",
+    "date": "2020-01-10",
+    "title": "Cancer By the Numbers",
+    "score": 7
+  },
+  {
+    "filename": "out_20200113-pushing-electrons_deepseek-v3.1-n.md",
+    "date": "2020-01-13",
+    "title": "Pushing Electrons",
+    "score": 8
+  },
+  {
+    "filename": "out_20200114-getting-around-report_deepseek-v3.1-n.md",
+    "date": "2020-01-14",
+    "title": "Getting Around to Reporting Clinical Data, Real Soon Now",
+    "score": 7
+  },
+  {
+    "filename": "out_20200115-eqrx-s-challenge-and-_deepseek-v3.1-n.md",
+    "date": "2020-01-15",
+    "title": "EQRx's Challenge, And My Challenge to Them",
+    "score": 7
+  },
+  {
+    "filename": "out_20200116-inside-lipid-droplets_deepseek-v3.1-n.md",
+    "date": "2020-01-16",
+    "title": "Inside the Lipid Droplets",
+    "score": 5
+  },
+  {
+    "filename": "out_20200117-one-sugar-turns-anoth_deepseek-v3.1-n.md",
+    "date": "2020-01-17",
+    "title": "One Sugar Turns Into Another",
+    "score": 7
+  },
+  {
+    "filename": "out_20200121-unscrambled-eggs_deepseek-v3.1-n.md",
+    "date": "2020-01-21",
+    "title": "Unscrambled Eggs",
+    "score": 4
+  },
+  {
+    "filename": "out_20200122-opening-lid-sarepta-s_deepseek-v3.1-n.md",
+    "date": "2020-01-22",
+    "title": "Opening the Lid on Sarepta's Drug Approvals",
+    "score": 7
+  },
+  {
+    "filename": "out_20200123-will-it-learn-can-it-_deepseek-v3.1-n.md",
+    "date": "2020-01-23",
+    "title": "Will It Learn? Can It Learn?",
+    "score": 8
+  },
+  {
+    "filename": "out_20200124-phosphorylation-witho_deepseek-v3.1-n.md",
+    "date": "2020-01-24",
+    "title": "Phosphorylation Without Pain",
+    "score": 6
+  },
+  {
+    "filename": "out_20200127-coronavirus_deepseek-v3.1-n.md",
+    "date": "2020-01-27",
+    "title": "Coronavirus",
+    "score": 9
+  },
+  {
+    "filename": "out_20200128-time-better-microbiom_deepseek-v3.1-n.md",
+    "date": "2020-01-28",
+    "title": "Time For Better Microbiome Research",
+    "score": 8
+  },
+  {
+    "filename": "out_20200129-harvard-s-chemistry-d_deepseek-v3.1-n.md",
+    "date": "2020-01-29",
+    "title": "Harvard's Chemistry Dept. Chairman in FBI Custody",
+    "score": 8
+  },
+  {
+    "filename": "out_20200130-how-deep-literature_deepseek-v3.1-n.md",
+    "date": "2020-01-30",
+    "title": "How Deep Is That Literature?",
+    "score": 8
+  },
+  {
+    "filename": "out_20200131-another-ai-generated-_deepseek-v3.1-n.md",
+    "date": "2020-01-31",
+    "title": "Article Title",
+    "score": 8
+  },
+  {
+    "filename": "out_20200203-free-floating-mitocho_deepseek-v3.1-n.md",
+    "date": "2020-02-03",
+    "title": "Free-Floating Mitochondria",
+    "score": 7
+  },
+  {
+    "filename": "out_20200204-arguing-ai-drug-disco_deepseek-v3.1-n.md",
+    "date": "2020-02-04",
+    "title": "Arguing on AI Drug Discovery",
+    "score": 8
+  },
+  {
+    "filename": "out_20200205-spinning_deepseek-v3.1-n.md",
+    "date": "2020-02-05",
+    "title": "Spinning Off",
+    "score": 3
+  },
+  {
+    "filename": "out_20200206-good-ol-grignard_deepseek-v3.1-n.md",
+    "date": "2020-02-06",
+    "title": "The Good Ol' Grignard",
+    "score": 4
+  },
+  {
+    "filename": "out_20200210-prospective-alzheimer_deepseek-v3.1-n.md",
+    "date": "2020-02-10",
+    "title": "A Prospective Alzheimer's Trial Reports",
+    "score": 8
+  },
+  {
+    "filename": "out_20200211-antiviral-theatrics_deepseek-v3.1-n.md",
+    "date": "2020-02-11",
+    "title": "Antiviral Theatrics?",
+    "score": 6
+  },
+  {
+    "filename": "out_20200212-drug-dosing_deepseek-v3.1-n.md",
+    "date": "2020-02-12",
+    "title": "Drug Dosing",
+    "score": 7
+  },
+  {
+    "filename": "out_20200213-happens-university-ba_deepseek-v3.1-n.md",
+    "date": "2020-02-13",
+    "title": "What Happens to University-Based Biotech Startups - And Why",
+    "score": 7
+  },
+  {
+    "filename": "out_20200214-quick-retraction_deepseek-v3.1-n.md",
+    "date": "2020-02-14",
+    "title": "A Quick Retraction",
+    "score": 4
+  },
+  {
+    "filename": "out_20200217-new-antibiotic-candid_deepseek-v3.1-n.md",
+    "date": "2020-02-17",
+    "title": "A New Antibiotic Candidate",
+    "score": 4
+  },
+  {
+    "filename": "out_20200218-opioid-signaling-thin_deepseek-v3.1-n.md",
+    "date": "2020-02-18",
+    "title": "Opioid Signaling: Think Again",
+    "score": 9
+  },
+  {
+    "filename": "out_20200220-machine-learning-anti_deepseek-v3.1-n.md",
+    "date": "2020-02-20",
+    "title": "Machine Learning for Antibiotics",
+    "score": 8
+  },
+  {
+    "filename": "out_20200221-fix-nobels-already_deepseek-v3.1-n.md",
+    "date": "2020-02-21",
+    "title": "Fix The Nobels Already",
+    "score": 6
+  },
+  {
+    "filename": "out_20200224-membrane-surprises_deepseek-v3.1-n.md",
+    "date": "2020-02-24",
+    "title": "Membrane Surprises",
+    "score": 7
+  },
+  {
+    "filename": "out_20200225-more-vsc-voodoo_deepseek-v3.1-n.md",
+    "date": "2020-02-25",
+    "title": "More VSC Voodoo",
+    "score": 6
+  },
+  {
+    "filename": "out_20200226-congo-red_deepseek-v3.1-n.md",
+    "date": "2020-02-26",
+    "title": "Congo Red",
+    "score": 6
+  },
+  {
+    "filename": "out_20200227-two-tribes_deepseek-v3.1-n.md",
+    "date": "2020-02-27",
+    "title": "Two Tribes",
+    "score": 8
+  },
+  {
+    "filename": "out_20200228-idiosyncratic-tox_deepseek-v3.1-n.md",
+    "date": "2020-02-28",
+    "title": "Idiosyncratic Tox",
+    "score": 6
+  },
+  {
+    "filename": "out_20201102-scientific-literature_deepseek-v3.1-n.md",
+    "date": "2020-11-02",
+    "title": "The Scientific Literature's Own Pandemic",
+    "score": 7
+  },
+  {
+    "filename": "out_20201105-don-t-make-mine-mink_deepseek-v3.1-n.md",
+    "date": "2020-11-05",
+    "title": "Don't Make Mine Mink",
+    "score": 6
+  },
+  {
+    "filename": "out_20201106-aducanumab-fda_deepseek-v3.1-n.md",
+    "date": "2020-11-06",
+    "title": "Aducanumab at the FDA",
+    "score": 9
+  },
+  {
+    "filename": "out_20201109-vaccine-efficacy-data_deepseek-v3.1-n.md",
+    "date": "2020-11-09",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20201111-good-news-t-cell-resp_deepseek-v3.1-n.md",
+    "date": "2020-11-11",
+    "title": "Good News on T-Cell Response",
+    "score": 8
+  },
+  {
+    "filename": "out_20201113-lilly-s-monoclonal-eu_deepseek-v3.1-n.md",
+    "date": "2020-11-13",
+    "title": "Article Title",
+    "score": 5
+  },
+  {
+    "filename": "out_20201116-moderna-s-vaccine-eff_deepseek-v3.1-n.md",
+    "date": "2020-11-16",
+    "title": "Moderna's Vaccine Efficacy Readout",
+    "score": 8
+  },
+  {
+    "filename": "out_20201118-vaccine-possibilities_deepseek-v3.1-n.md",
+    "date": "2020-11-18",
+    "title": "Vaccine Possibilities",
+    "score": 8
+  },
+  {
+    "filename": "out_20201119-more-vaccine-data-adv_deepseek-v3.1-n.md",
+    "date": "2020-11-19",
+    "title": "More Vaccine Data, in Advance of More Efficacy",
+    "score": 8
+  },
+  {
+    "filename": "out_20201123-oxford-az-vaccine-eff_deepseek-v3.1-n.md",
+    "date": "2020-11-23",
+    "title": "Oxford/AZ Vaccine Efficacy Data",
+    "score": 9
+  },
+  {
+    "filename": "out_20201125-thanksgiving-break-20_deepseek-v3.1-n.md",
+    "date": "2020-11-25",
+    "title": "Thanksgiving Break 2020",
+    "score": 0
+  },
+  {
+    "filename": "out_20201130-protein-folding-2020_deepseek-v3.1-n.md",
+    "date": "2020-11-30",
+    "title": "Article Title",
+    "score": 9
+  },
+  {
+    "filename": "out_20201201-big-problems_deepseek-v3.1-n.md",
+    "date": "2020-12-01",
+    "title": "The Big Problems",
+    "score": 9
+  },
+  {
+    "filename": "out_20201202-taking-two-different-_deepseek-v3.1-n.md",
+    "date": "2020-12-02",
+    "title": "Taking Two Different Vaccines?",
+    "score": 7
+  },
+  {
+    "filename": "out_20201204-get-ready-false-side-_deepseek-v3.1-n.md",
+    "date": "2020-12-04",
+    "title": "Get Ready for False Side Effects",
+    "score": 8
+  },
+  {
+    "filename": "out_20201207-gene-therapy-absolute_deepseek-v3.1-n.md",
+    "date": "2020-12-07",
+    "title": "Gene Therapy, Absolutely and For Real",
+    "score": 9
+  },
+  {
+    "filename": "out_20201209-fda-weighs-its-first-_deepseek-v3.1-n.md",
+    "date": "2020-12-09",
+    "title": "The FDA Weighs Its First Coronavirus Vaccine",
+    "score": 9
+  },
+  {
+    "filename": "out_20201209-oxford-astrazeneca-va_deepseek-v3.1-n.md",
+    "date": "2020-12-09",
+    "title": "The Oxford/AstraZeneca Vaccine Efficacy Data",
+    "score": 9
+  },
+  {
+    "filename": "out_20201210-latest-coronavirus-mu_deepseek-v3.1-n.md",
+    "date": "2020-12-10",
+    "title": "The Latest on Coronavirus Mutations",
+    "score": 9
+  },
+  {
+    "filename": "out_20201211-wider-variety-vaccine_deepseek-v3.1-n.md",
+    "date": "2020-12-11",
+    "title": "A Wider Variety of Vaccine Platforms Report",
+    "score": 8
+  },
+  {
+    "filename": "out_20201214-baricitinib-follow-up_deepseek-v3.1-n.md",
+    "date": "2020-12-14",
+    "title": "Baricitinib Follow-Up: An AI Prediction for Coronavirus Therapy",
+    "score": 8
+  },
+  {
+    "filename": "out_20201215-autoantibody-problems_deepseek-v3.1-n.md",
+    "date": "2020-12-15",
+    "title": "Autoantibody Problems",
+    "score": 8
+  },
+  {
+    "filename": "out_20201218-antibody-dependent-en_deepseek-v3.1-n.md",
+    "date": "2020-12-18",
+    "title": "Antibody-Dependent Enhancement",
+    "score": 8
+  },
+  {
+    "filename": "out_20201222-new-mutations_deepseek-v3.1-n.md",
+    "date": "2020-12-22",
+    "title": "The New Mutations",
+    "score": 8
+  },
+  {
+    "filename": "out_20201223-holiday-break-2020_deepseek-v3.1-n.md",
+    "date": "2020-12-23",
+    "title": "Holiday Break",
+    "score": 0
+  },
+  {
+    "filename": "out_20201228-holiday-recipe-banana_deepseek-v3.1-n.md",
+    "date": "2020-12-28",
+    "title": "Holiday Recipe: Banana Bread",
+    "score": 0
+  },
+  {
+    "filename": "out_20201229-recipe-peruvian-roast_deepseek-v3.1-n.md",
+    "date": "2020-12-29",
+    "title": "Recipe: Peruvian Roast Chicken",
+    "score": 0
+  },
+  {
+    "filename": "out_20201230-vaccine-roundup-late-_deepseek-v3.1-n.md",
+    "date": "2020-12-30",
+    "title": "Vaccine Roundup, Late December",
+    "score": 7
+  },
+  {
+    "filename": "out_20210104-variants-and-vaccines_deepseek-v3.1-n.md",
+    "date": "2021-01-04",
+    "title": "Variants and Vaccines",
+    "score": 8
+  },
+  {
+    "filename": "out_20210108-regular-posting-resum_deepseek-v3.1-n.md",
+    "date": "2021-01-08",
+    "title": "Regular Posting Resumes Monday",
+    "score": 2
+  },
+  {
+    "filename": "out_20210111-rna-vaccines-and-thei_deepseek-v3.1-n.md",
+    "date": "2021-01-11",
+    "title": "RNA Vaccines And Their Lipids",
+    "score": 9
+  },
+  {
+    "filename": "out_20210112-more-things-do-mrna_deepseek-v3.1-n.md",
+    "date": "2021-01-12",
+    "title": "More Things to Do With mRNA",
+    "score": 7
+  },
+  {
+    "filename": "out_20210114-johnson-and-johnson-s_deepseek-v3.1-n.md",
+    "date": "2021-01-14",
+    "title": "Johnson and Johnson, SinoVac and More",
+    "score": 8
+  },
+  {
+    "filename": "out_20210119-memory-b-cells-infect_deepseek-v3.1-n.md",
+    "date": "2021-01-19",
+    "title": "Memory B Cells, Infection, and Vaccination",
+    "score": 8
+  },
+  {
+    "filename": "out_20210121-mrna-vaccines-what-ha_deepseek-v3.1-n.md",
+    "date": "2021-01-21",
+    "title": "mRNA Vaccines: What Happens",
+    "score": 9
+  },
+  {
+    "filename": "out_20210122-other-guys_deepseek-v3.1-n.md",
+    "date": "2021-01-22",
+    "title": "The Other Guys",
+    "score": 7
+  },
+  {
+    "filename": "out_20210125-vaccine-roundup-merck_deepseek-v3.1-n.md",
+    "date": "2021-01-25",
+    "title": "Vaccine Roundup: Merck Wipes Out (and More)",
+    "score": 9
+  },
+  {
+    "filename": "out_20210127-vaccination-against-n_deepseek-v3.1-n.md",
+    "date": "2021-01-27",
+    "title": "Vaccination Against the New Variants: Real-World Data",
+    "score": 8
+  },
+  {
+    "filename": "out_20210129-j-amp-j-and-novavax-d_deepseek-v3.1-n.md",
+    "date": "2021-01-29",
+    "title": "J&J and Novavax Data",
+    "score": 7
+  },
+  {
+    "filename": "out_20210201-screening-within-and-_deepseek-v3.1-n.md",
+    "date": "2021-02-01",
+    "title": "Screening, Within and Without",
+    "score": 6
+  },
+  {
+    "filename": "out_20210202-myths-vaccine-manufac_deepseek-v3.1-n.md",
+    "date": "2021-02-02",
+    "title": "Myths of Vaccine Manufacturing",
+    "score": 7
+  },
+  {
+    "filename": "out_20210203-oxford-astrazeneca-da_deepseek-v3.1-n.md",
+    "date": "2021-02-03",
+    "title": "Oxford AstraZeneca Data, Again",
+    "score": 7
+  },
+  {
+    "filename": "out_20210204-t-cells-and-bifunctio_deepseek-v3.1-n.md",
+    "date": "2021-02-04",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20210205-adenovirus-vector-vac_deepseek-v3.1-n.md",
+    "date": "2021-02-05",
+    "title": "Article Title",
+    "score": 7
+  },
+  {
+    "filename": "out_20210208-how-you-make-adenovir_deepseek-v3.1-n.md",
+    "date": "2021-02-08",
+    "title": "How You Make an Adenovirus Vaccine",
+    "score": 8
+  },
+  {
+    "filename": "out_20210210-does-prior-exposure-c_deepseek-v3.1-n.md",
+    "date": "2021-02-10",
+    "title": "Does Prior Exposure to Coronaviruses Protect You?",
+    "score": 7
+  },
+  {
+    "filename": "out_20210212-antibody-dependent-en_deepseek-v3.1-n.md",
+    "date": "2021-02-12",
+    "title": "Antibody-Dependent Enhancement and the Coronavirus Vaccines",
+    "score": 8
+  },
+  {
+    "filename": "out_20210215-glp-1-and-obesity_deepseek-v3.1-n.md",
+    "date": "2021-02-15",
+    "title": "GLP-1 and Obesity",
+    "score": 9
+  },
+  {
+    "filename": "out_20210216-cancer-and-gene-thera_deepseek-v3.1-n.md",
+    "date": "2021-02-16",
+    "title": "Cancer and Gene Therapy",
+    "score": 8
+  },
+  {
+    "filename": "out_20210218-coronavirus-variants-_deepseek-v3.1-n.md",
+    "date": "2021-02-18",
+    "title": "Coronavirus Variants: Down to the Details",
+    "score": 9
+  },
+  {
+    "filename": "out_20210219-how-antidepressants-w_deepseek-v3.1-n.md",
+    "date": "2021-02-19",
+    "title": "How Antidepressants Work, At Last?",
+    "score": 7
+  },
+  {
+    "filename": "out_20210222-more-mrna-vaccine-man_deepseek-v3.1-n.md",
+    "date": "2021-02-22",
+    "title": "More on mRNA Vaccine Manufacturing",
+    "score": 7
+  },
+  {
+    "filename": "out_20210224-j-amp-j-vaccine-fda_deepseek-v3.1-n.md",
+    "date": "2021-02-24",
+    "title": "The J&J Vaccine at the FDA",
+    "score": 6
+  },
+  {
+    "filename": "out_20210225-vetiver_deepseek-v3.1-n.md",
+    "date": "2021-02-25",
+    "title": "Vetiver",
+    "score": 5
+  },
+  {
+    "filename": "out_20211101-clindamycin-21st-cent_deepseek-v3.1-n.md",
+    "date": "2021-11-01",
+    "title": "Clindamycin For the 21st Century",
+    "score": 6
+  },
+  {
+    "filename": "out_20211102-inside-cell_deepseek-v3.1-n.md",
+    "date": "2021-11-02",
+    "title": "The Inside of the Cell",
+    "score": 3
+  },
+  {
+    "filename": "out_20211103-making-new-building-b_deepseek-v3.1-n.md",
+    "date": "2021-11-03",
+    "title": "Making New Building Blocks, For Fun and Profit",
+    "score": 5
+  },
+  {
+    "filename": "out_20211104-fluvoxamine-coronavir_deepseek-v3.1-n.md",
+    "date": "2021-11-04",
+    "title": "Fluvoxamine for Coronavirus",
+    "score": 7
+  },
+  {
+    "filename": "out_20211105-pfizer-s-good-news-wo_deepseek-v3.1-n.md",
+    "date": "2021-11-05",
+    "title": "Pfizer's Good News Is the World's Good News",
+    "score": 8
+  },
+  {
+    "filename": "out_20211108-ai-generated-clinical_deepseek-v3.1-n.md",
+    "date": "2021-11-08",
+    "title": "AI-Generated Clinical Candidates, So Far",
+    "score": 7
+  },
+  {
+    "filename": "out_20211109-pushing-through-capil_deepseek-v3.1-n.md",
+    "date": "2021-11-09",
+    "title": "Article Title",
+    "score": 4
+  },
+  {
+    "filename": "out_20211110-nih-v-moderna_deepseek-v3.1-n.md",
+    "date": "2021-11-10",
+    "title": "The NIH v Moderna",
+    "score": 7
+  },
+  {
+    "filename": "out_20211111-alzheimer-s-update-mo_deepseek-v3.1-n.md",
+    "date": "2021-11-11",
+    "title": "Alzheimer's Update: More Disarray",
+    "score": 8
+  },
+  {
+    "filename": "out_20211115-protein-complex-struc_deepseek-v3.1-n.md",
+    "date": "2021-11-15",
+    "title": "Protein Complex Structure Predictions, Already?",
+    "score": 8
+  },
+  {
+    "filename": "out_20211116-proteins-aging-not-so_deepseek-v3.1-n.md",
+    "date": "2021-11-16",
+    "title": "Proteins Aging, Not So Gracefully",
+    "score": 7
+  },
+  {
+    "filename": "out_20211117-alzheimer-s-vaccines_deepseek-v3.1-n.md",
+    "date": "2021-11-17",
+    "title": "Alzheimer's Vaccines?",
+    "score": 6
+  },
+  {
+    "filename": "out_20211118-biotin-lessons_deepseek-v3.1-n.md",
+    "date": "2021-11-18",
+    "title": "Biotin Lessons",
+    "score": 6
+  },
+  {
+    "filename": "out_20211119-coronavirus-vaccines-_deepseek-v3.1-n.md",
+    "date": "2021-11-19",
+    "title": "Coronavirus Vaccines and Cancer",
+    "score": 4
+  },
+  {
+    "filename": "out_20211122-another-orphan-reunit_deepseek-v3.1-n.md",
+    "date": "2021-11-22",
+    "title": "Another Orphan Reunited",
+    "score": 3
+  },
+  {
+    "filename": "out_20211124-few-days-cook-stuff_deepseek-v3.1-n.md",
+    "date": "2021-11-24",
+    "title": "A Few Days Off to Cook Stuff",
+    "score": 0
+  },
+  {
+    "filename": "out_20211201-rethinking-molnupirav_deepseek-v3.1-n.md",
+    "date": "2021-12-01",
+    "title": "Rethinking Molnupiravir",
+    "score": 7
+  },
+  {
+    "filename": "out_20211202-omicron-time_deepseek-v3.1-n.md",
+    "date": "2021-12-02",
+    "title": "Omicron Time",
+    "score": 8
+  },
+  {
+    "filename": "out_20211206-autism-and-microbiome_deepseek-v3.1-n.md",
+    "date": "2021-12-06",
+    "title": "Autism and the Microbiome: The Wrong Way Around?",
+    "score": 7
+  },
+  {
+    "filename": "out_20211207-rna-takes-over_deepseek-v3.1-n.md",
+    "date": "2021-12-07",
+    "title": "RNA Takes Over",
+    "score": 7
+  },
+  {
+    "filename": "out_20211209-another-ai-drug-annou_deepseek-v3.1-n.md",
+    "date": "2021-12-09",
+    "title": "Another AI Drug Announcement",
+    "score": 7
+  },
+  {
+    "filename": "out_20211210-moderna-s-mrna-flu-va_deepseek-v3.1-n.md",
+    "date": "2021-12-10",
+    "title": "Moderna's mRNA Flu Vaccine",
+    "score": 7
+  },
+  {
+    "filename": "out_20211213-how-much-great-new-pa_deepseek-v3.1-n.md",
+    "date": "2021-12-13",
+    "title": "How Much Of That Great New Paper is Real?",
+    "score": 7
+  },
+  {
+    "filename": "out_20211214-pfizer-s-paxlovid-hol_deepseek-v3.1-n.md",
+    "date": "2021-12-14",
+    "title": "Pfizer's Paxlovid Holds Up",
+    "score": 9
+  },
+  {
+    "filename": "out_20211216-ai-improvements-chemi_deepseek-v3.1-n.md",
+    "date": "2021-12-16",
+    "title": "AI Improvements in Chemical Calculations",
+    "score": 3
+  },
+  {
+    "filename": "out_20211217-omicron-update_deepseek-v3.1-n.md",
+    "date": "2021-12-17",
+    "title": "Omicron Update",
+    "score": 9
+  },
+  {
+    "filename": "out_20211221-holidays_deepseek-v3.1-n.md",
+    "date": "2021-12-21",
+    "title": "Holiday Blogging and Recipes",
+    "score": 0
+  },
+  {
+    "filename": "out_20211227-recipe-time-adas-poll_deepseek-v3.1-n.md",
+    "date": "2021-12-27",
+    "title": "Recipe Time: Adas Pollo",
+    "score": 0
   }
 ]
