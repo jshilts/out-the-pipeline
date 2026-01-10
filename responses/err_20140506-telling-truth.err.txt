@@ -1,0 +1,14 @@
+Error processing: 20140506-telling-truth.txt
+
+Error code: 503 - {'error': {'message': 'Provider returned error', 'code': 503, 'metadata': {'raw': '{"code":50508,"message":"System is too busy now. Please try again later.","data":null}', 'provider_name': 'SiliconFlow'}}, 'user_id': 'user_37FX4YsvOHO1A11zlomVsHHSg4z'}
+
+Traceback (most recent call last):
+  File "C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\llm-summary.py", line 107, in worker_task
+    response = local_client.responses.create(**params)
+  File "C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\.venv\lib\site-packages\openai\resources\responses\responses.py", line 866, in create
+    return self._post(
+  File "C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\.venv\lib\site-packages\openai\_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\jshilts\OneDrive\Documents\Other Documents\Programming\Python\out-the-pipeline\.venv\lib\site-packages\openai\_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Error code: 503 - {'error': {'message': 'Provider returned error', 'code': 503, 'metadata': {'raw': '{"code":50508,"message":"System is too busy now. Please try again later.","data":null}', 'provider_name': 'SiliconFlow'}}, 'user_id': 'user_37FX4YsvOHO1A11zlomVsHHSg4z'}
