@@ -1,6 +1,6 @@
 
 https://www.science.org/content/blog-post/does-antroquinonol-do-anything
-# Article Title (January 2016)
+# Does Antroquinonol Do Anything? (January 2016)
 
 ## 1. SUMMARY
 
